@@ -3,7 +3,7 @@ name: Požadavek na opravu
 about: Tento typ požadavku použijte, když něco nebude fungovat, tak jak by podle vás
   mělo.
 title: ''
-labels: ''
+labels: bug
 assignees: MichalMed
 
 ---
