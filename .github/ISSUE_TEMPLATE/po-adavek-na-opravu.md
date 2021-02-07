@@ -7,6 +7,7 @@ labels: bug
 assignees: MichalMed
 
 ---
+Pokud je to možné, pokuste se informaci o chybě rozepsat dle následující struktury, pomůžete nám ji rychleji identifikovat a opravit.
 
 # Popis problému
 Popište jak se problém projevuje a uveďte detaily, které víte - urychlíte vyřešení problému:
