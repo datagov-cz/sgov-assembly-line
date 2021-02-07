@@ -7,6 +7,7 @@ labels: enhancement
 assignees: MichalMed
 
 ---
+Pokud je to možné, pokuste se formulovat svůj požadavek dle následující struktury, pomůžete nám jej efektivněji zpracovat.
 
 # Popis
 Popište jakou funkci navrhujete. 
