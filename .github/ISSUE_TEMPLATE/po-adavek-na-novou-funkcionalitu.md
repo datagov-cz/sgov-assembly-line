@@ -1,13 +1,12 @@
 ---
-name: Požadavek na novou funkcionalitu
-about: Tento typ požadavku použijte, když budete chtít navrhnout novou funkci nebo
-  vylepšení stávající funkce.
+name: Návrh na novou funkci
+about: Použijte, když budete chtít navrhnout novou funkci nebo vylepšit stávající funkci.
 title: ''
 labels: enhancement
 assignees: MichalMed
 
 ---
-Pokud je to možné, pokuste se formulovat svůj požadavek dle následující struktury, pomůžete nám jej efektivněji zpracovat.
+Pokud je to možné, pokuste se formulovat svůj návrh dle následující struktury, pomůžete nám jej efektivněji zpracovat.
 
 # Popis
 Popište jakou funkci navrhujete. 
