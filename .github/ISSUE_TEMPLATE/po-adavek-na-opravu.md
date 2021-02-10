@@ -1,6 +1,6 @@
 ---
-name: Požadavek na opravu
-about: Tento typ požadavku použijte, když něco nebude fungovat, tak jak by podle vás
+name: Nahlásit chybu
+about: Použijte, když něco nebude fungovat, tak jak by podle vás
   mělo.
 title: ''
 labels: bug
