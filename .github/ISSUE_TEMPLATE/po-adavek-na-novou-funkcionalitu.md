@@ -1,5 +1,5 @@
 ---
-name: Návrh na novou funkci
+name: Navrhnout úpravu
 about: Použijte, když budete chtít navrhnout novou funkci nebo vylepšit stávající funkci.
 title: ''
 labels: enhancement
