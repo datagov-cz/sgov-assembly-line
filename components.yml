@@ -4,7 +4,7 @@ sgovServer:
   meta: {}
 dbServer:
   name: A graph database
-  url: ${URL}/služby/dbServer/repositories/kodi
+  url: ${URL}/služby/dbServer/repositories/assembly-line
   meta: {}
 authServer:
   name: OIDC Authentication Service
