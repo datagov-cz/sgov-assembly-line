@@ -6,13 +6,49 @@ services:
     build:
       context: nginx
     ports:
-      - "80:80"
-      - "443:443"
+      - 80:80
+      - 443:443
     restart: always
-  mission-control:
+  keycloakPostgres:
+    image: postgres
+    volumes:
+      - kodi-keycloak-postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+  missionControl:
     image: docker.pkg.github.com/opendata-mvcr/mission-control/mission-control:latest
     environment:
-      - CONTEXT
-      - ID=kodi-mission-control-dev # TODO: change to missionControl after Kaycloak is fixed
-      - URL=${URL}/modelujeme
-      - COMPONENTS
+      CONTEXT:
+      ID: missionControl
+      URL: ${URL}/modelujeme
+      COMPONENTS:
+  authServer:
+    image: kodi-keycloak:latest
+    volumes:
+      - kodi-keycloak:/keycloak
+      - /etc/ssl/private/tls.key:/etc/x509/https/tls.key
+      - /etc/ssl/certs/tls.crt:/etc/x509/https/tls.crt
+    environment:
+      CONTEXT:
+      ID: authServer
+      URL: ${URL}/služby/authServer/auth/realms/kodi
+      COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
+      DB_VENDOR: POSTGRES
+      DB_ADDR: keycloakPostgres
+      DB_DATABASE: ${POSTGRES_DB}
+      DB_USER: ${POSTGRES_USER}
+      DB_SCHEMA: public
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      REALM_ID: kodi
+      KEYCLOAK_USER:
+      KEYCLOAK_PASSWORD:
+    ports:
+      - 10808:8443
+    depends_on:
+      - keycloakPostgres
+
+volumes:
+  kodi-keycloak-postgres:
+  kodi-keycloak:
