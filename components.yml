@@ -1,0 +1,36 @@
+sgovServer:
+  name: SGoV Service
+  url: ${URL}/služby/sgov-server
+  meta: {}
+dbServer:
+  name: A graph database
+  url: ${URL}/služby/graphdb/repositories/kodi
+  meta: {}
+authServer:
+  name: OIDC Authentication Service
+  url: ${URL}/služby/keycloak/auth/realms/kodi
+  meta: {}
+ontographer:
+  name: ontoGrapher
+  url: ${URL}/modelujeme/v-nástroji/ontographer
+  meta:
+    workspacePath: "?workspace=%WORKSPACE_IRI%"
+termitServer:
+  name: TermIT backend
+  url: ${URL}/služby/termit-server
+  meta: {}
+termit:
+  name: TermIT
+  url: ${URL}/modelujeme/v-nástroji/termit
+  meta:
+    workspacePath: "#vocabularies?workspace=%WORKSPACE_IRI%"
+missionControl:
+  name: Mission Control
+  url: ${URL}/modelujeme
+  meta: {}
+issueTracker:
+  name: Issue Tracker
+  url: https://github.com/opendata-mvcr/sgov-assembly-line/issues
+  meta:
+    newBug: https://github.com/opendata-mvcr/sgov-assembly-line/issues/new?labels=bug&template=po-adavek-na-opravu.md&title=
+    newFeature: https://github.com/opendata-mvcr/sgov-assembly-line/issues/new?labels=enhancement&template=po-adavek-na-novou-funkcionalitu.md&title=
