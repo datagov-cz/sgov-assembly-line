@@ -1,0 +1,45 @@
+PREFIX :<http://www.ontotext.com/connectors/lucene#>
+PREFIX inst:<http://www.ontotext.com/connectors/lucene/instance#>
+INSERT DATA {
+	inst:label_index :createConnector '''
+{
+  "fields": [
+    {
+      "fieldName": "label",
+      "propertyChain": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "indexed": true,
+      "stored": true,
+      "analyzed": true,
+      "multivalued": true,
+      "facet": true
+    },
+    {
+      "fieldName": "title",
+      "propertyChain": [
+        "http://purl.org/dc/terms/title"
+      ],
+      "indexed": true,
+      "stored": true,
+      "analyzed": true,
+      "multivalued": true,
+      "facet": true
+    }
+  ],
+  "languages": [
+    "cs"
+  ],
+  "types": [
+    "http://www.w3.org/2004/02/skos/core#Concept",
+    "http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník"
+  ],
+  "readonly": false,
+  "detectFields": false,
+  "importGraph": false,
+  "boostProperties": [],
+  "stripMarkup": false,
+  "analyzer": "org.apache.lucene.analysis.cz.CzechAnalyzer"
+}
+''' .
+}

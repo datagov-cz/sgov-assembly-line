@@ -6,13 +6,67 @@ services:
     build:
       context: nginx
     ports:
-      - "80:80"
-      - "443:443"
+      - 80:80
+      - 443:443
     restart: always
-  mission-control:
+  keycloakPostgres:
+    image: postgres
+    volumes:
+      - al-keycloak-postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+  missionControl:
     image: docker.pkg.github.com/opendata-mvcr/mission-control/mission-control:latest
     environment:
-      - CONTEXT
-      - ID=kodi-mission-control-dev # TODO: change to missionControl after Kaycloak is fixed
-      - URL=${URL}/modelujeme
-      - COMPONENTS
+      CONTEXT:
+      ID: missionControl
+      URL: ${URL}/modelujeme
+      COMPONENTS:
+  dbServer:
+    build:
+      context: graphdb
+      args:
+        version: 9.5.1
+    environment:
+      CONTEXT:
+      ID: dbServer
+      URL: ${URL}/služby/dbServer/repositories/assembly-line
+      COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
+    image: al-graphdb
+    restart: always
+    ports:
+      - 17200:7200
+    volumes:
+      - al-graphdb:/graphdb/home
+  authServer:
+    image: docker.pkg.github.com/opendata-mvcr/keycloak-graphdb-user-replicator/al-keycloak:latest
+    volumes:
+      - al-keycloak:/keycloak
+      - /etc/ssl/private/tls.key:/etc/x509/https/tls.key
+      - /etc/ssl/certs/tls.crt:/etc/x509/https/tls.crt
+    environment:
+      CONTEXT:
+      ID: authServer
+      URL: ${URL}/služby/authServer/auth/realms/assembly-line
+      COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
+      DB_VENDOR: POSTGRES
+      DB_ADDR: keycloakPostgres
+      DB_DATABASE: ${POSTGRES_DB}
+      DB_USER: ${POSTGRES_USER}
+      DB_SCHEMA: public
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      REALM_ID: assembly-line
+      KEYCLOAK_USER:
+      KEYCLOAK_PASSWORD:
+    ports:
+      - 10808:8443
+    depends_on:
+      - keycloakPostgres
+      - dbServer
+
+volumes:
+  al-graphdb:
+  al-keycloak-postgres:
+  al-keycloak:
