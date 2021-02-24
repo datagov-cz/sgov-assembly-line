@@ -1,0 +1,1109 @@
+@prefix : <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model> .
+
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model> rdf:type owl:Ontology ;
+                                                                       owl:versionIRI <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/model/verze/1.0.1> ;
+                                                                       owl:imports <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/1.0.0> ,
+                                                                                   <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/glosář> ;
+                                                                       <http://purl.org/dc/elements/1.1/creator> "Michal Med"^^xsd:string ;
+                                                                       <http://purl.org/dc/elements/1.1/rights> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                                       <http://purl.org/dc/elements/1.1/title> "Slovník popis dat - model"@cs ,
+                                                                                                               "Vocabulary for data description - model"@en ;
+                                                                       <http://purl.org/dc/terms/created> "13.11.2019"^^xsd:string ;
+                                                                       <http://purl.org/ontology/bibo/status> "Specification"@en ,
+                                                                                                              "Specifikace"@cs ;
+                                                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "a-popis-dat-pojem"^^xsd:string ;
+                                                                       <http://purl.org/vocab/vann/preferredNamespaceUri> "http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/pojem/"^^xsd:string ;
+                                                                       rdfs:label "Slovník popis dat - model"@cs ,
+                                                                                  "Vocabulary for data description - model"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-kořenový-pojem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-kořenový-pojem> rdf:type owl:AnnotationProperty ;
+                                                                                              rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#hasTopConcept> .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/offers-dataset
+<http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/offers-dataset> rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/definuje-funkci
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/definuje-funkci> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                      rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> ;
+                                                                                      rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/funkce> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/importuje-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/importuje-slovník> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                        rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> ;
+                                                                                        rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                   rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut> ;
+                                                                                   rdfs:range <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-databázové-tabulky
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-databázové-tabulky> rdf:type owl:ObjectProperty ;
+                                                                                                      rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem> ;
+                                                                                                      rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> ;
+                                                                                                      rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem> ;
+                                                                                           rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu> ;
+                                                                                           rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-datovým-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-datovým-atributem-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu> ;
+                                                                                                   rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-atribut-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem> ;
+                                                                                rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/term> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem-ze-slovníku
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem-ze-slovníku> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem> ;
+                                                                                            rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-referenčním-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-referenčním-atributem-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                                       rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu> ;
+                                                                                                       rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/referenční-atribut-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-statistickým-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-statistickým-atributem-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                                        rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu> ;
+                                                                                                        rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/statistický-atribut-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu-datové-sady
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu-datové-sady> rdf:type owl:ObjectProperty ;
+                                                                                                rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu> ;
+                                                                                                rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-verzí
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-verzí> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/ufo/is-snapshot-of> ;
+                                                                               rdfs:domain <http://onto.fel.cvut.cz/ontologies/ufo/endurant> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                  rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam> ;
+                                                                                  rdfs:range <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem-datové-sady
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem-datové-sady> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem> ;
+                                                                                              rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-částí-dokumentu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-částí-dokumentu> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalogizuje-datovou-sadu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalogizuje-datovou-sadu> rdf:type owl:ObjectProperty ;
+                                                                                                rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                                rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalog> ;
+                                                                                                rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                 owl:inverseOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem> ;
+                                                                                 rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-databázové-tabulky
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-databázové-tabulky> rdf:type owl:ObjectProperty ;
+                                                                                                    rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut> ;
+                                                                                                    rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka> ;
+                                                                                                    rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut> ;
+                                                                                         owl:inverseOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-autora
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-autora> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-editora> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-atribut-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                                rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-záznamu> ;
+                                                                                                owl:inverseOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-datovým-atributem-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-typ
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-typ> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                    rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-dokumentový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-dokumentový-slovník> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                             owl:inverseOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-dokument> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-editora
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-editora> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                 rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/uživatel> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-glosář
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-glosář> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/ufo/has-part> ;
+                                                                                rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> ;
+                                                                                rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/glosář> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-hodnotu-z-číselníku
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-hodnotu-z-číselníku> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                             rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> ;
+                                                                                             rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselník> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-model
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-model> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/ufo/has-part> ;
+                                                                               rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> ;
+                                                                               rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/model> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-novou-hodnotu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-novou-hodnotu> rdf:type owl:ObjectProperty ;
+                                                                                       rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                       rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/úprava-entity> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-posledního-editora
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-posledního-editora> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-editora> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-původní-hodnotu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-původní-hodnotu> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                         rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/úprava-entity> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-referenční-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-referenční-atribut-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                                    rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-záznamu> ;
+                                                                                                    owl:inverseOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-referenčním-atributem-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-soubor
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-soubor> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                owl:inverseOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-částí-dokumentu> ;
+                                                                                rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument> ;
+                                                                                rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/soubor> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-statistický-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-statistický-atribut-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                                     rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-záznamu> ;
+                                                                                                     owl:inverseOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-statistickým-atributem-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-zdroj
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-zdroj> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                               rdfs:domain <http://onto.fel.cvut.cz/ontologies/ufo/object> ;
+                                                                               rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněnou-entitu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněnou-entitu> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                         rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/změna> ;
+                                                                                         rdfs:range <http://onto.fel.cvut.cz/ontologies/ufo/endurant> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněný-atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněný-atribut> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                         rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/úprava-entity> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-číselníkovou-hodnotu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-číselníkovou-hodnotu> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-databázové-tabulky> ;
+                                                                                              rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselník> ;
+                                                                                              rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselníková-hodnota> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-kořenový-pojem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-kořenový-pojem> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-pojem> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-pojem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-pojem> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                     owl:inverseOf <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                     rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/glosář> ;
+                                                                                     rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/term> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-dokument
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-dokument> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                        rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokumentový-slovník> ;
+                                                                                        rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-legislativní-dokument
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-legislativní-dokument> rdf:type owl:ObjectProperty ;
+                                                                                                     rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-dokument> ;
+                                                                                                     rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/legislativní-slovník> ;
+                                                                                                     rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument-legislativní-povahy> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-atribut-záznamu> rdf:type owl:ObjectProperty ;
+                                                                                                rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                                rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-atributu-záznamu> ;
+                                                                                                rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-datovou-sadu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-datovou-sadu> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/offers-dataset> ;
+                                                                                             rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-datové-sady> ;
+                                                                                             rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-záznam
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-záznam> rdf:type owl:ObjectProperty ;
+                                                                                       rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vztah> ;
+                                                                                       rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-záznamu> ;
+                                                                                       rdfs:range <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam> .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+###  https://slovník.gov.cz/základní/pojem/vztah
+<https://slovník.gov.cz/základní/pojem/vztah> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-modifikace
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-modifikace> rdf:type owl:DatatypeProperty ;
+                                                                                                rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vlastnost> ;
+                                                                                                rdfs:domain <http://onto.fel.cvut.cz/ontologies/ufo/object> ;
+                                                                                                rdfs:range rdfs:Literal .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-poslední-modifikace
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-poslední-modifikace> rdf:type owl:DatatypeProperty ;
+                                                                                                         rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-modifikace> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-vytvoření
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-vytvoření> rdf:type owl:DatatypeProperty ;
+                                                                                               rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-modifikace> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-heslo
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-heslo> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vlastnost> ;
+                                                                               rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/uživatel> ;
+                                                                               rdfs:range rdfs:Literal .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-křestní-jméno
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-křestní-jméno> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vlastnost> ;
+                                                                                       rdfs:domain <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person> ;
+                                                                                       rdfs:range rdfs:Literal .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-příjmení
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-příjmení> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vlastnost> ;
+                                                                                  rdfs:domain <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person> ;
+                                                                                  rdfs:range rdfs:Literal .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-uživatelské-jméno
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-uživatelské-jméno> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:subPropertyOf <https://slovník.gov.cz/základní/pojem/vlastnost> ;
+                                                                                           rdfs:domain <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/uživatel> ;
+                                                                                           rdfs:range rdfs:Literal .
+
+
+###  https://slovník.gov.cz/základní/pojem/vlastnost
+<https://slovník.gov.cz/základní/pojem/vlastnost> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset
+<http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset> rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset-source
+<http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset-source> rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person
+<http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person> rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/agendový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/agendový-slovník> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://slovník.gov.cz/základní/pojem/objekt> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut> ,
+                                                                                                      <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/term> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databáze
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databáze> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka-jako-zdroj-dat
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka-jako-zdroj-dat> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka> ,
+                                                                                                                        <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dotaz-sql-databáze> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset> ,
+                                                                                                  <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/kontext> ,
+                                                                                                  <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-atribut-záznamu> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-slovník> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/diagram
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/diagram> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> ,
+                                                                                              <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument-legislativní-povahy
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument-legislativní-povahy> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokumentový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokumentový-slovník> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dotaz-sql-databáze
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dotaz-sql-databáze> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-dat> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/funkce
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/funkce> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/trope> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/geometrický-atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/geometrický-atribut> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/glosář
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/glosář> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> ,
+                                                                                             <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalog
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalog> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/kontext
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/kontext> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/endurant> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/legislativní-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/legislativní-slovník> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokumentový-slovník> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/model
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/model> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/referenční-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/referenční-atribut-záznamu> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/soubor
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/soubor> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/statistický-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/statistický-atribut-záznamu> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/term
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/term> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/uživatel
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/uživatel> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/vytvoření-entity
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/vytvoření-entity> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/změna> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-atributu-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-atributu-záznamu> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-dat> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-dat
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-dat> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-datové-sady
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-datové-sady> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset-source> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-záznamu> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-dat> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/změna
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/změna> rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> ,
+                                                                                             <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/úprava-entity
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/úprava-entity> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/změna> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselník> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselníková-hodnota
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselníková-hodnota> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/ufo/endurant
+<http://onto.fel.cvut.cz/ontologies/ufo/endurant> rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/ufo/object
+<http://onto.fel.cvut.cz/ontologies/ufo/object> rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/ufo/trope
+<http://onto.fel.cvut.cz/ontologies/ufo/trope> rdf:type owl:Class .
+
+
+###  https://slovník.gov.cz/základní/pojem/objekt
+<https://slovník.gov.cz/základní/pojem/objekt> rdf:type owl:Class .
+
+
+###  https://slovník.gov.cz/základní/pojem/typ-objektu
+<https://slovník.gov.cz/základní/pojem/typ-objektu> rdf:type owl:Class .
+
+
+###  https://slovník.gov.cz/základní/pojem/typ-události
+<https://slovník.gov.cz/základní/pojem/typ-události> rdf:type owl:Class .
+
+
+###  https://slovník.gov.cz/základní/pojem/typ-vlastnosti
+<https://slovník.gov.cz/základní/pojem/typ-vlastnosti> rdf:type owl:Class .
+
+
+###  https://slovník.gov.cz/základní/pojem/typ-vztahu
+<https://slovník.gov.cz/základní/pojem/typ-vztahu> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model> rdf:type owl:NamedIndividual ,
+                                                                               <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/model> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/agendový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/agendový-slovník> rdf:type owl:NamedIndividual ,
+                                                                                                <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut> rdf:type owl:NamedIndividual ,
+                                                                                       <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-databázové-tabulky> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                               <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databáze
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databáze> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka-jako-zdroj-dat
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/databázová-tabulka-jako-zdroj-dat> rdf:type owl:NamedIndividual ,
+                                                                                                                 <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datová-sada> rdf:type owl:NamedIndividual ,
+                                                                                           <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                      <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/datový-slovník> rdf:type owl:NamedIndividual ,
+                                                                                              <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/definuje-funkci
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/definuje-funkci> rdf:type owl:NamedIndividual ,
+                                                                                               <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/diagram
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/diagram> rdf:type owl:NamedIndividual ,
+                                                                                       <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument-legislativní-povahy
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokument-legislativní-povahy> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokumentový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dokumentový-slovník> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dotaz-sql-databáze
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/dotaz-sql-databáze> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/funkce
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/funkce> rdf:type owl:NamedIndividual ,
+                                                                                      <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/geometrický-atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/geometrický-atribut> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/glosář
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/glosář> rdf:type owl:NamedIndividual ,
+                                                                                      <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/importuje-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/importuje-slovník> rdf:type owl:NamedIndividual ,
+                                                                                                 <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem> rdf:type owl:NamedIndividual ,
+                                                                                            <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-databázové-tabulky
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-databázové-tabulky> rdf:type owl:NamedIndividual ,
+                                                                                                               <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-atributem-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-datovým-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-datovým-atributem-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem> rdf:type owl:NamedIndividual ,
+                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem-ze-slovníku
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-pojmem-ze-slovníku> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-referenčním-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-referenčním-atributem-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                                <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-statistickým-atributem-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-statistickým-atributem-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                                 <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu> rdf:type owl:NamedIndividual ,
+                                                                                             <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu-datové-sady
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-v-kontextu-datové-sady> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-verzí
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-verzí> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem> rdf:type owl:NamedIndividual ,
+                                                                                           <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem-datové-sady
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-záznamem-datové-sady> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-částí-dokumentu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/je-částí-dokumentu> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalog
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalog> rdf:type owl:NamedIndividual ,
+                                                                                       <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalogizuje-datovou-sadu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/katalogizuje-datovou-sadu> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/kontext
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/kontext> rdf:type owl:NamedIndividual ,
+                                                                                       <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/legislativní-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/legislativní-slovník> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/model
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/model> rdf:type owl:NamedIndividual ,
+                                                                                     <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut> rdf:type owl:NamedIndividual ,
+                                                                                          <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-databázové-tabulky
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-databázové-tabulky> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-autora
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-autora> rdf:type owl:NamedIndividual ,
+                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-typ
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datový-typ> rdf:type owl:NamedIndividual ,
+                                                                                             <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-modifikace
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-modifikace> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-poslední-modifikace
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-poslední-modifikace> rdf:type owl:NamedIndividual ,
+                                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-vytvoření
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-datum-a-čas-vytvoření> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-dokumentový-slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-dokumentový-slovník> rdf:type owl:NamedIndividual ,
+                                                                                                      <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-editora
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-editora> rdf:type owl:NamedIndividual ,
+                                                                                          <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-glosář
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-glosář> rdf:type owl:NamedIndividual ,
+                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-heslo
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-heslo> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-hodnotu-z-číselníku
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-hodnotu-z-číselníku> rdf:type owl:NamedIndividual ,
+                                                                                                      <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-křestní-jméno
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-křestní-jméno> rdf:type owl:NamedIndividual ,
+                                                                                                <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-model
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-model> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-novou-hodnotu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-novou-hodnotu> rdf:type owl:NamedIndividual ,
+                                                                                                <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-posledního-editora
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-posledního-editora> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-příjmení
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-příjmení> rdf:type owl:NamedIndividual ,
+                                                                                           <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-původní-hodnotu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-původní-hodnotu> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-referenční-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-referenční-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-soubor
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-soubor> rdf:type owl:NamedIndividual ,
+                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-statistický-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-statistický-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                              <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-uživatelské-jméno
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-uživatelské-jméno> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://slovník.gov.cz/základní/pojem/typ-vlastnosti> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-zdroj
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-zdroj> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněnou-entitu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněnou-entitu> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněný-atribut
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-změněný-atribut> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-číselníkovou-hodnotu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/má-číselníkovou-hodnotu> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-kořenový-pojem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-kořenový-pojem> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-pojem
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/obsahuje-pojem> rdf:type owl:NamedIndividual ,
+                                                                                              <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-dokument
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-dokument> rdf:type owl:NamedIndividual ,
+                                                                                                 <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-legislativní-dokument
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/popisuje-legislativní-dokument> rdf:type owl:NamedIndividual ,
+                                                                                                              <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-datovou-sadu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-datovou-sadu> rdf:type owl:NamedIndividual ,
+                                                                                                      <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-záznam
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/poskytuje-záznam> rdf:type owl:NamedIndividual ,
+                                                                                                <https://slovník.gov.cz/základní/pojem/typ-vztahu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/referenční-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/referenční-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> rdf:type owl:NamedIndividual ,
+                                                                                       <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/soubor
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/soubor> rdf:type owl:NamedIndividual ,
+                                                                                      <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/statistický-atribut-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/statistický-atribut-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                           <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/term
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/term> rdf:type owl:NamedIndividual ,
+                                                                                    <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/uživatel
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/uživatel> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/vytvoření-entity
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/vytvoření-entity> rdf:type owl:NamedIndividual ,
+                                                                                                <https://slovník.gov.cz/základní/pojem/typ-události> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj> rdf:type owl:NamedIndividual ,
+                                                                                     <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-atributu-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-atributu-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                                      <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-dat
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-dat> rdf:type owl:NamedIndividual ,
+                                                                                         <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-datové-sady
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-datové-sady> rdf:type owl:NamedIndividual ,
+                                                                                                 <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-záznamu
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/zdroj-záznamu> rdf:type owl:NamedIndividual ,
+                                                                                             <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/změna
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/změna> rdf:type owl:NamedIndividual ,
+                                                                                     <https://slovník.gov.cz/základní/pojem/typ-události> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/záznam> rdf:type owl:NamedIndividual ,
+                                                                                      <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/úprava-entity
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/úprava-entity> rdf:type owl:NamedIndividual ,
+                                                                                             <https://slovník.gov.cz/základní/pojem/typ-události> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselník
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselník> rdf:type owl:NamedIndividual ,
+                                                                                        <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselníková-hodnota
+<http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/číselníková-hodnota> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://slovník.gov.cz/základní/pojem/typ-objektu> .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

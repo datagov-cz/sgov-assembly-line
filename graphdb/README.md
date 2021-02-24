@@ -1,0 +1,3 @@
+- download GraphDb Free distribution ZIP and place it here. It should be named graphdb-free-<version>-dist.zip.
+- set the build arg `version` in ../docker-compose.yml to the <version> .
+- build using `docker-compose`
