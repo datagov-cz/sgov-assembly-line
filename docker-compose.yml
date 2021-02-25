@@ -28,11 +28,12 @@ services:
     build:
       context: graphdb
       args:
-        version: 9.5.1
+#        version: 9.6.0
+         GRAPHDB_ZIP: graphdb-free-9.6.0-dist.zip
     environment:
       CONTEXT:
       ID: dbServer
-      URL: ${URL}/služby/dbServer/repositories/assembly-line
+      URL: ${URL}/sluzby/dbServer/repositories/assembly-line
       COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
     image: al-graphdb
     restart: always
@@ -49,7 +50,7 @@ services:
     environment:
       CONTEXT:
       ID: authServer
-      URL: ${URL}/služby/authServer/auth/realms/assembly-line
+      URL: ${URL}/sluzby/authServer/realms/assembly-line
       COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
       DB_VENDOR: POSTGRES
       DB_ADDR: keycloakPostgres
@@ -60,6 +61,7 @@ services:
       REALM_ID: assembly-line
       KEYCLOAK_USER:
       KEYCLOAK_PASSWORD:
+      PROXY_ADDRESS_FORWARDING: "true"
     ports:
       - 10808:8443
     depends_on:
