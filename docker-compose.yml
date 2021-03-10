@@ -9,6 +9,28 @@ services:
       - 80:80
       - 443:443
     restart: always
+  missionControl:
+    image: docker.pkg.github.com/opendata-mvcr/mission-control/mission-control:latest
+    environment:
+      CONTEXT:
+      ID: missionControl
+      URL: ${URL}
+      COMPONENTS:
+    restart: always
+  dbServer:
+    image: al-graphdb
+    build:
+      context: dbServer
+      args:
+        GRAPHDB_ZIP: graphdb-free-9.6.0-dist.zip
+    environment:
+      CONTEXT:
+      ID: dbServer
+      URL: ${URL}/sluzby/dbServer/repositories/assembly-line
+      COMPONENTS: # TODO REPOSITORY_USERNAME and REPOSITORY_PASSWORD
+    restart: always
+    volumes:
+      - al-graphdb:/graphdb/home
   keycloakPostgres:
     image: postgres
     volumes:
@@ -17,39 +39,18 @@ services:
       POSTGRES_DB:
       POSTGRES_USER:
       POSTGRES_PASSWORD:
-  missionControl:
-    image: docker.pkg.github.com/opendata-mvcr/mission-control/mission-control:latest
-    environment:
-      CONTEXT:
-      ID: missionControl
-      URL: ${URL}/modelujeme
-      COMPONENTS:
-  dbServer:
-    build:
-      context: graphdb
-      args:
-        version: 9.5.1
-    environment:
-      CONTEXT:
-      ID: dbServer
-      URL: ${URL}/služby/dbServer/repositories/assembly-line
-      COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
-    image: al-graphdb
     restart: always
-    ports:
-      - 17200:7200
-    volumes:
-      - al-graphdb:/graphdb/home
   authServer:
     image: docker.pkg.github.com/opendata-mvcr/keycloak-graphdb-user-replicator/al-keycloak:latest
     volumes:
       - al-keycloak:/keycloak
       - /etc/ssl/private/tls.key:/etc/x509/https/tls.key
       - /etc/ssl/certs/tls.crt:/etc/x509/https/tls.crt
+      - ./authServer:/authServer
     environment:
       CONTEXT:
       ID: authServer
-      URL: ${URL}/služby/authServer/auth/realms/assembly-line
+      URL: ${URL}/sluzby/authServer/realms/assembly-line
       COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
       DB_VENDOR: POSTGRES
       DB_ADDR: keycloakPostgres
@@ -60,11 +61,29 @@ services:
       REALM_ID: assembly-line
       KEYCLOAK_USER:
       KEYCLOAK_PASSWORD:
-    ports:
-      - 10808:8443
+      PROXY_ADDRESS_FORWARDING: "true"
+      KEYCLOAK_FRONTEND_URL: ${URL}/sluzby/authServer
+      KEYCLOAK_IMPORT: /authServer/keycloak-realm.json
     depends_on:
       - keycloakPostgres
       - dbServer
+    restart: always
+  sgovServer:
+    image: docker.pkg.github.com/opendata-mvcr/sgov/al-sgov:latest
+    environment:
+      CONTEXT:
+      ID: sgovServer
+      URL: ${URL}/sluzby/sgovServer
+      COMPONENTS:
+      REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
+      KEYCLOAK_REALM: assembly-line
+      KEYCLOAK_RESOURCE: sgovServer
+      KEYCLOAK_AUTHSERVERURL: http://authServer:8080/modelujeme/sluzby/authServer
+      KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
+      KEYCLOAK_CREDENTIALS_SECRET: ${SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
+      KEYCLOAK_PUBLIC_CLIENT: "false"
+      REPOSITORY_GITHUBUSERTOKEN: ${SGOV_SERVER_REPOSITORY_GITHUBUSERTOKEN}
+    restart: always
 
 volumes:
   al-graphdb:
