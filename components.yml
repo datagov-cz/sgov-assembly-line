@@ -26,7 +26,7 @@ termit:
     workspacePath: "#vocabularies?workspace=%WORKSPACE_IRI%"
 missionControl:
   name: Mission Control
-  url: ${URL}/
+  url: ${URL}
   meta: {}
 issueTracker:
   name: Issue Tracker
