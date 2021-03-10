@@ -1,32 +1,32 @@
 sgovServer:
   name: SGoV Service
-  url: ${URL}/modelujeme/sluzby/sgovServer
+  url: ${URL}/sluzby/sgovServer
   meta: {}
 dbServer:
   name: A graph database
-  url: ${URL}/modelujeme/sluzby/dbServer/repositories/assembly-line
+  url: ${URL}/sluzby/dbServer/repositories/assembly-line
   meta: {}
 authServer:
   name: OIDC Authentication Service
-  url: ${URL}/modelujeme/sluzby/authServer/realms/assembly-line
+  url: ${URL}/sluzby/authServer/realms/assembly-line
   meta: {}
 ontographer:
   name: ontoGrapher
-  url: ${URL}/modelujeme/v-nástroji/ontographer
+  url: ${URL}/v-nástroji/ontographer
   meta:
     workspacePath: "?workspace=%WORKSPACE_IRI%"
 termitServer:
   name: TermIT backend
-  url: ${URL}/modelujeme/sluzby/termitServer
+  url: ${URL}/sluzby/termitServer
   meta: {}
 termit:
   name: TermIT
-  url: ${URL}/modelujeme/v-nástroji/termit
+  url: ${URL}/v-nástroji/termit
   meta:
     workspacePath: "#vocabularies?workspace=%WORKSPACE_IRI%"
 missionControl:
   name: Mission Control
-  url: ${URL}/modelujeme
+  url: ${URL}/
   meta: {}
 issueTracker:
   name: Issue Tracker

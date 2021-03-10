@@ -14,7 +14,7 @@ services:
     environment:
       CONTEXT:
       ID: missionControl
-      URL: ${URL}/modelujeme
+      URL: ${URL}
       COMPONENTS:
     restart: always
   dbServer:
@@ -26,7 +26,7 @@ services:
     environment:
       CONTEXT:
       ID: dbServer
-      URL: ${URL}/modelujeme/sluzby/dbServer/repositories/assembly-line
+      URL: ${URL}/sluzby/dbServer/repositories/assembly-line
       COMPONENTS: # TODO REPOSITORY_USERNAME and REPOSITORY_PASSWORD
     restart: always
     volumes:
@@ -50,7 +50,7 @@ services:
     environment:
       CONTEXT:
       ID: authServer
-      URL: ${URL}/modelujeme/sluzby/authServer/realms/assembly-line
+      URL: ${URL}/sluzby/authServer/realms/assembly-line
       COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
       DB_VENDOR: POSTGRES
       DB_ADDR: keycloakPostgres
@@ -62,7 +62,7 @@ services:
       KEYCLOAK_USER:
       KEYCLOAK_PASSWORD:
       PROXY_ADDRESS_FORWARDING: "true"
-      KEYCLOAK_FRONTEND_URL: ${URL}/modelujeme/sluzby/authServer
+      KEYCLOAK_FRONTEND_URL: ${URL}/sluzby/authServer
       KEYCLOAK_IMPORT: /authServer/keycloak-realm.json
     depends_on:
       - keycloakPostgres
@@ -73,7 +73,7 @@ services:
     environment:
       CONTEXT:
       ID: sgovServer
-      URL: ${URL}/modelujeme/sluzby/sgovServer
+      URL: ${URL}/sluzby/sgovServer
       COMPONENTS:
       REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
       KEYCLOAK_REALM: assembly-line

@@ -14,19 +14,19 @@ case $ENV in
 
   local)
     export CONTEXT=development
-    export URL=http://localhost
+    export URL=http://localhost/modelujeme
     FILE=.env.local
     ;;
 
   development)
     export CONTEXT=development
-    export URL=https://slovník-test.mvcr.gov.cz
+    export URL=https://slovník-test.mvcr.gov.cz/modelujeme
     FILE=.env.development
     ;;
 
   production)
     export CONTEXT=production
-    export URL=https://slovník.gov.cz
+    export URL=https://slovník.gov.cz/modelujeme
     FILE=.env.production
     ;;
 
