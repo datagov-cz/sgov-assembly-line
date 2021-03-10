@@ -1,7 +1,7 @@
 FROM openjdk:11
 
 ARG GRAPHDB_ZIP
-ARG CONTEXT="http://slovnik.gov.cz/modelujeme/sluzby/dbServer"
+ARG CONTEXT="http://localhost/modelujeme/sluzby/dbServer"
 
 RUN \
     # Check for mandatory build arguments

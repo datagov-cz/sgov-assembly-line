@@ -1,14 +1,14 @@
 sgovServer:
   name: SGoV Service
-  url: ${URL}/sluzby/sgovServer
+  url: ${URL}/modelujeme/sluzby/sgovServer
   meta: {}
 dbServer:
   name: A graph database
-  url: ${URL}/sluzby/dbServer/repositories/assembly-line
+  url: ${URL}/modelujeme/sluzby/dbServer/repositories/assembly-line
   meta: {}
 authServer:
   name: OIDC Authentication Service
-  url: ${URL}/sluzby/authServer/realms/kodi
+  url: ${URL}/modelujeme/sluzby/authServer/realms/assembly-line
   meta: {}
 ontographer:
   name: ontoGrapher
@@ -17,7 +17,7 @@ ontographer:
     workspacePath: "?workspace=%WORKSPACE_IRI%"
 termitServer:
   name: TermIT backend
-  url: ${URL}/sluzby/termitServer
+  url: ${URL}/modelujeme/sluzby/termitServer
   meta: {}
 termit:
   name: TermIT

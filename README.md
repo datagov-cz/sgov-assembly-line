@@ -14,19 +14,34 @@ Tento repozitář obsahuje sadu Docker instrukcí pro nasazení Výrobní linky.
 
 Postup:
 
+0. Stáhni [GraphDB Free](https://graphdb.ontotext.com) do složky `graphdb`, např. `graphdb-free-9.6.0-dist.zip`.
+
 1. Vygeneruj soubor s proměnnými pomocí utility `gen_env.sh`. Utilita vyžaduje parametr s hodnotou `local`, `development` nebo `production`. V závislosti na parametru bude vygenerován příslušný `.env.*` soubor. Konfigurace komponent bude vygenerována z šablony `components.yml` a zakódována pomocí base64 do jednoduchého řetězce. Příklad:
 
 ```
 ./gen_env.sh local
 ```
+2. Přidej do `.env.<CONTEXT>` proměnné a nastav je:
+Tyto proměnné volíš:
+`POSTGRES_DB`
+`POSTGRES_USER`
+`POSTGRES_PASSWORD`
+`KEYCLOAK_USER`
+`KEYCLOAK_PASSWORD`
+`REPOSITORY_GITHUBUSERTOKEN` (nutné pouze pro publikaci pracovního prostoru na Github)
 
-2. Spusť `docker-compose` s příslušným `.env.*` souborem. Příklad:
+3. Spusť `docker-compose` s příslušným `.env.*` souborem. Příklad:
 
 ```
 docker-compose --env-file=.env.local up
 ```
 
-3. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost`.
+4. Nyní běží authServer (ale některé další služby ne, např. sgovServer). Přihlašte se do něj pomocí `KEYCLOAK_USER` a
+`KEYCLOAK_PASSWORD` vytvořte uživatele výrobní linky. Nezapomeňte mu přiřadit roli ROLE_USER pro službu sgovServer. Dále
+přidejte do proměnné KEYCLOAK_REALMKEY hodnotu veřejného klíče daného realmu a do proměnné
+SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET přidejte hodnotu klíče klienta sgovServer.
+
+5. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost`.
 
 Tento repozitář vznikl v rámci projektu OPZ č. [CZ.03.4.74/0.0/0.0/15_025/0004172](https://esf2014.esfcr.cz/PublicPortal/Views/Projekty/Public/ProjektDetailPublicPage.aspx?action=get&datovySkladId=7CCECB36-FB27-4B75-9F6B-6892D2107FD8) a je udržován v rámci projektu OPZ č. [CZ.03.4.74/0.0/0.0/15_025/0013983](https://esf2014.esfcr.cz/PublicPortal/Views/Projekty/Public/ProjektDetailPublicPage.aspx?action=get&datovySkladId=F5E162B2-15EC-4BBE-9ABD-066388F3D412).
 ![Evropská unie - Evropský sociální fond - Operační program Zaměstnanost](https://data.gov.cz/images/ozp_logo_cz.jpg)
