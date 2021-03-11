@@ -64,6 +64,10 @@ services:
       PROXY_ADDRESS_FORWARDING: "true"
       KEYCLOAK_FRONTEND_URL: ${URL}/sluzby/authServer
       KEYCLOAK_IMPORT: /authServer/keycloak-realm.json
+      DB_SERVER_URL: http://dbServer:7200
+      DB_SERVER_REPOSITORY_ID: assembly-line
+      DB_SERVER_CONTEXT: https://slovník.gov.cz/uživatel
+      NAMESPACE: https://slovník.gov.cz/uživatel/
     depends_on:
       - keycloakPostgres
       - dbServer
@@ -83,6 +87,11 @@ services:
       KEYCLOAK_CREDENTIALS_SECRET: ${SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
       KEYCLOAK_PUBLIC_CLIENT: "false"
       REPOSITORY_GITHUBUSERTOKEN: ${SGOV_SERVER_REPOSITORY_GITHUBUSERTOKEN}
+      USER_NAMESPACE: https://slovník.gov.cz/uživatel/
+      USER_CONTEXT: https://slovník.gov.cz/uživatel
+    depends_on:
+      - dbServer
+      - authServer
     restart: always
 
 volumes:
