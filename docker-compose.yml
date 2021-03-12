@@ -17,6 +17,14 @@ services:
       URL: ${URL}
       COMPONENTS:
     restart: always
+  ontographer:
+    image: docker.pkg.github.com/opendata-mvcr/ontographer/ontographer:latest
+    environment:
+      CONTEXT:
+      ID: ontographer
+      URL: ${URL}/v-nástroji/ontographer
+      COMPONENTS:
+    restart: always
   dbServer:
     image: al-graphdb
     build:
