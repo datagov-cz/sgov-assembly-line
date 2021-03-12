@@ -36,12 +36,20 @@ Tyto proměnné volíš:
 docker-compose --env-file=.env.local up
 ```
 
-4. Nyní běží authServer (ale některé další služby ne, např. sgovServer). Přihlašte se do něj pomocí `KEYCLOAK_USER` a
-`KEYCLOAK_PASSWORD` vytvořte uživatele výrobní linky. Nezapomeňte mu přiřadit roli ROLE_USER pro službu sgovServer. Dále
-přidejte do proměnné KEYCLOAK_REALMKEY hodnotu veřejného klíče daného realmu a do proměnné
-SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET přidejte hodnotu klíče klienta sgovServer.
+4. V dbServeru (`/modelujeme/sluzby/dbServer`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'.
 
-5. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost`.
+5. V authServeru (`/modelujeme/sluzby/authServer`, přihlaš se do něj pomocí `$KEYCLOAK_USER` a
+`$KEYCLOAK_PASSWORD`)
+ - přidej v záložce 'Events Config' Event listener `keycloak-graphdb-user-replicator` a ulož,
+ - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
+ - zkopíruj hodnotu klíče klienta sgovServer do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo a přiřadit roli ROLE_USER pro službu sgovServer.
+
+6. Restartuj službu `sgovServer`
+
+`docker-compose stop sgovServer ; docker-compose --env-file=.env.local up -d sgovServer`
+
+6. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 
 Tento repozitář vznikl v rámci projektu OPZ č. [CZ.03.4.74/0.0/0.0/15_025/0004172](https://esf2014.esfcr.cz/PublicPortal/Views/Projekty/Public/ProjektDetailPublicPage.aspx?action=get&datovySkladId=7CCECB36-FB27-4B75-9F6B-6892D2107FD8) a je udržován v rámci projektu OPZ č. [CZ.03.4.74/0.0/0.0/15_025/0013983](https://esf2014.esfcr.cz/PublicPortal/Views/Projekty/Public/ProjektDetailPublicPage.aspx?action=get&datovySkladId=F5E162B2-15EC-4BBE-9ABD-066388F3D412).
 ![Evropská unie - Evropský sociální fond - Operační program Zaměstnanost](https://data.gov.cz/images/ozp_logo_cz.jpg)
