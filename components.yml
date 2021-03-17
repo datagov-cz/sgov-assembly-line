@@ -14,7 +14,7 @@ ontographer:
   name: ontoGrapher
   url: ${URL}/v-nástroji/ontographer
   meta:
-    workspacePath: "?workspace=%WORKSPACE_IRI%"
+    workspacePath: '/?workspace=%WORKSPACE_IRI%'
 termitServer:
   name: TermIT backend
   url: ${URL}/sluzby/termitServer
@@ -23,7 +23,7 @@ termit:
   name: TermIT
   url: ${URL}/v-nástroji/termit
   meta:
-    workspacePath: "#vocabularies?workspace=%WORKSPACE_IRI%"
+    workspacePath: '/#vocabularies?workspace=%WORKSPACE_IRI%'
 missionControl:
   name: Mission Control
   url: ${URL}
