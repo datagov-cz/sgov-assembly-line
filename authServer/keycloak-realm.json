@@ -978,6 +978,9 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
+      "defaultRoles": [
+        "ROLE_USER"
+      ],
       "redirectUris": [
         "https://slovník.gov.cz/modelujeme/sluzby/sgovServer",
         "*"
