@@ -1727,8 +1727,8 @@
   "emailTheme": "keycloak",
   "eventsEnabled": false,
   "eventsListeners": [
-    "keycloak-graphdb-user-replicator",
-    "jboss-logging"
+    "jboss-logging",
+    "keycloak-graphdb-user-replicator"
   ],
   "enabledEventTypes": [
     "UPDATE_CONSENT_ERROR",
