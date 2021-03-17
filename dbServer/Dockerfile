@@ -7,6 +7,9 @@ RUN \
     # Check for mandatory build arguments
         : "${GRAPHDB_ZIP:?Provide the downloaded GraphDB Free ZIP file}"
 
+ENV GRAPHDB_WORKBENCH_EXTERNAL_URL=http://localhost/modelujeme/sluzby/dbServer
+ENV GRAPHDB_EXTERNAL_URL=http://localhost/modelujeme/sluzby/dbServer
+
 ENV GRAPHDB_VOLUME=/graphdb
 ENV GRAPHDB_HOME=${GRAPHDB_VOLUME}/home
 ENV GRAPHDB_INSTALL_DIR=${GRAPHDB_VOLUME}/dist
@@ -29,6 +32,6 @@ RUN rm -rf ${GRAPHDB_HOME}/data
 COPY ./data ${GRAPHDB_HOME}/data
 COPY ./conf ${GRAPHDB_HOME}/conf
 
-CMD ["-Dgraphdb.home=/graphdb/home","-Dgraphdb.logback=conf/logback.xml","-Dgraphdb.workbench.external-url=http://localhost/modelujeme/sluzby/dbServer","-Dgraphdb.external-url=http://localhost/modelujeme/sluzby/dbServer"]
+CMD ["-Dgraphdb.home=/graphdb/home","-Dgraphdb.logback=conf/logback.xml","-Dgraphdb.workbench.external-url=$GRAPHDB_WORKBENCH_EXTERNAL_URL","-Dgraphdb.external-url=$GRAPHDB_EXTERNAL_URL"]
 ENTRYPOINT ["/graphdb/dist/bin/graphdb"]
 EXPOSE 7200

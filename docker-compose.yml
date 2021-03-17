@@ -3,6 +3,7 @@
 version: "3.9"
 services:
   nginx:
+    image: al-nginx
     build:
       context: nginx
     ports:
@@ -36,6 +37,8 @@ services:
       ID: dbServer
       URL: ${URL}/sluzby/dbServer/repositories/assembly-line
       COMPONENTS: # TODO REPOSITORY_USERNAME and REPOSITORY_PASSWORD
+      GRAPHDB_WORKBENCH_EXTERNAL_URL: ${URL}/sluzby/dbServer
+      GRAPHDB_EXTERNAL_URL: ${URL}/sluzby/dbServer
     restart: always
     volumes:
       - al-graphdb:/graphdb/home
