@@ -2,7 +2,7 @@
   "id": "assembly-line",
   "realm": "assembly-line",
   "displayName": "Výrobní linka konceptuálních modelu (KODI)",
-  "displayNameHtml": "Výrobní linka konceptuálních modelu (KODI)",
+  "displayNameHtml": "<img src=\"https://www.mvcr.cz/soubor/ministerstvo-loga-logo-cmyk-jpg.aspx\" style=\"width:250px;height:100px;\"/><div><span>Výrobní linka konceptuálních modelu (KODI)</span></div>",
   "notBefore": 0,
   "revokeRefreshToken": false,
   "refreshTokenMaxReuse": 0,
@@ -32,7 +32,7 @@
   "verifyEmail": false,
   "loginWithEmailAllowed": true,
   "duplicateEmailsAllowed": false,
-  "resetPasswordAllowed": true,
+  "resetPasswordAllowed": false,
   "editUsernameAllowed": false,
   "bruteForceProtected": false,
   "permanentLockout": false,
@@ -421,6 +421,7 @@
   "requiredCredentials": [
     "password"
   ],
+  "passwordPolicy": "notUsername(undefined) and notEmail(undefined)",
   "otpPolicyType": "totp",
   "otpPolicyAlgorithm": "HmacSHA1",
   "otpPolicyInitialCounter": 0,
@@ -479,7 +480,7 @@
       "clientId": "account",
       "name": "${client_account}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/kodi-dev/account/",
+      "baseUrl": "/realms/assembly-line/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
@@ -490,7 +491,8 @@
         "view-profile"
       ],
       "redirectUris": [
-        "/realms/kodi-dev/account/*"
+        "*",
+        "/realms/assembly-line/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -526,14 +528,15 @@
       "clientId": "account-console",
       "name": "${client_account-console}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/kodi-dev/account/",
+      "baseUrl": "/realms/assembly-line/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "/realms/kodi-dev/account/*"
+        "*",
+        "/realms/assembly-line/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -658,26 +661,24 @@
       "id": "97171a99-4126-4b8a-9b21-254401f0a5d2",
       "clientId": "dbServer",
       "name": "GraphDB",
-      "rootUrl": "https://slovník.gov.cz/modelujeme/sluzby/dbServer",
-      "adminUrl": "https://slovník.gov.cz/modelujeme/sluzby/dbServer",
+      "rootUrl": "",
+      "adminUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "*",
         "https://slovník.gov.cz/modelujeme/sluzby/dbServer/*"
       ],
       "webOrigins": [
-        "https://slovník.gov.cz/modelujeme/sluzby/dbServer",
-        "*"
+        "https://slovník.gov.cz/modelujeme/sluzby/dbServer"
       ],
       "notBefore": 0,
       "bearerOnly": false,
       "consentRequired": false,
       "standardFlowEnabled": true,
-      "implicitFlowEnabled": true,
+      "implicitFlowEnabled": false,
       "directAccessGrantsEnabled": true,
       "serviceAccountsEnabled": false,
       "publicClient": false,
@@ -722,26 +723,25 @@
       "id": "45f6e2e4-c062-4747-bfe3-247b51e254d4",
       "clientId": "missionControl",
       "name": "Mission Control",
-      "rootUrl": "https://slovník.gov.cz/modelujeme",
-      "baseUrl": "https://slovník.gov.cz/modelujeme",
+      "rootUrl": "",
+      "baseUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://slovník.gov.cz/modelujeme/*",
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/*",
         "*"
       ],
       "webOrigins": [
-        "*",
-        "https://slovník.gov.cz/modelujeme"
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme"
       ],
       "notBefore": 0,
       "bearerOnly": false,
       "consentRequired": false,
       "standardFlowEnabled": true,
-      "implicitFlowEnabled": true,
+      "implicitFlowEnabled": false,
       "directAccessGrantsEnabled": true,
       "serviceAccountsEnabled": false,
       "publicClient": true,
@@ -782,7 +782,7 @@
             "access.token.claim": "true",
             "claim.name": "roles",
             "jsonType.label": "String",
-            "usermodel.clientRoleMapping.clientId": "kodi-mission-control-dev"
+            "usermodel.clientRoleMapping.clientId": "missionControl"
           }
         }
       ],
@@ -804,26 +804,24 @@
       "id": "35f76c28-d375-4a9e-aa65-1bef69d8f0b3",
       "clientId": "ontographer",
       "name": "OntoGrapher",
-      "rootUrl": "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer",
-      "adminUrl": "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer",
+      "rootUrl": "",
+      "adminUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer/*",
-        "*"
+        "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer/*"
       ],
       "webOrigins": [
-        "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer",
-        "*"
+        "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer"
       ],
       "notBefore": 0,
       "bearerOnly": false,
       "consentRequired": false,
       "standardFlowEnabled": true,
-      "implicitFlowEnabled": true,
+      "implicitFlowEnabled": false,
       "directAccessGrantsEnabled": true,
       "serviceAccountsEnabled": false,
       "publicClient": true,
@@ -908,17 +906,17 @@
       "clientId": "security-admin-console",
       "name": "${client_security-admin-console}",
       "rootUrl": "${authAdminUrl}",
-      "baseUrl": "/admin/kodi-dev/console/",
+      "baseUrl": "/admin/master/console/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "/admin/kodi-dev/console/*"
+        "*"
       ],
       "webOrigins": [
-        "+"
+        "*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -931,7 +929,23 @@
       "frontchannelLogout": false,
       "protocol": "openid-connect",
       "attributes": {
-        "pkce.code.challenge.method": "S256"
+        "saml.assertion.signature": "false",
+        "saml.multivalued.roles": "false",
+        "saml.force.post.binding": "false",
+        "saml.encrypt": "false",
+        "saml.server.signature": "false",
+        "backchannel.logout.revoke.offline.tokens": "false",
+        "saml.server.signature.keyinfo.ext": "false",
+        "exclude.session.state.from.auth.response": "false",
+        "backchannel.logout.session.required": "false",
+        "client_credentials.use_refresh_token": "false",
+        "saml_force_name_id_format": "false",
+        "saml.client.signature": "false",
+        "tls.client.certificate.bound.access.tokens": "false",
+        "saml.authnstatement": "false",
+        "display.on.consent.screen": "false",
+        "pkce.code.challenge.method": "S256",
+        "saml.onetimeuse.condition": "false"
       },
       "authenticationFlowBindingOverrides": {},
       "fullScopeAllowed": false,
@@ -971,8 +985,9 @@
       "id": "060350eb-cf47-47a0-8092-f51cd28ca29e",
       "clientId": "sgovServer",
       "name": "SGoV server",
-      "rootUrl": "https://slovník.gov.cz/modelujeme/sluzby/sgovServer",
+      "rootUrl": "",
       "adminUrl": "",
+      "baseUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
@@ -982,12 +997,10 @@
         "ROLE_USER"
       ],
       "redirectUris": [
-        "https://slovník.gov.cz/modelujeme/sluzby/sgovServer",
-        "*"
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/sgovServer/*"
       ],
       "webOrigins": [
-        "https://slovník.gov.cz/modelujeme/sluzby/sgovServer",
-        "*"
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/sgovServer"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -1038,21 +1051,19 @@
       "id": "35558b0f-0c5f-4772-966b-2e0658c33b83",
       "clientId": "termit",
       "name": "TermIt UI",
-      "rootUrl": "https://slovník.gov.cz/modelujeme/v-nástroji/termit",
-      "adminUrl": "https://slovník.gov.cz/modelujeme/v-nástroji/termit",
-      "baseUrl": "https://slovník.gov.cz/modelujeme/v-nástroji/termit",
+      "rootUrl": "",
+      "adminUrl": "",
+      "baseUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "*",
-        "https://slovník.gov.cz/modelujeme/v-nástroji/termit/*"
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/v-nástroji/termit/*"
       ],
       "webOrigins": [
-        "https://slovník.gov.cz/modelujeme/v-nástroji/termit",
-        "*"
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/v-nástroji/termit"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -1099,7 +1110,7 @@
             "access.token.claim": "true",
             "claim.name": "roles",
             "jsonType.label": "String",
-            "usermodel.clientRoleMapping.clientId": "kodi-termit-ui-dev"
+            "usermodel.clientRoleMapping.clientId": "termit"
           }
         }
       ],
@@ -1121,8 +1132,8 @@
       "id": "4a9d821c-7a12-4a10-ad1c-5b6bf50ceca4",
       "clientId": "termitServer",
       "name": "TermIt",
-      "rootUrl": "https://slovník.gov.cz/modelujeme/sluzby/termitServer",
-      "adminUrl": "https://slovník.gov.cz/modelujeme/sluzby/termitServer",
+      "rootUrl": "",
+      "adminUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
@@ -1132,10 +1143,10 @@
         "ROLE_USER"
       ],
       "redirectUris": [
-        "/*"
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/termitServer/*"
       ],
       "webOrigins": [
-        "https://slovník.gov.cz/modelujeme/sluzby/termitServer"
+        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/termitServer"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -1182,7 +1193,7 @@
             "access.token.claim": "true",
             "claim.name": "roles",
             "jsonType.label": "String",
-            "usermodel.clientRoleMapping.clientId": "kodi-termit-dev"
+            "usermodel.clientRoleMapping.clientId": "termitServer"
           }
         }
       ],
@@ -1709,14 +1720,87 @@
     "xXSSProtection": "1; mode=block",
     "strictTransportSecurity": "max-age=31536000; includeSubDomains"
   },
+  "smtpServer": {},
   "loginTheme": "keycloak",
-  "accountTheme": "keycloak",
+  "accountTheme": "keycloak.v2",
+  "adminTheme": "base",
+  "emailTheme": "keycloak",
   "eventsEnabled": false,
   "eventsListeners": [
     "jboss-logging",
     "keycloak-graphdb-user-replicator"
   ],
-  "enabledEventTypes": [],
+  "enabledEventTypes": [
+    "UPDATE_CONSENT_ERROR",
+    "SEND_RESET_PASSWORD",
+    "GRANT_CONSENT",
+    "UPDATE_TOTP",
+    "REMOVE_TOTP",
+    "REVOKE_GRANT",
+    "LOGIN_ERROR",
+    "CLIENT_LOGIN",
+    "RESET_PASSWORD_ERROR",
+    "IMPERSONATE_ERROR",
+    "CODE_TO_TOKEN_ERROR",
+    "CUSTOM_REQUIRED_ACTION",
+    "RESTART_AUTHENTICATION",
+    "UPDATE_PROFILE_ERROR",
+    "IMPERSONATE",
+    "LOGIN",
+    "UPDATE_PASSWORD_ERROR",
+    "CLIENT_INITIATED_ACCOUNT_LINKING",
+    "TOKEN_EXCHANGE",
+    "REGISTER",
+    "LOGOUT",
+    "DELETE_ACCOUNT_ERROR",
+    "CLIENT_REGISTER",
+    "IDENTITY_PROVIDER_LINK_ACCOUNT",
+    "UPDATE_PASSWORD",
+    "DELETE_ACCOUNT",
+    "FEDERATED_IDENTITY_LINK_ERROR",
+    "CLIENT_DELETE",
+    "IDENTITY_PROVIDER_FIRST_LOGIN",
+    "VERIFY_EMAIL",
+    "CLIENT_DELETE_ERROR",
+    "CLIENT_LOGIN_ERROR",
+    "RESTART_AUTHENTICATION_ERROR",
+    "REMOVE_FEDERATED_IDENTITY_ERROR",
+    "EXECUTE_ACTIONS",
+    "TOKEN_EXCHANGE_ERROR",
+    "PERMISSION_TOKEN",
+    "SEND_IDENTITY_PROVIDER_LINK_ERROR",
+    "EXECUTE_ACTION_TOKEN_ERROR",
+    "SEND_VERIFY_EMAIL",
+    "EXECUTE_ACTIONS_ERROR",
+    "REMOVE_FEDERATED_IDENTITY",
+    "IDENTITY_PROVIDER_POST_LOGIN",
+    "IDENTITY_PROVIDER_LINK_ACCOUNT_ERROR",
+    "UPDATE_EMAIL",
+    "REGISTER_ERROR",
+    "REVOKE_GRANT_ERROR",
+    "LOGOUT_ERROR",
+    "UPDATE_EMAIL_ERROR",
+    "EXECUTE_ACTION_TOKEN",
+    "CLIENT_UPDATE_ERROR",
+    "UPDATE_PROFILE",
+    "FEDERATED_IDENTITY_LINK",
+    "CLIENT_REGISTER_ERROR",
+    "SEND_VERIFY_EMAIL_ERROR",
+    "SEND_IDENTITY_PROVIDER_LINK",
+    "RESET_PASSWORD",
+    "CLIENT_INITIATED_ACCOUNT_LINKING_ERROR",
+    "UPDATE_CONSENT",
+    "REMOVE_TOTP_ERROR",
+    "VERIFY_EMAIL_ERROR",
+    "SEND_RESET_PASSWORD_ERROR",
+    "CLIENT_UPDATE",
+    "IDENTITY_PROVIDER_POST_LOGIN_ERROR",
+    "CUSTOM_REQUIRED_ACTION_ERROR",
+    "UPDATE_TOTP_ERROR",
+    "CODE_TO_TOKEN",
+    "GRANT_CONSENT_ERROR",
+    "IDENTITY_PROVIDER_FIRST_LOGIN_ERROR"
+  ],
   "adminEventsEnabled": false,
   "adminEventsDetailsEnabled": false,
   "identityProviders": [],
@@ -1746,14 +1830,14 @@
         "subComponents": {},
         "config": {
           "allowed-protocol-mapper-types": [
-            "saml-role-list-mapper",
-            "saml-user-property-mapper",
             "oidc-usermodel-attribute-mapper",
+            "oidc-sha256-pairwise-sub-mapper",
+            "oidc-usermodel-property-mapper",
+            "saml-role-list-mapper",
+            "saml-user-attribute-mapper",
             "oidc-address-mapper",
             "oidc-full-name-mapper",
-            "saml-user-attribute-mapper",
-            "oidc-usermodel-property-mapper",
-            "oidc-sha256-pairwise-sub-mapper"
+            "saml-user-property-mapper"
           ]
         }
       },
@@ -1765,14 +1849,14 @@
         "subComponents": {},
         "config": {
           "allowed-protocol-mapper-types": [
-            "saml-user-attribute-mapper",
-            "oidc-full-name-mapper",
-            "oidc-address-mapper",
             "oidc-usermodel-attribute-mapper",
+            "saml-role-list-mapper",
+            "oidc-address-mapper",
+            "oidc-full-name-mapper",
+            "saml-user-attribute-mapper",
             "oidc-usermodel-property-mapper",
             "oidc-sha256-pairwise-sub-mapper",
-            "saml-user-property-mapper",
-            "saml-role-list-mapper"
+            "saml-user-property-mapper"
           ]
         }
       },
@@ -1877,7 +1961,7 @@
   "defaultLocale": "cs",
   "authenticationFlows": [
     {
-      "id": "e6d47aa0-2860-45cb-8c14-dab1e35be273",
+      "id": "db351fa0-5e2d-4128-861a-163a1a62b0cb",
       "alias": "Account verification options",
       "description": "Method with which to verity the existing account",
       "providerId": "basic-flow",
@@ -1901,7 +1985,7 @@
       ]
     },
     {
-      "id": "e34d07f9-546f-4452-9f65-74dd8ec3ae35",
+      "id": "36f99da1-fea7-48a9-9582-7a54af733c6e",
       "alias": "Authentication Options",
       "description": "Authentication options.",
       "providerId": "basic-flow",
@@ -1932,7 +2016,7 @@
       ]
     },
     {
-      "id": "52611a68-33d6-4f9c-8b24-a1bb707850be",
+      "id": "dd64063a-0300-4f45-a189-340a3c559f06",
       "alias": "Browser - Conditional OTP",
       "description": "Flow to determine if the OTP is required for the authentication",
       "providerId": "basic-flow",
@@ -1956,7 +2040,7 @@
       ]
     },
     {
-      "id": "e23a0300-0f40-429b-a62b-c73b5ba1f052",
+      "id": "34e6f9fb-87c6-473f-b956-f0aea0830acd",
       "alias": "Direct Grant - Conditional OTP",
       "description": "Flow to determine if the OTP is required for the authentication",
       "providerId": "basic-flow",
@@ -1980,7 +2064,7 @@
       ]
     },
     {
-      "id": "5896e72a-f514-46de-9eaf-54907fa387ba",
+      "id": "1b30b5e8-2153-4032-8210-834bb8c65d03",
       "alias": "First broker login - Conditional OTP",
       "description": "Flow to determine if the OTP is required for the authentication",
       "providerId": "basic-flow",
@@ -2004,7 +2088,7 @@
       ]
     },
     {
-      "id": "6e0a17e1-00fd-4c0d-9128-02c314e90308",
+      "id": "c3129ae7-ebc7-480e-9664-84649e068c18",
       "alias": "Handle Existing Account",
       "description": "Handle what to do if there is existing account with same email/username like authenticated identity provider",
       "providerId": "basic-flow",
@@ -2028,7 +2112,7 @@
       ]
     },
     {
-      "id": "b11d3600-6633-4cd4-b30e-b5f57976955d",
+      "id": "eec46f7e-e523-4378-8007-653581007f34",
       "alias": "Reset - Conditional OTP",
       "description": "Flow to determine if the OTP should be reset or not. Set to REQUIRED to force.",
       "providerId": "basic-flow",
@@ -2052,7 +2136,7 @@
       ]
     },
     {
-      "id": "d94eeb07-a687-42d9-b2c2-f5198ca9ae21",
+      "id": "94fed00a-a695-4f27-9a79-2deae7a8cfb6",
       "alias": "User creation or linking",
       "description": "Flow for the existing/non-existing user alternatives",
       "providerId": "basic-flow",
@@ -2077,7 +2161,7 @@
       ]
     },
     {
-      "id": "b5971454-9cc2-4ec9-93a1-c31707850c1f",
+      "id": "325218ef-3f64-45e2-8fdc-86345f56ac59",
       "alias": "Verify Existing Account by Re-authentication",
       "description": "Reauthentication of existing account",
       "providerId": "basic-flow",
@@ -2101,7 +2185,7 @@
       ]
     },
     {
-      "id": "5d2a9c0b-0724-4df5-a102-c24b8098fc39",
+      "id": "df790714-206e-4997-b019-64f163a31aeb",
       "alias": "browser",
       "description": "browser based authentication",
       "providerId": "basic-flow",
@@ -2139,7 +2223,7 @@
       ]
     },
     {
-      "id": "d2707b8b-d9ec-43dc-b1b0-9dfbdf5715bd",
+      "id": "9cb2803e-732f-4033-ab8c-046da5d9efdd",
       "alias": "clients",
       "description": "Base authentication for clients",
       "providerId": "client-flow",
@@ -2177,7 +2261,7 @@
       ]
     },
     {
-      "id": "59df236e-d9fb-47e8-82b8-7250a8be03ce",
+      "id": "c940eb82-f0b4-4ed5-b0af-4e515532884e",
       "alias": "direct grant",
       "description": "OpenID Connect Resource Owner Grant",
       "providerId": "basic-flow",
@@ -2208,7 +2292,7 @@
       ]
     },
     {
-      "id": "a934c6c0-4ce3-4646-83da-2487620f1c8c",
+      "id": "50249400-de23-44a6-aa6e-72cce6cec72f",
       "alias": "docker auth",
       "description": "Used by Docker clients to authenticate against the IDP",
       "providerId": "basic-flow",
@@ -2225,7 +2309,7 @@
       ]
     },
     {
-      "id": "8de563b2-b5f0-4e27-85a1-ce35701d95e0",
+      "id": "12ee2a4b-b4c5-4a7d-98da-b48f6a40c0cd",
       "alias": "first broker login",
       "description": "Actions taken after first broker login with identity provider account, which is not yet linked to any Keycloak account",
       "providerId": "basic-flow",
@@ -2250,7 +2334,7 @@
       ]
     },
     {
-      "id": "7e20551a-46d3-4e17-82f8-bdc0eb645861",
+      "id": "ceeba845-45b7-4d7c-8d0e-721a5450bb90",
       "alias": "forms",
       "description": "Username, password, otp and other auth forms.",
       "providerId": "basic-flow",
@@ -2274,7 +2358,7 @@
       ]
     },
     {
-      "id": "d06522fd-cc57-4e3a-9b62-6bd81a06b86e",
+      "id": "b4993b64-28ec-48dd-aeaf-7494d233f481",
       "alias": "http challenge",
       "description": "An authentication flow based on challenge-response HTTP Authentication Schemes",
       "providerId": "basic-flow",
@@ -2298,7 +2382,7 @@
       ]
     },
     {
-      "id": "df5691b0-2ee6-40c1-b1b2-158aa5ecdb03",
+      "id": "d5dd1aa1-0710-403a-9cc3-fcb282c71b74",
       "alias": "registration",
       "description": "registration flow",
       "providerId": "basic-flow",
@@ -2316,7 +2400,7 @@
       ]
     },
     {
-      "id": "b98174d8-555c-434b-84fc-8e70adb13fe8",
+      "id": "d66ee4ce-bc67-4858-b71c-fc75cc6b7d4a",
       "alias": "registration form",
       "description": "registration form",
       "providerId": "form-flow",
@@ -2354,7 +2438,7 @@
       ]
     },
     {
-      "id": "a8a9eee4-2ff8-4803-8ddd-914ea4412c3e",
+      "id": "98451c4f-bb6f-489f-bfb8-fafb9707b254",
       "alias": "reset credentials",
       "description": "Reset credentials for a user if they forgot their password or something",
       "providerId": "basic-flow",
@@ -2392,7 +2476,7 @@
       ]
     },
     {
-      "id": "dd4d606a-e37a-4bd1-b7d4-eff5a004fb0e",
+      "id": "ce092313-404f-4997-8240-18f6b2fc8913",
       "alias": "saml ecp",
       "description": "SAML ECP Profile Authentication Flow",
       "providerId": "basic-flow",
@@ -2411,14 +2495,14 @@
   ],
   "authenticatorConfig": [
     {
-      "id": "22d02f9f-2267-4af0-aa07-d0ffdf98db74",
+      "id": "c1432dbd-a575-4077-b771-0e0c181013d1",
       "alias": "create unique user config",
       "config": {
         "require.password.update.after.registration": "false"
       }
     },
     {
-      "id": "85e24afb-320e-4ebf-bf06-73881c1f8f2a",
+      "id": "ecb67a6d-8386-46d4-b542-48c8708bbdf4",
       "alias": "review profile config",
       "config": {
         "update.profile.on.first.login": "missing"
@@ -2504,5 +2588,5 @@
     "clientOfflineSessionIdleTimeout": "0"
   },
   "keycloakVersion": "12.0.4",
-  "userManagedAccessAllowed": false
+  "userManagedAccessAllowed": true
 }
