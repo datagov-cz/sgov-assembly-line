@@ -104,6 +104,27 @@ services:
       - dbServer
       - authServer
     restart: always
+  termitServer:
+    image: docker.pkg.github.com/opendata-mvcr/termit/al-termit:latest
+    environment:
+      CONTEXT:
+      ID: sgovServer
+      URL: ${URL}/sluzby/sgovServer
+      COMPONENTS:
+      SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/termitServer
+      REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
+      KEYCLOAK_REALM: assembly-line
+      KEYCLOAK_RESOURCE: termitServer
+      KEYCLOAK_AUTHSERVERURL: http://authServer:8080/modelujeme/sluzby/authServer
+      KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
+      KEYCLOAK_CREDENTIALS_SECRET: ${TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
+      KEYCLOAK_PUBLIC_CLIENT: "false"
+      USER_NAMESPACE: https://slovník.gov.cz/uživatel/
+      USER_CONTEXT: https://slovník.gov.cz/uživatel
+    depends_on:
+      - dbServer
+      - authServer
+    restart: always
 
 volumes:
   al-graphdb:
