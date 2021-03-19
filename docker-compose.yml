@@ -118,6 +118,8 @@ services:
       ID: termitServer
       URL: ${URL}/sluzby/termitServer
       COMPONENTS:
+      CORS_ALLOWEDORIGIN: "*"
+      CANONICAL_CACHE_CONTAINER: https://slovník.gov.cz
       SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/termitServer
       REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
       KEYCLOAK_REALM: assembly-line
