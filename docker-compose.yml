@@ -3,6 +3,7 @@
 version: "3.9"
 services:
   nginx:
+    image: al-nginx
     build:
       context: nginx
     ports:
@@ -43,6 +44,8 @@ services:
       ID: dbServer
       URL: ${URL}/sluzby/dbServer/repositories/assembly-line
       COMPONENTS: # TODO REPOSITORY_USERNAME and REPOSITORY_PASSWORD
+      GRAPHDB_WORKBENCH_EXTERNAL_URL: ${URL}/sluzby/dbServer
+      GRAPHDB_EXTERNAL_URL: ${URL}/sluzby/dbServer
     restart: always
     volumes:
       - al-graphdb:/graphdb/home
@@ -102,6 +105,27 @@ services:
       KEYCLOAK_CREDENTIALS_SECRET: ${SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
       KEYCLOAK_PUBLIC_CLIENT: "false"
       REPOSITORY_GITHUBUSERTOKEN: ${SGOV_SERVER_REPOSITORY_GITHUBUSERTOKEN}
+      USER_NAMESPACE: https://slovník.gov.cz/uživatel/
+      USER_CONTEXT: https://slovník.gov.cz/uživatel
+    depends_on:
+      - dbServer
+      - authServer
+    restart: always
+  termitServer:
+    image: docker.pkg.github.com/opendata-mvcr/termit/al-termit:latest
+    environment:
+      CONTEXT:
+      ID: termitServer
+      URL: ${URL}/sluzby/termitServer
+      COMPONENTS:
+      SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/termitServer
+      REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
+      KEYCLOAK_REALM: assembly-line
+      KEYCLOAK_RESOURCE: termitServer
+      KEYCLOAK_AUTHSERVERURL: http://authServer:8080/modelujeme/sluzby/authServer
+      KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
+      KEYCLOAK_CREDENTIALS_SECRET: ${TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
+      KEYCLOAK_PUBLIC_CLIENT: "false"
       USER_NAMESPACE: https://slovník.gov.cz/uživatel/
       USER_CONTEXT: https://slovník.gov.cz/uživatel
     depends_on:
