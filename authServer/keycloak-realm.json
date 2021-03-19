@@ -669,10 +669,10 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://slovník.gov.cz/modelujeme/sluzby/dbServer/*"
+        "*"
       ],
       "webOrigins": [
-        "https://slovník.gov.cz/modelujeme/sluzby/dbServer"
+        "*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -731,11 +731,10 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/*",
         "*"
       ],
       "webOrigins": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme"
+        "*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -812,10 +811,10 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer/*"
+        "*"
       ],
       "webOrigins": [
-        "https://slovník.gov.cz/modelujeme/v-nástroji/ontographer"
+        "*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -997,10 +996,10 @@
         "ROLE_USER"
       ],
       "redirectUris": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/sgovServer/*"
+        "*"
       ],
       "webOrigins": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/sgovServer"
+        "*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -1060,10 +1059,10 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/v-nástroji/termit/*"
+        "*"
       ],
       "webOrigins": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/v-nástroji/termit"
+        "*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -1143,10 +1142,10 @@
         "ROLE_USER"
       ],
       "redirectUris": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/termitServer/*"
+        "*"
       ],
       "webOrigins": [
-        "https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme/sluzby/termitServer"
+        "*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
