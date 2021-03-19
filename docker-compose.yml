@@ -108,8 +108,8 @@ services:
     image: docker.pkg.github.com/opendata-mvcr/termit/al-termit:latest
     environment:
       CONTEXT:
-      ID: sgovServer
-      URL: ${URL}/sluzby/sgovServer
+      ID: termitServer
+      URL: ${URL}/sluzby/termitServer
       COMPONENTS:
       SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/termitServer
       REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
