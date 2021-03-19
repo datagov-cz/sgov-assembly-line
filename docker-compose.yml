@@ -25,6 +25,13 @@ services:
       URL: ${URL}/v-nástroji/ontographer
       COMPONENTS:
     restart: always
+  termit:
+    image: docker.pkg.github.com/opendata-mvcr/termit-ui/al-termit-ui:latest
+    environment:
+      CONTEXT:
+      ID: termit
+      URL: ${URL}/v-nástroji/termit
+      COMPONENTS:
   dbServer:
     image: al-graphdb
     build:
