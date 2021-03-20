@@ -44,6 +44,9 @@ services:
       ID: dbServer
       URL: ${URL}/sluzby/dbServer/repositories/assembly-line
       COMPONENTS: # TODO REPOSITORY_USERNAME and REPOSITORY_PASSWORD
+      GDB_JAVA_OPTS: >-
+        -Dgraphdb.workbench.external-url=${URL}/sluzby/dbServer
+        -Dgraphdb.external-url=${URL}/sluzby/dbServer
       GRAPHDB_WORKBENCH_EXTERNAL_URL: ${URL}/sluzby/dbServer
       GRAPHDB_EXTERNAL_URL: ${URL}/sluzby/dbServer
     restart: always
