@@ -323,8 +323,16 @@
           "attributes": {}
         },
         {
-          "id": "f080dcc6-f0c8-49be-ab64-e010ce919ce2",
-          "name": "ROLE_USER",
+          "id": "f2a90c47-549c-4cd0-9fb8-aa0cec779825",
+          "name": "ROLE_FULL_USER",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "4a9d821c-7a12-4a10-ad1c-5b6bf50ceca4",
+          "attributes": {}
+        },
+        {
+          "id": "027a0570-ce9d-4c41-acc3-addd8aa21fec",
+          "name": "ROLE_RESTRICTED_USER",
           "composite": false,
           "clientRole": true,
           "containerId": "4a9d821c-7a12-4a10-ad1c-5b6bf50ceca4",
@@ -1139,7 +1147,7 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "defaultRoles": [
-        "ROLE_USER"
+        "ROLE_FULL_USER"
       ],
       "redirectUris": [
         "*"
