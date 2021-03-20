@@ -137,8 +137,11 @@ services:
       - dbServer
       - authServer
     restart: always
+    volumes:
+      - al-termit:/tmp/termit
 
 volumes:
   al-graphdb:
   al-keycloak-postgres:
   al-keycloak:
+  al-termit:
