@@ -21,14 +21,15 @@ Postup:
 ```
 ./gen_env.sh local
 ```
+
 2. Přidej do `.env.<CONTEXT>` proměnné a nastav je:
-Tyto proměnné volíš:
-`POSTGRES_DB`
-`POSTGRES_USER`
-`POSTGRES_PASSWORD`
-`KEYCLOAK_USER`
-`KEYCLOAK_PASSWORD`
-`REPOSITORY_GITHUBUSERTOKEN` (nutné pouze pro publikaci pracovního prostoru na Github)
+   Tyto proměnné volíš:
+   `POSTGRES_DB`
+   `POSTGRES_USER`
+   `POSTGRES_PASSWORD`
+   `KEYCLOAK_USER`
+   `KEYCLOAK_PASSWORD`
+   `REPOSITORY_GITHUBUSERTOKEN` (nutné pouze pro publikaci pracovního prostoru na Github)
 
 3. Spusť `docker-compose` s příslušným `.env.*` souborem. Příklad:
 
@@ -36,18 +37,19 @@ Tyto proměnné volíš:
 docker-compose --env-file=.env.local up
 ```
 
-4. V dbServeru (`/modelujeme/sluzby/dbServer`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'.
+4. V al-db-serveru (`/modelujeme/sluzby/al-db-server`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'.
 
-5. V authServeru (`/modelujeme/sluzby/authServer`, přihlaš se do něj pomocí `$KEYCLOAK_USER` a
-`$KEYCLOAK_PASSWORD`)
- - přidej v záložce 'Events Config' Event listener `keycloak-graphdb-user-replicator` a ulož,
- - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
- - zkopíruj hodnotu klíče klienta sgovServer do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
- - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo a přiřadit roli ROLE_USER pro službu sgovServer.
+5. V al-auth-serveru (`/modelujeme/sluzby/al-auth-server`, přihlaš se do něj pomocí `$KEYCLOAK_USER` a
+   `$KEYCLOAK_PASSWORD`)
 
-6. Restartuj službu `sgovServer`
+- přidej v záložce 'Events Config' Event listener `keycloak-graphdb-user-replicator` a ulož,
+- zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
+- zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+- vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo a přiřadit roli ROLE_USER pro službu al-sgov-server.
 
-`docker-compose stop sgovServer ; docker-compose --env-file=.env.local up -d sgovServer`
+6. Restartuj službu `al-sgov-server`
+
+`docker-compose stop al-sgov-server ; docker-compose --env-file=.env.local up -d al-sgov-server`
 
 6. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 

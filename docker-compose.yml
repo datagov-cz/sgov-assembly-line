@@ -2,7 +2,7 @@
 
 version: "3.9"
 services:
-  nginx:
+  al-nginx:
     build:
       context: nginx
     image: al-nginx
@@ -10,45 +10,45 @@ services:
       - 80:80
       - 443:443
     restart: always
-  missionControl:
-    image: docker.pkg.github.com/opendata-mvcr/mission-control/mission-control:latest
+  al-mission-control:
+    image: docker.pkg.github.com/opendata-mvcr/mission-control/al-mission-control:latest
     environment:
       CONTEXT:
       ID: missionControl
       URL: ${URL}
       COMPONENTS:
     restart: always
-  ontographer:
-    image: docker.pkg.github.com/opendata-mvcr/ontographer/ontographer:latest
+  al-ontographer:
+    image: docker.pkg.github.com/opendata-mvcr/ontographer/al-ontographer:latest
     environment:
       CONTEXT:
       ID: ontographer
       URL: ${URL}/v-nástroji/ontographer
       COMPONENTS:
     restart: always
-  termit:
-    image: docker.pkg.github.com/opendata-mvcr/termit-ui/al-termit-ui:latest
+  al-termit:
+    image: docker.pkg.github.com/opendata-mvcr/termit-ui/al-termit:latest
     environment:
       CONTEXT:
       ID: termit
       URL: ${URL}/v-nástroji/termit
       COMPONENTS:
-  dbServer:
+  al-db-server:
     build:
-      context: dbServer
+      context: al-db-server
       args:
         GRAPHDB_ZIP: graphdb-free-9.6.0-dist.zip
     image: al-graphdb
     environment:
       CONTEXT:
-      ID: dbServer
-      URL: ${URL}/sluzby/dbServer/repositories/assembly-line
+      ID: al-db-server
+      URL: ${URL}/sluzby/al-db-server/repositories/assembly-line
       COMPONENTS: # TODO REPOSITORY_USERNAME and REPOSITORY_PASSWORD
       GDB_JAVA_OPTS: >-
-        -Dgraphdb.workbench.external-url=${URL}/sluzby/dbServer
-        -Dgraphdb.external-url=${URL}/sluzby/dbServer
-      GRAPHDB_WORKBENCH_EXTERNAL_URL: ${URL}/sluzby/dbServer
-      GRAPHDB_EXTERNAL_URL: ${URL}/sluzby/dbServer
+        -Dgraphdb.workbench.external-url=${URL}/sluzby/al-db-server
+        -Dgraphdb.external-url=${URL}/sluzby/al-db-server
+      GRAPHDB_WORKBENCH_EXTERNAL_URL: ${URL}/sluzby/al-db-server
+      GRAPHDB_EXTERNAL_URL: ${URL}/sluzby/al-db-server
     restart: always
     volumes:
       - al-graphdb:/graphdb/home
@@ -61,12 +61,12 @@ services:
     restart: always
     volumes:
       - al-keycloak-postgres:/var/lib/postgresql/data
-  authServer:
+  al-auth-server:
     image: docker.pkg.github.com/opendata-mvcr/keycloak-graphdb-user-replicator/al-keycloak:latest
     environment:
       CONTEXT:
-      ID: authServer
-      URL: ${URL}/sluzby/authServer/realms/assembly-line
+      ID: al-auth-server
+      URL: ${URL}/sluzby/al-auth-server/realms/assembly-line
       COMPONENTS: # then REPOSITORY_USERNAME and REPOSITORY_PASSWORD
       DB_VENDOR: POSTGRES
       DB_ADDR: keycloakPostgres
@@ -78,32 +78,32 @@ services:
       KEYCLOAK_USER:
       KEYCLOAK_PASSWORD:
       PROXY_ADDRESS_FORWARDING: "true"
-      KEYCLOAK_FRONTEND_URL: ${URL}/sluzby/authServer
-      KEYCLOAK_IMPORT: /authServer/keycloak-realm.json
-      DB_SERVER_URL: http://dbServer:7200
+      KEYCLOAK_FRONTEND_URL: ${URL}/sluzby/al-auth-server
+      KEYCLOAK_IMPORT: /al-auth-server/keycloak-realm.json
+      DB_SERVER_URL: http://al-db-server:7200
       DB_SERVER_REPOSITORY_ID: assembly-line
       DB_SERVER_CONTEXT: https://slovník.gov.cz/uživatel
       NAMESPACE: https://slovník.gov.cz/uživatel/
     depends_on:
       - keycloakPostgres
-      - dbServer
+      - al-db-server
     restart: always
     volumes:
       - al-keycloak:/keycloak
       - /etc/ssl/private/tls.key:/etc/x509/https/tls.key
       - /etc/ssl/certs/tls.crt:/etc/x509/https/tls.crt
-      - ./authServer:/authServer
-  sgovServer:
+      - ./al-auth-server:/al-auth-server
+  al-sgov-server:
     image: docker.pkg.github.com/opendata-mvcr/sgov/al-sgov:latest
     environment:
       CONTEXT:
-      ID: sgovServer
-      URL: ${URL}/sluzby/sgovServer
+      ID: al-sgov-server
+      URL: ${URL}/sluzby/al-sgov-server
       COMPONENTS:
-      REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
+      REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
       KEYCLOAK_REALM: assembly-line
-      KEYCLOAK_RESOURCE: sgovServer
-      KEYCLOAK_AUTHSERVERURL: http://authServer:8080/modelujeme/sluzby/authServer
+      KEYCLOAK_RESOURCE: al-sgov-server
+      KEYCLOAK_AUTHSERVERURL: http://al-auth-server:8080/modelujeme/sluzby/al-auth-server
       KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
       KEYCLOAK_CREDENTIALS_SECRET: ${SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
       KEYCLOAK_PUBLIC_CLIENT: "false"
@@ -111,30 +111,30 @@ services:
       USER_NAMESPACE: https://slovník.gov.cz/uživatel/
       USER_CONTEXT: https://slovník.gov.cz/uživatel
     depends_on:
-      - dbServer
-      - authServer
+      - al-db-server
+      - al-auth-server
     restart: always
-  termitServer:
+  al-termit-server:
     image: docker.pkg.github.com/opendata-mvcr/termit/al-termit:latest
     environment:
       CONTEXT:
-      ID: termitServer
-      URL: ${URL}/sluzby/termitServer
+      ID: al-termit-server
+      URL: ${URL}/sluzby/al-termit-server
       COMPONENTS:
       CORS_ALLOWEDORIGIN: "*"
       CANONICAL_CACHE_CONTAINER: https://slovník.gov.cz
-      SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/termitServer
-      REPOSITORY_URL: http://dbServer:7200/repositories/assembly-line
+      SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/al-termit-server
+      REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
       KEYCLOAK_REALM: assembly-line
-      KEYCLOAK_RESOURCE: termitServer
-      KEYCLOAK_AUTHSERVERURL: http://authServer:8080/modelujeme/sluzby/authServer
+      KEYCLOAK_RESOURCE: al-termit-server
+      KEYCLOAK_AUTHSERVERURL: http://al-auth-server:8080/modelujeme/sluzby/al-auth-server
       KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
       KEYCLOAK_CREDENTIALS_SECRET: ${TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
       KEYCLOAK_PUBLIC_CLIENT: "false"
       NAMESPACE_USER: https://slovník.gov.cz/uživatel/
     depends_on:
-      - dbServer
-      - authServer
+      - al-db-server
+      - al-auth-server
     restart: always
     volumes:
       - al-termit:/tmp/termit
