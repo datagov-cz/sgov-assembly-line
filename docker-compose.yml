@@ -97,6 +97,7 @@ services:
       ID: al-sgov-server
       URL: ${URL}/sluzby/sgov-server
       COMPONENTS:
+      SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/sgov-server
       REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
       KEYCLOAK_REALM: assembly-line
       KEYCLOAK_RESOURCE: al-sgov-server
