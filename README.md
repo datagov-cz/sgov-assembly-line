@@ -36,18 +36,19 @@ Tyto proměnné volíš:
 docker-compose --env-file=.env.local up
 ```
 
-4. V dbServeru (`/modelujeme/sluzby/dbServer`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'.
+4. V dbServeru (`/modelujeme/sluzby/dbServer`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'. Rovněž spusťe SPARQL dotazy ve složce `lucene`.
 
-5. V authServeru (`/modelujeme/sluzby/authServer`, přihlaš se do něj pomocí `$KEYCLOAK_USER` a
+5. V authServeru (`/modelujeme/sluzby/authServer`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
 `$KEYCLOAK_PASSWORD`)
- - přidej v záložce 'Events Config' Event listener `keycloak-graphdb-user-replicator` a ulož,
  - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
  - zkopíruj hodnotu klíče klienta sgovServer do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
- - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo a přiřadit roli ROLE_USER pro službu sgovServer.
+ - zkopíruj hodnotu klíče klienta termitServer do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo.
 
-6. Restartuj službu `sgovServer`
+6. Restartuj službu `sgovServer` a `termitServer`
 
 `docker-compose stop sgovServer ; docker-compose --env-file=.env.local up -d sgovServer`
+`docker-compose stop termitServer ; docker-compose --env-file=.env.local up -d termitServer`
 
 6. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 
