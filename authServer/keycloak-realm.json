@@ -2,7 +2,7 @@
   "id": "assembly-line",
   "realm": "assembly-line",
   "displayName": "Výrobní linka konceptuálních modelu (KODI)",
-  "displayNameHtml": "<img src=\"https://www.mvcr.cz/soubor/ministerstvo-loga-logo-cmyk-jpg.aspx\" style=\"width:250px;height:100px;\"/><div><span>Výrobní linka konceptuálních modelu (KODI)</span></div>",
+  "displayNameHtml": "<img src=\"https://data.gov.cz/images/ozp_logo_cz.jpg\" style=\"height:50px;\"/><h6>OPZ č. CZ.03.4.74/0.0/0.0/15_025/0013983</h6><div><span>Výrobní linka konceptuálních modelu</span></div>",
   "notBefore": 0,
   "revokeRefreshToken": false,
   "refreshTokenMaxReuse": 0,

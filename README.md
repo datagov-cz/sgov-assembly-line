@@ -37,19 +37,19 @@ Postup:
 docker-compose --env-file=.env.local up
 ```
 
-4. V al-db-serveru (`/modelujeme/sluzby/al-db-server`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'.
+4. V al-db-serveru (`/modelujeme/sluzby/al-db-serveru`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'. Rovněž spusťe SPARQL dotazy ve složce `lucene`.
 
-5. V al-auth-serveru (`/modelujeme/sluzby/al-auth-server`, přihlaš se do něj pomocí `$KEYCLOAK_USER` a
-   `$KEYCLOAK_PASSWORD`)
+5. V al-auth-serveru (`/modelujeme/sluzby/al-auth-server`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
+`$KEYCLOAK_PASSWORD`)
+ - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
+ - zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - zkopíruj hodnotu klíče klienta al-termit-server do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo.
 
-- přidej v záložce 'Events Config' Event listener `keycloak-graphdb-user-replicator` a ulož,
-- zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
-- zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
-- vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo a přiřadit roli ROLE_USER pro službu al-sgov-server.
-
-6. Restartuj službu `al-sgov-server`
+6. Restartuj službu `al-sgov-server` a `al-termit-server`
 
 `docker-compose stop al-sgov-server ; docker-compose --env-file=.env.local up -d al-sgov-server`
+`docker-compose stop al-termit-server ; docker-compose --env-file=.env.local up -d al-termit-server`
 
 6. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 
