@@ -1,7 +1,6 @@
 FROM openjdk:11
 
 ARG GRAPHDB_ZIP
-ARG CONTEXT="http://localhost/modelujeme/sluzby/al-db-server"
 
 RUN \
     # Check for mandatory build arguments

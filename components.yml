@@ -1,14 +1,14 @@
 al-sgov-server:
   name: SGoV Service
-  url: ${URL}/sluzby/al-sgov-server
+  url: ${URL}/sluzby/sgov-server
   meta: {}
 al-db-server:
   name: A graph database
-  url: ${URL}/sluzby/al-db-server/repositories/assembly-line
+  url: ${URL}/sluzby/db-server/repositories/assembly-line
   meta: {}
 al-auth-server:
   name: OIDC Authentication Service
-  url: ${URL}/sluzby/al-auth-server/realms/assembly-line
+  url: ${URL}/sluzby/auth-server/realms/assembly-line
   meta: {}
 al-ontographer:
   name: ontoGrapher
@@ -17,7 +17,7 @@ al-ontographer:
     workspace-path: '/?workspace=%WORKSPACE_IRI%'
 al-termit-server:
   name: TermIT backend
-  url: ${URL}/sluzby/al-termit-server
+  url: ${URL}/sluzby/termit-server
   meta: {}
 al-termit:
   name: TermIT
