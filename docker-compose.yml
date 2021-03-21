@@ -88,6 +88,8 @@ services:
       - al-auth-server-db
       - al-db-server
     restart: always
+    volumes:
+      - ./al-auth-server:/al-auth-server
   al-sgov-server:
     image: docker.pkg.github.com/opendata-mvcr/sgov/al-sgov-server:latest
     environment:
