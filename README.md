@@ -21,14 +21,15 @@ Postup:
 ```
 ./gen_env.sh local
 ```
+
 2. Přidej do `.env.<CONTEXT>` proměnné a nastav je:
-Tyto proměnné volíš:
-`POSTGRES_DB`
-`POSTGRES_USER`
-`POSTGRES_PASSWORD`
-`KEYCLOAK_USER`
-`KEYCLOAK_PASSWORD`
-`REPOSITORY_GITHUBUSERTOKEN` (nutné pouze pro publikaci pracovního prostoru na Github)
+   Tyto proměnné volíš:
+   `POSTGRES_DB`
+   `POSTGRES_USER`
+   `POSTGRES_PASSWORD`
+   `KEYCLOAK_USER`
+   `KEYCLOAK_PASSWORD`
+   `REPOSITORY_GITHUBUSERTOKEN` (nutné pouze pro publikaci pracovního prostoru na Github)
 
 3. Spusť `docker-compose` s příslušným `.env.*` souborem. Příklad:
 
@@ -36,19 +37,19 @@ Tyto proměnné volíš:
 docker-compose --env-file=.env.local up
 ```
 
-4. V dbServeru (`/modelujeme/sluzby/dbServer`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'. Rovněž spusťe SPARQL dotazy ve složce `lucene`.
+4. V al-db-serveru (`/modelujeme/sluzby/al-db-serveru`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'. Rovněž spusťe SPARQL dotazy ve složce `lucene`.
 
-5. V authServeru (`/modelujeme/sluzby/authServer`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
+5. V al-auth-serveru (`/modelujeme/sluzby/al-auth-server`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
 `$KEYCLOAK_PASSWORD`)
  - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
- - zkopíruj hodnotu klíče klienta sgovServer do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
- - zkopíruj hodnotu klíče klienta termitServer do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - zkopíruj hodnotu klíče klienta al-termit-server do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
  - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo.
 
-6. Restartuj službu `sgovServer` a `termitServer`
+6. Restartuj službu `al-sgov-server` a `al-termit-server`
 
-`docker-compose stop sgovServer ; docker-compose --env-file=.env.local up -d sgovServer`
-`docker-compose stop termitServer ; docker-compose --env-file=.env.local up -d termitServer`
+`docker-compose stop al-sgov-server ; docker-compose --env-file=.env.local up -d al-sgov-server`
+`docker-compose stop al-termit-server ; docker-compose --env-file=.env.local up -d al-termit-server`
 
 6. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 

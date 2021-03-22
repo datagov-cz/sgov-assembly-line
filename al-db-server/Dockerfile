@@ -1,11 +1,10 @@
 FROM openjdk:11
 
 ARG GRAPHDB_ZIP
-ARG CONTEXT="http://localhost/modelujeme/sluzby/dbServer"
 
 RUN \
     # Check for mandatory build arguments
-        : "${GRAPHDB_ZIP:?Provide the downloaded GraphDB Free ZIP file}"
+    : "${GRAPHDB_ZIP:?Provide the downloaded GraphDB Free ZIP file}"
 
 ENV GRAPHDB_VOLUME=/graphdb
 ENV GRAPHDB_HOME=${GRAPHDB_VOLUME}/home

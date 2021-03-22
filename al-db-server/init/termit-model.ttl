@@ -32,7 +32,7 @@ termit-pojem:zablokovaný-uživatel-termitu
         a       owl:Class .
 
 termit-pojem:administrátor-termitu
-        a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
+        a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class, termit-pojem:uživatelská-role;
         rdfs:subClassOf  termit-pojem:uživatel-termitu .
 
 termit-pojem:má-koncovou-pozici
@@ -180,7 +180,7 @@ termit:model  a         owl:Ontology , <http://onto.fel.cvut.cz/ontologies/slovn
                 "termit-pojem" ;
         <http://purl.org/vocab/vann/preferredNamespaceUri>
                 "http://onto.fel.cvut.cz/ontologies/application/termit/pojem/" ;
-        owl:imports     <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model> , termit:glosář ;
+        owl:imports     <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model> , <https://slovník.gov.cz/datový/pracovní-prostor/model> , termit:glosář ;
         owl:versionIRI  <http://onto.fel.cvut.cz/ontologies/application/termit/model/verze/1.1.2> .
 
 termit-pojem:selektor-css
@@ -196,7 +196,11 @@ termit-pojem:selektor-text-quote
         rdfs:subClassOf  termit-pojem:selektor .
 
 termit-pojem:omezený-uživatel-termitu
-        a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
+        a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class , termit-pojem:uživatelská-role ;
+        rdfs:subClassOf  termit-pojem:uživatel-termitu .
+
+termit-pojem:plný-uživatel-termitu
+        a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class , termit-pojem:uživatelská-role ;
         rdfs:subClassOf  termit-pojem:uživatel-termitu .
 
 termit-pojem:má-suffix-text-quote
@@ -220,3 +224,38 @@ termit-pojem:má-analyzovaný-zdroj
 termit-pojem:výskyt-termu
         a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
         rdfs:subClassOf  termit-pojem:přiřazení-termu .
+
+termit-pojem:používá-pojmy-ze-slovníku
+        a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> ;
+        rdfs:range          <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník> ;
+        rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
+
+termit-pojem:reakce
+        a                <https://slovník.gov.cz/základní/pojem/typ-objektu> , owl:Class ;
+        rdfs:subClassOf  <https://slovník.gov.cz/základní/pojem/objekt> .
+
+termit-pojem:má-reakci
+        a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         <http://rdfs.org/sioc/types#Comment> ;
+        rdfs:range          termit-pojem:reakce ;
+        rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
+
+<http://purl.org/dc/terms/language>
+        a                owl:AnnotationProperty .
+
+termit-pojem:má-uživatelskou-roli
+        a                   owl:ObjectProperty , <https://slovník.gov.cz/základní/pojem/typ-vztahu> ;
+        rdfs:domain         termit-pojem:uživatel-termitu ;
+        rdfs:range          termit-pojem:uživatelská-role ;
+        rdfs:subPropertyOf  <https://slovník.gov.cz/základní/pojem/vztah> .
+
+termit-pojem:uživatelská-role
+        a                   <https://slovník.gov.cz/základní/pojem/typ-objektu>, owl:Class .
+
+termit-pojem:konfigurace
+        a               owl:Class .
+
+termit-pojem:je-tématem
+        a               owl:ObjectProperty;
+        owl:inverseOf   sioc:topic .
