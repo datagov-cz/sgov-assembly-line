@@ -33,6 +33,7 @@ services:
       ID: al-termit
       URL: ${URL}/v-nástroji/termit
       COMPONENTS:
+    restart: always
   al-db-server:
     build:
       context: al-db-server
