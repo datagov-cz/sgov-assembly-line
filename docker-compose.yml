@@ -10,6 +10,14 @@ services:
       - 80:80
       - 443:443
     restart: always
+    depends_on:
+      - al-mission-control
+      - al-termit
+      - al-ontographer
+      - al-db-server
+      - al-auth-server
+      - al-sgov-server
+      - al-termit-server
   al-mission-control:
     image: docker.pkg.github.com/opendata-mvcr/mission-control/al-mission-control:latest
     environment:
