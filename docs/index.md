@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Výrobní linka konceptuálních modelů
 
-You can use the [editor on GitHub](https://github.com/opendata-mvcr/sgov-assembly-line/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Výrobní linka slouží k tvorbě konceptuálních modelů, jakožto dílčích komponent [Sémantického slovníku pojmů veřejné správy](https://xn--slovnk-7va.gov.cz).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Rozcestník produkční verze
+- [pracujte s výrobní linkou](https://slovník.gov.cz/modelujeme)
+- [sledujte dostupnost výrobní linky](https://slovník.gov.cz/monitorujeme)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/opendata-mvcr/sgov-assembly-line/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Rozcestník vývojové verze
+- [pracujte s výrobní linkou](https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme)
+- [sledujte dostupnost výrobní linky](https://xn--slovnk-test-scb.mvcr.gov.cz/monitorujeme)
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Jste stávající uživatel a chcete nahlásit chybu nebo navrhnout novou funkci? Nebo se setkáváte s výrobní linkou poprvé a máte zájem se dozvědět více? Kontaktujte nás [zde](https://github.com/opendata-mvcr/sgov-assembly-line/issues)
