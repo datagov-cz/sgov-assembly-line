@@ -3,12 +3,13 @@
 version: "3.9"
 services:
   al-nginx:
-    build:
-      context: al-nginx
-    image: al-nginx
+    image: nginx:latest
+    container_name: al-nginx
+    volumes:
+      - ./al-nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./al-nginx/error.html:/usr/share/nginx/html/error.html
     ports:
-      - 80:80
-      - 443:443
+      - 1234:80
     restart: always
     depends_on:
       - al-mission-control
