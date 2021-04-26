@@ -1,0 +1,38 @@
+<!-- Assembly Line Nginx reverse proxy-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      <!--# echo var="status" default="" -->
+      | Assembly Line
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--# if expr="$status = 502" -->
+      <meta http-equiv="refresh" content="2">
+    <!--# endif -->
+  </head>
+  <style type="text/css">
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      height: 100vh;
+      margin: 0;
+      background: #263238 linear-gradient(5deg, #057fa5 0%, #263238 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+<body>
+  <!--# if expr="$status = 502" -->
+    <h1>Právě probíhá aktualizace aplikace </h1>
+    <p>Za několik sekund budete přesměrováni na novou verzi.</p>
+    <p>Pokud tuto zprávu vidíte déle než minutu, něco se pokazilo.</p>
+  <!--# else -->
+    <h1>Omlouváme se, něco se pokazilo.</h1>
+    <p><!--# echo var="status" default="" --></p>
+  <!--# endif -->
+</body>
+</html>
