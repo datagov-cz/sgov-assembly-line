@@ -16,11 +16,11 @@ al-ontographer:
   meta:
     workspace-path: '/?workspace=%WORKSPACE_IRI%'
 al-termit-server:
-  name: TermIT backend
+  name: TermIt backend
   url: ${URL}/sluzby/termit-server
   meta: {}
 al-termit:
-  name: TermIT
+  name: TermIt
   url: ${URL}/v-nástroji/termit
   meta:
     workspace-path: '/#vocabularies?workspace=%WORKSPACE_IRI%'
