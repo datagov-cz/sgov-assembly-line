@@ -35,7 +35,7 @@ services:
       COMPONENTS:
     restart: always
   al-termit:
-    image: al-termit-test # docker.pkg.github.com/opendata-mvcr/termit-ui/al-termit:latest
+    image: docker.pkg.github.com/opendata-mvcr/termit-ui/al-termit:latest
     environment:
       CONTEXT:
       ID: al-termit
