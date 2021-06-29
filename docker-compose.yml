@@ -57,6 +57,7 @@ services:
         -Dgraphdb.workbench.external-url=${URL}/sluzby/db-server
         -Dgraphdb.external-url=${URL}/sluzby/db-server
         -Dgraphdb.workbench.cors.enable=true
+        -Dgraphdb.connector.maxHttpHeaderSize=65536
       GRAPHDB_WORKBENCH_EXTERNAL_URL: ${URL}/sluzby/db-server
       GRAPHDB_EXTERNAL_URL: ${URL}/sluzby/db-server
     restart: always
