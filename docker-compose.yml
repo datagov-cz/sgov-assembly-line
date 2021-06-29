@@ -130,17 +130,17 @@ services:
       ID: al-termit-server
       URL: ${URL}/sluzby/termit-server
       COMPONENTS:
-      CORS_ALLOWEDORIGIN: "*"
-      CANONICAL_CACHE_CONTAINER: https://slovník.gov.cz
+      TERMIT_CORS_ALLOWEDORIGIN: "*"
+      TERMIT_REPOSITORY_CANONICAL_CONTAINER: https://slovník.gov.cz
+      TERMIT_REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
+      TERMIT_NAMESPACE_USER: https://slovník.gov.cz/uživatel/
       SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/termit-server
-      REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
       KEYCLOAK_REALM: assembly-line
       KEYCLOAK_RESOURCE: al-termit-server
       KEYCLOAK_AUTHSERVERURL: http://al-auth-server:8080/modelujeme/sluzby/auth-server
       KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
       KEYCLOAK_CREDENTIALS_SECRET: ${TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
       KEYCLOAK_PUBLIC_CLIENT: "false"
-      NAMESPACE_USER: https://slovník.gov.cz/uživatel/
     depends_on:
       - al-db-server
       - al-auth-server
