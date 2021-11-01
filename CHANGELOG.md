@@ -10,9 +10,6 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - #322](https://github.com/opendata-mvcr/ontoGrapher/issues/322), Fixes displaying of domains and ranges in other workspaces in relator detail.
 
 ## 2021-10-18
-- OntoGrapher allows exporting diagrams
-
-### Features
 - [Ontographer - #37 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/37), OntoGrapher allows exporting diagrams as PNG or SVG
 
 ---
@@ -24,4 +21,4 @@ All notable changes to the Assembly line tooling will be documented here.
 - /DEVELOPER/ [PROJECTNAME-XXXX](http://tickets.projectname.com/browse/PROJECTNAME-XXXX), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
-- /DEVELOPER/ [PROJECTNAME-XXXX](http://tickets.projectname.com/browse/PROJECTNAME-XXXX),/RELEASE MANAGER/ short description of the bug fix
+- /DEVELOPER/ [PROJECTNAME-XXXX](http://tickets.projectname.com/browse/PROJECTNAME-XXXX), /RELEASE MANAGER/ short description of the bug fix
