@@ -133,6 +133,10 @@ services:
       TERMIT_CORS_ALLOWEDORIGIN: "*"
       TERMIT_REPOSITORY_CANONICAL_CONTAINER: https://slovník.gov.cz
       TERMIT_REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
+      TERMIT_REPOSITORY_PUBLICURL: ${URL}/sluzby/db-server/repositories/assembly-line
+      TERMIT_TEXTANALYSIS_URL: http://al-annotace-server:8080/annotate?enableKeywordExtraction=true
+      TERMIT_TEXTANALYSIS_TERMOCCURRENCEMINSCORE: "0.49"
+      TERMIT_TEXTANALYSIS_TERMASSIGNMENTMINSCORE: "1"
       TERMIT_NAMESPACE_USER: https://slovník.gov.cz/uživatel/
       SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/termit-server
       KEYCLOAK_REALM: assembly-line
@@ -147,6 +151,13 @@ services:
     restart: always
     volumes:
       - al-termit-server:/tmp/termit
+  al-annotace-server:
+    image: ghcr.io/kbss-cvut/annotace/annotace-spark:latest
+    environment:
+      JAVA_OPTS: "-Xmx1g"
+    ports:
+      - "8888:8080"
+    restart: always
 
 volumes:
   al-db-server:
