@@ -18,10 +18,9 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ### Features
-- /DEVELOPER/ [PROJECTNAME-XXXX](http://tickets.projectname.com/browse/PROJECTNAME-XXXX), /RELEASE MANAGER/ short description of the feature
+- [Ontographer - #329](https://github.com/opendata-mvcr/ontoGrapher/issues/329), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
-- [Ontographer - #329](https://github.com/opendata-mvcr/ontoGrapher/issues/329), /RELEASE MANAGER/ short description of the bug fix
 - [Ontographer - #334](https://github.com/opendata-mvcr/ontoGrapher/issues/334), /RELEASE MANAGER/ short description of the bug fix
 - [Ontographer - #335](https://github.com/opendata-mvcr/ontoGrapher/issues/335), /RELEASE MANAGER/ short description of the bug fix
 - [Ontographer - AL#62](https://github.com/opendata-mvcr/sgov-assembly-line/issues/62), /RELEASE MANAGER/ short description of the bug fix
