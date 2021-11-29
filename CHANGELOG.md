@@ -25,3 +25,4 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - #335](https://github.com/opendata-mvcr/ontoGrapher/issues/335), /RELEASE MANAGER/ short description of the bug fix
 - [Ontographer - AL#62](https://github.com/opendata-mvcr/sgov-assembly-line/issues/62), /RELEASE MANAGER/ short description of the bug fix
 - [Ontographer - AL#63](https://github.com/opendata-mvcr/sgov-assembly-line/issues/63), /RELEASE MANAGER/ short description of the bug fix
+- [Ontographer - #346](https://github.com/opendata-mvcr/ontoGrapher/issues/346), /RELEASE MANAGER/ short description of the bug fix
