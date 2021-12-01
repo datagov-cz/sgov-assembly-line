@@ -2,6 +2,20 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## 2021-11-30
+- Label visible in OntoGrapher is marked as dcterms:label and bug fixes.
+
+### Features
+- [Ontographer - #329](https://github.com/opendata-mvcr/ontoGrapher/issues/329), Visible labels in OG exported as dcterms:label.
+
+### Bug Fixes
+- [Ontographer - #334](https://github.com/opendata-mvcr/ontoGrapher/issues/334), fixes the number of shown terms from external vocabulary in the left panel.
+- [Ontographer - #335](https://github.com/opendata-mvcr/ontoGrapher/issues/334), fixes visibility of deleted term from external vocabulary
+- [Ontographer - AL#62](https://github.com/opendata-mvcr/sgov-assembly-line/issues/62), fixes saving changes in line shapes
+- [Ontographer - AL#63](https://github.com/opendata-mvcr/sgov-assembly-line/issues/63), fixes invalid creation of properties in compact mode
+- [Ontographer - #346](https://github.com/opendata-mvcr/ontoGrapher/issues/346), fixes loadingo f terms into workspace
+
+
 ## 2021-11-01
 - Minor bug fixes 
 
@@ -10,6 +24,9 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - #322](https://github.com/opendata-mvcr/ontoGrapher/issues/322), Fixes displaying of domains and ranges in other workspaces in relator detail.
 
 ## 2021-10-18
+- Diagram export support
+
+### Features
 - [Ontographer - #37 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/37), OntoGrapher allows exporting diagrams as PNG or SVG
 
 ---
@@ -18,7 +35,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ### Features
-- /DEVELOPER/ [PROJECTNAME-XXXX](http://tickets.projectname.com/browse/PROJECTNAME-XXXX), /RELEASE MANAGER/ short description of the feature
+- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
-- /DEVELOPER/ [PROJECTNAME-XXXX](http://tickets.projectname.com/browse/PROJECTNAME-XXXX), /RELEASE MANAGER/ short description of the bug fix
+- [Bug name](Bug LINK), /RELEASE MANAGER/ short description of the bug fix
