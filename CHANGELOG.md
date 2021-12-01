@@ -13,7 +13,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - #335](https://github.com/opendata-mvcr/ontoGrapher/issues/334), fixes visibility of deleted term from external vocabulary
 - [Ontographer - AL#62](https://github.com/opendata-mvcr/sgov-assembly-line/issues/62), fixes saving changes in line shapes
 - [Ontographer - AL#63](https://github.com/opendata-mvcr/sgov-assembly-line/issues/63), fixes invalid creation of properties in compact mode
-- [Ontographer - #346](https://github.com/opendata-mvcr/ontoGrapher/issues/346), fixes loadingo f terms into workspace
+- [Ontographer - #346](https://github.com/opendata-mvcr/ontoGrapher/issues/346), fixes loading of terms into workspace
 
 
 ## 2021-11-01
