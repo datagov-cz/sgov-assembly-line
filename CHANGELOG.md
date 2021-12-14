@@ -2,6 +2,15 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## [Unreleased] - yyyy-mm-dd
+- /RELEASE-MANAGER/ short description
+
+### Features
+- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
+ 
+### Bug fixes
+- [Mission Control - #196](https://github.com/opendata-mvcr/mission-control/issues/196), enables editing of a vocabulary right after adding it to a workspace
+
 ## 2021-11-30
 - Label visible in OntoGrapher is marked as dcterms:label and bug fixes.
 
@@ -13,7 +22,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - #335](https://github.com/opendata-mvcr/ontoGrapher/issues/334), fixes visibility of deleted term from external vocabulary
 - [Ontographer - AL#62](https://github.com/opendata-mvcr/sgov-assembly-line/issues/62), fixes saving changes in line shapes
 - [Ontographer - AL#63](https://github.com/opendata-mvcr/sgov-assembly-line/issues/63), fixes invalid creation of properties in compact mode
-- [Ontographer - #346](https://github.com/opendata-mvcr/ontoGrapher/issues/346), fixes loadingo f terms into workspace
+- [Ontographer - #346](https://github.com/opendata-mvcr/ontoGrapher/issues/346), fixes loading of terms into workspace
 
 
 ## 2021-11-01
