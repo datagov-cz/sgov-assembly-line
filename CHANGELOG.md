@@ -2,6 +2,15 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## 2022-01-03
+Support for publishing diagrams along with vocabularies. Two outstanding bugs remain - [SGoV - #114](https://github.com/opendata-mvcr/sgov/issues/114), [OntoGrapher - #68](https://github.com/opendata-mvcr/sgov-assembly-line/issues/68)
+
+### Features
+- [SGoV - #106](https://github.com/opendata-mvcr/sgov/issues/106), SGoV server support for publishing diagrams
+ 
+### Bug fixes
+- [Mission Control - #196](https://github.com/opendata-mvcr/mission-control/issues/196), enables editing of a vocabulary right after adding it to a workspace
+
 ## 2021-11-30
 - Label visible in OntoGrapher is marked as dcterms:label and bug fixes.
 
