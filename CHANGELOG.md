@@ -2,6 +2,9 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## UNPUBLISHED
+- [SGoV - #113](https://github.com/opendata-mvcr/sgov/issues/114), fixing publishing action behaviour
+
 ## 2022-01-03
 Support for publishing diagrams along with vocabularies. Two outstanding bugs remain - [SGoV - #114](https://github.com/opendata-mvcr/sgov/issues/114), [OntoGrapher - #68](https://github.com/opendata-mvcr/sgov-assembly-line/issues/68)
 
