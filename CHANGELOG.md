@@ -50,4 +50,6 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
-- [Bug name](Bug LINK), /RELEASE MANAGER/ short description of the bug fix
+- [OntoGrapher - AL#70](https://github.com/opendata-mvcr/sgov-assembly-line/issues/70), /RELEASE MANAGER/ short description of the bug fix
+- [OntoGrapher - #362](https://github.com/opendata-mvcr/ontoGrapher/issues/362), /RELEASE MANAGER/ short description of the bug fix
+- [OntoGrapher - #359](https://github.com/opendata-mvcr/ontoGrapher/issues/359/ short description of the bug fix
