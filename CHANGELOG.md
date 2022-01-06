@@ -9,7 +9,7 @@ Bug fixes solving behaviour of publishing diagram.
 - [SGoV - #113](https://github.com/opendata-mvcr/sgov/issues/114), fixing publishing action behaviour
 - [OntoGrapher - #362](https://github.com/opendata-mvcr/ontoGrapher/issues/362), fixes visualization of links coming out and to the concept,
 - [OntoGrapher - #359](https://github.com/opendata-mvcr/ontoGrapher/issues/359/), fixes vizualization of diagrams,
-- [SGoV assemply line #68](https://github.com/opendata-mvcr/sgov-assembly-line/issues/68), fixed by #359,
+- [SGoV assembly line #68](https://github.com/opendata-mvcr/sgov-assembly-line/issues/68), fixed by #359,
 - [OntoGrapher - AL#70](https://github.com/opendata-mvcr/sgov-assembly-line/issues/70), fixed by #359.
 
 
