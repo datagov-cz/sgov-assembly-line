@@ -14,7 +14,7 @@ Tento repozitář obsahuje sadu Docker instrukcí pro nasazení Výrobní linky.
 
 Postup:
 
-0. Stáhni [GraphDB Free](https://graphdb.ontotext.com) do složky `graphdb`, např. `graphdb-free-9.6.0-dist.zip`.
+0. Stáhni [GraphDB Free](https://graphdb.ontotext.com) do složky `al-db-server`, např. `graphdb-free-9.6.0-dist.zip`.
 
 1. Vygeneruj soubor s proměnnými pomocí utility `gen_env.sh`. Utilita vyžaduje parametr s hodnotou `local`, `development` nebo `production`. V závislosti na parametru bude vygenerován příslušný `.env.*` soubor. Konfigurace komponent bude vygenerována z šablony `components.yml` a zakódována pomocí base64 do jednoduchého řetězce. Příklad:
 
