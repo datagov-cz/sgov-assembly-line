@@ -119,6 +119,7 @@ services:
       REPOSITORY_GITHUBUSERTOKEN: ${SGOV_SERVER_REPOSITORY_GITHUBUSERTOKEN}
       USER_NAMESPACE: https://slovník.gov.cz/uživatel/
       USER_CONTEXT: https://slovník.gov.cz/uživatel
+      FEATURE_DEMO: "false"
     depends_on:
       - al-db-server
       - al-auth-server
