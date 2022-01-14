@@ -14,7 +14,7 @@ case $ENV in
 
   local)
     export CONTEXT=development
-    export URL=https://xn--slovnk-7va.dev/modelujeme
+    export URL=http://localhost:1234/modelujeme
     FILE=.env.local
     ;;
 
