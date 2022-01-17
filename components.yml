@@ -27,7 +27,8 @@ al-termit:
 al-mission-control:
   name: Mission Control
   url: ${URL}
-  meta: {}
+  meta:
+    feature-demo: true
 al-issue-tracker:
   name: Issue Tracker
   url: https://github.com/opendata-mvcr/sgov-assembly-line/issues
