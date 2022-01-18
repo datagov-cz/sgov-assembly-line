@@ -2,6 +2,17 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## 2022-01-18
+Bug fixes solving behaviour of publishing diagram.
+
+- [Ontographer - #366](https://github.com/opendata-mvcr/ontoGrapher/issues/366), fixing showing untyped entities in compact view,
+- [Ontographer - #371](https://github.com/opendata-mvcr/ontoGrapher/issues/371), fixing creating intrinsic tropes,
+- [Ontographer - #372](https://github.com/opendata-mvcr/ontoGrapher/issues/372), fixing problem with model saving,
+- [Ontographer - #375](https://github.com/opendata-mvcr/ontoGrapher/issues/375), fixing cardinalities not loading into workspace,
+- [Ontographer - #376](https://github.com/opendata-mvcr/ontoGrapher/issues/376), fixing opening a workspace with diagrams in OG,
+- [Ontographer - #377](https://github.com/opendata-mvcr/ontoGrapher/issues/377), fixing adding items from external vocabularies,
+- [Ontographer - AL#74](https://github.com/opendata-mvcr/sgov-assembly-line/issues/74), fixing loading of workspace.
+
 ## 2022-01-06
 Bug fixes solving behaviour of publishing diagram.
 
@@ -58,12 +69,5 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
-- [Ontographer - #366](https://github.com/opendata-mvcr/ontoGrapher/issues/366), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #371](https://github.com/opendata-mvcr/ontoGrapher/issues/371), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #372](https://github.com/opendata-mvcr/ontoGrapher/issues/372), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #375](https://github.com/opendata-mvcr/ontoGrapher/issues/375), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #376](https://github.com/opendata-mvcr/ontoGrapher/issues/376), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #377](https://github.com/opendata-mvcr/ontoGrapher/issues/377), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - AL#74](https://github.com/opendata-mvcr/sgov-assembly-line/issues/74), /RELEASE MANAGER/ short description of the bug fix
 
 
