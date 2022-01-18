@@ -3,7 +3,7 @@
 All notable changes to the Assembly line tooling will be documented here.
 
 ## 2022-01-18
-Bug fixes solving behaviour of publishing diagram.
+Various bug fixes in OntoGrapher.
 
 - [Ontographer - #366](https://github.com/opendata-mvcr/ontoGrapher/issues/366), fixing showing untyped entities in compact view,
 - [Ontographer - #371](https://github.com/opendata-mvcr/ontoGrapher/issues/371), fixing creating intrinsic tropes,
