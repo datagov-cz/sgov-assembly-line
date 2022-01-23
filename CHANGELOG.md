@@ -69,5 +69,7 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
+- [Ontographer - #373](https://github.com/opendata-mvcr/ontoGrapher/issues/373), More precise translation of Links to Czech
+- [Ontographer - #82 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/82), OntoGrapher allows exporting diagrams as PNG or SVG
 
 
