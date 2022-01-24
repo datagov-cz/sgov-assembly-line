@@ -2,6 +2,18 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## [Unreleased] - yyyy-mm-dd
+- /RELEASE-MANAGER/ short description
+
+### Features
+- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
+ 
+### Bug fixes
+- [Ontographer - #373](https://github.com/opendata-mvcr/ontoGrapher/issues/373), More precise translation of Links to Czech
+- [Ontographer - #82 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/82), OntoGrapher allows exporting diagrams as PNG or SVG
+
+
+
 ## 2022-01-18
 Various bug fixes in OntoGrapher.
 
@@ -61,15 +73,5 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Ontographer - #37 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/37), OntoGrapher allows exporting diagrams as PNG or SVG
 
 ---
-
-## [Unreleased] - yyyy-mm-dd
-- /RELEASE-MANAGER/ short description
-
-### Features
-- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
- 
-### Bug fixes
-- [Ontographer - #373](https://github.com/opendata-mvcr/ontoGrapher/issues/373), More precise translation of Links to Czech
-- [Ontographer - #82 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/82), OntoGrapher allows exporting diagrams as PNG or SVG
 
 
