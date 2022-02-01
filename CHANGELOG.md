@@ -2,17 +2,13 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
-## [Unreleased] - yyyy-mm-dd
-- /RELEASE-MANAGER/ short description
+## 2022-02-01
+Bug fixes related to the vizualization of terms in OntoGrapher and saving all relations to the RDF.
 
-### Features
-- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
- 
 ### Bug fixes
-- [Ontographer - #400](https://github.com/opendata-mvcr/ontoGrapher/issues/400), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #373](https://github.com/opendata-mvcr/ontoGrapher/issues/373), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #82 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/82), /RELEASE MANAGER/ short description of the bug fix
-
+- [Ontographer - #400](https://github.com/opendata-mvcr/ontoGrapher/issues/400), fixes bug with not saving all the cardinalities to RDF data,
+- [Ontographer - #373](https://github.com/opendata-mvcr/ontoGrapher/issues/373), fixes bug of showing hidden terms after creation of a new one,
+- [Ontographer - #82 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/82), fixes vizualization of retators and tropes in compact view.
 
 
 ## 2022-01-18
@@ -75,4 +71,12 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 
 ---
 
+## [Unreleased] - yyyy-mm-dd
+- /RELEASE-MANAGER/ short description
+
+### Features
+- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
+ 
+### Bug fixes
+- [Bug fix name](Bug fix LINK), /RELEASE MANAGER/ short description of the bug fix
 
