@@ -37,21 +37,34 @@ Postup:
 docker-compose --env-file=.env.local up
 ```
 
-4. V al-db-serveru (`/modelujeme/sluzby/al-db-serveru`) importujte do repozitáře všechny soubory v sekci Server files do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'. Rovněž spusťe SPARQL dotazy ve složce `lucene`.
+4. Nakonfiguruj a spusť externí webový server pro směrování požadavků z url definované v proměnné `URL` příslušného `.env.*` souboru 
+na službu `al-nginx`. V případě lokálního nasazení a webového serevru `apache2` konfigurace může vypadat následovně:
+```
+<VirtualHost *:80>
+        <Location /modelujeme>
+                ProxyPass http://localhost:1234/modelujeme nocanon
+                ProxyPassReverse http://localhost:1234/modelujeme
+        </Location>
+</VirtualHost>
+ ```
 
-5. V al-auth-serveru (`/modelujeme/sluzby/al-auth-server`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
+5. V al-db-serveru (`/modelujeme/sluzby/db-server`) importujte do repozitáře všechny soubory v sekci 
+`Import/RDF/Server files` do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'. 
+Rovněž spusťe SPARQL dotazy ze složky `al-db-server/lucene`.
+
+6. V al-auth-serveru (`/modelujeme/sluzby/auth-server/`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
 `$KEYCLOAK_PASSWORD`)
  - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
- - zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET (použi `Regenerate Secret`), 
  - zkopíruj hodnotu klíče klienta al-termit-server do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
  - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo.
 
-6. Restartuj službu `al-sgov-server` a `al-termit-server`
+7. Restartuj službu `al-sgov-server` a `al-termit-server`
 
 `docker-compose stop al-sgov-server ; docker-compose --env-file=.env.local up -d al-sgov-server`
 `docker-compose stop al-termit-server ; docker-compose --env-file=.env.local up -d al-termit-server`
 
-6. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
+8. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 ---
 Tento repozitář je udržován v rámci projektu OPZ č. [CZ.03.4.74/0.0/0.0/15_025/0013983](https://esf2014.esfcr.cz/PublicPortal/Views/Projekty/Public/ProjektDetailPublicPage.aspx?action=get&datovySkladId=F5E162B2-15EC-4BBE-9ABD-066388F3D412).
 ![Evropská unie - Evropský sociální fond - Operační program Zaměstnanost](https://data.gov.cz/images/ozp_logo_cz.jpg)
