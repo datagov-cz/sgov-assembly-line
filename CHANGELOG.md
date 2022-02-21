@@ -6,7 +6,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ### Features
-- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
+- [Ontographer - #406](https://github.com/opendata-mvcr/ontoGrapher/issues/406), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
 - [AL - #91](https://github.com/opendata-mvcr/sgov-assembly-line/issues/91), TermIt caches data and does not show vocabularies relevant to the workspace,
