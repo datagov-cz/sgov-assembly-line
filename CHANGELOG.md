@@ -2,18 +2,16 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
-## [Unreleased] - yyyy-mm-dd
-- /RELEASE-MANAGER/ short description
+## 2022-02-22
+Added support to touchpad controll in OntoGrapher. Fixes bugs regarding caching in TermIt and minor controlls in OntoGrapher.
 
 ### Features
-- [Ontographer - #406](https://github.com/opendata-mvcr/ontoGrapher/issues/406), /RELEASE MANAGER/ short description of the feature
+- [Ontographer - #406](https://github.com/opendata-mvcr/ontoGrapher/issues/406), changes mouse interactions to support touchpad
  
 ### Bug fixes
-- [AL - #91](https://github.com/opendata-mvcr/sgov-assembly-line/issues/91), TermIt caches data and does not show vocabularies relevant to the workspace,
-- [Ontographer - #402](https://github.com/opendata-mvcr/ontoGrapher/issues/402), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #398](https://github.com/opendata-mvcr/ontoGrapher/issues/398), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #396](https://github.com/opendata-mvcr/ontoGrapher/issues/396), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #397](https://github.com/opendata-mvcr/ontoGrapher/issues/397), /RELEASE MANAGER/ short description of the bug fix
+- [AL - #91](https://github.com/opendata-mvcr/sgov-assembly-line/issues/91), fixes bug where TermIt caches data and does not show vocabularies relevant to the workspace,
+- [Ontographer - #398](https://github.com/opendata-mvcr/ontoGrapher/issues/398), fixes bug with filtering object types in compact mode,
+- [Ontographer - #397](https://github.com/opendata-mvcr/ontoGrapher/issues/397), fixes bug with relations in canvas opened in other workspace.
 
 ## 2022-02-01
 Bug fixes related to the vizualization of terms in OntoGrapher and saving all relations to the RDF.
@@ -92,7 +90,5 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
  
 ### Bug fixes
 - [Ontographer - #402](https://github.com/opendata-mvcr/ontoGrapher/issues/402), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #398](https://github.com/opendata-mvcr/ontoGrapher/issues/398), /RELEASE MANAGER/ short description of the bug fix
 - [Ontographer - #396](https://github.com/opendata-mvcr/ontoGrapher/issues/396), /RELEASE MANAGER/ short description of the bug fix
-- [Ontographer - #397](https://github.com/opendata-mvcr/ontoGrapher/issues/397), /RELEASE MANAGER/ short description of the bug fix
 
