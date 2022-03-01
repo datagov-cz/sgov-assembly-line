@@ -91,4 +91,5 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 ### Bug fixes
 - [Ontographer - #396](https://github.com/opendata-mvcr/ontoGrapher/issues/396), /RELEASE MANAGER/ short description of the bug fix
 - [Ontographer - #393](https://github.com/opendata-mvcr/ontoGrapher/issues/393), /RELEASE MANAGER/ short description of the bug fix
+- [Ontographer - #402](https://github.com/opendata-mvcr/ontoGrapher/issues/393), /RELEASE MANAGER/ short description of the bug fix
 
