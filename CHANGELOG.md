@@ -92,6 +92,5 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
-- [Ontographer - #393](https://github.com/opendata-mvcr/ontoGrapher/issues/393), fixes problem with loading content of diagrams in new workspaces,
-- [Ontographer - #402](https://github.com/opendata-mvcr/ontoGrapher/issues/393), /RELEASE MANAGER/ short description of the bug fix
+- [Bug name](Bug LINK), /RELEASE MANAGER/ short description of the bug fix
 
