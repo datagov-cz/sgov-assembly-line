@@ -2,6 +2,20 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## 2022-02-22
+Added support to touchpad control in OntoGrapher. Fixes bugs regarding caching in TermIt and vizualization in OntoGrapher.
+
+### Features
+- [Ontographer - #406](https://github.com/opendata-mvcr/ontoGrapher/issues/406), changes mouse interactions to support touchpad
+ 
+### Bug fixes
+- [AL - #91](https://github.com/opendata-mvcr/sgov-assembly-line/issues/91), fixes bug where TermIt caches data and does not show vocabularies relevant to the workspace,
+- [Ontographer - #396](https://github.com/opendata-mvcr/ontoGrapher/issues/396), fixes incorrect switch of relators between compact and full view,
+- [Ontographer - #398](https://github.com/opendata-mvcr/ontoGrapher/issues/398), fixes bug with filtering object types in compact mode,
+- [Ontographer - #397](https://github.com/opendata-mvcr/ontoGrapher/issues/397), fixes bug with relations in canvas opened in other workspace,
+- [Ontographer - #393](https://github.com/opendata-mvcr/ontoGrapher/issues/393), fixes problem with loading content of diagrams in new workspaces,
+- [Ontographer - #402](https://github.com/opendata-mvcr/ontoGrapher/issues/402), published data does not contain duplicities.
+
 ## 2022-02-01
 Bug fixes related to the vizualization of terms in OntoGrapher and saving all relations to the RDF.
 
@@ -78,5 +92,5 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
  
 ### Bug fixes
-- [Bug fix name](Bug fix LINK), /RELEASE MANAGER/ short description of the bug fix
+- [Bug name](Bug LINK), /RELEASE MANAGER/ short description of the bug fix
 
