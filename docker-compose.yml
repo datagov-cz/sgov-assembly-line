@@ -64,7 +64,7 @@ services:
     volumes:
       - al-db-server:/graphdb/home
   al-auth-server-db:
-    image: postgres
+    image: postgres:13
     environment:
       POSTGRES_DB:
       POSTGRES_USER:
