@@ -10,6 +10,7 @@ All notable changes to the Assembly line tooling will be documented here.
  
 ### Bug fixes
 - [Ontographer - AL#39](https://github.com/opendata-mvcr/sgov-assembly-line/issues/39)
+- [Mission Control - AL#36](https://github.com/opendata-mvcr/sgov-assembly-line/issues/36)
 
 ## 2022-02-22
 Added support to touchpad control in OntoGrapher. Fixes bugs regarding caching in TermIt and vizualization in OntoGrapher.
