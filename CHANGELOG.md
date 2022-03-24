@@ -1,16 +1,16 @@
 
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
-## [Unreleased] - yyyy-mm-dd
-- /RELEASE-MANAGER/ short description
+
+## [Unreleased] - 2022-03-24
+Stabilization of assembly line
 
 ### Features
-- [Ontographer - AL#58](https://github.com/opendata-mvcr/sgov-assembly-line/issues/58)
-- [Ontographer - AL#80](https://github.com/opendata-mvcr/sgov-assembly-line/issues/80)
+- [Ontographer - AL#80](https://github.com/opendata-mvcr/sgov-assembly-line/issues/80), supports batch editing of cardinalities and setting of default cardinality for new rleations
  
 ### Bug fixes
-- [Ontographer - AL#39](https://github.com/opendata-mvcr/sgov-assembly-line/issues/39)
-- [Mission Control - AL#36](https://github.com/opendata-mvcr/sgov-assembly-line/issues/36)
+- [Ontographer - AL#39](https://github.com/opendata-mvcr/sgov-assembly-line/issues/39), fixes OntoGrapher controlls for touchpads,
+- [Mission Control - AL#36](https://github.com/opendata-mvcr/sgov-assembly-line/issues/36), does not allow users to create new vocabulary with IRI already existing in SSP.
 
 ## 2022-02-22
 Added support to touchpad control in OntoGrapher. Fixes bugs regarding caching in TermIt and vizualization in OntoGrapher.
@@ -94,3 +94,5 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Ontographer - #37 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/37), OntoGrapher allows exporting diagrams as PNG or SVG
 
 ---
+## Waiting for repairs:
+- [Ontographer - AL#58](https://github.com/opendata-mvcr/sgov-assembly-line/issues/58), fixes bug that OntoGrapher allows two domains or ranges from same relator
