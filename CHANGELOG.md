@@ -7,6 +7,7 @@ Stabilization of assembly line
 
 ### Features
 - [Ontographer - AL#80](https://github.com/opendata-mvcr/sgov-assembly-line/issues/80), supports batch editing of cardinalities and setting of default cardinality for new rleations
+- [Ontographer - AL#58](https://github.com/opendata-mvcr/sgov-assembly-line/issues/58)
  
 ### Bug fixes
 - [Ontographer - AL#39](https://github.com/opendata-mvcr/sgov-assembly-line/issues/39), fixes OntoGrapher controlls for touchpads,
