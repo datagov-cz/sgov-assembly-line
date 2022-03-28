@@ -2,16 +2,16 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
-## [Unreleased] - 2022-03-24
+## 2022-03-24
 Stabilization of assembly line
 
 ### Features
-- [Ontographer - AL#80](https://github.com/opendata-mvcr/sgov-assembly-line/issues/80), supports batch editing of cardinalities and setting of default cardinality for new rleations
-- [Ontographer - AL#58](https://github.com/opendata-mvcr/sgov-assembly-line/issues/58)
+- [Ontographer - AL#80](https://github.com/opendata-mvcr/sgov-assembly-line/issues/80), supports batch editing of cardinalities and setting of default cardinality for new rleations,
+- [Ontographer - AL#58](https://github.com/opendata-mvcr/sgov-assembly-line/issues/58), fixes bug that OntoGrapher allows two domains or ranges from same relator.
  
 ### Bug fixes
 - [Ontographer - AL#39](https://github.com/opendata-mvcr/sgov-assembly-line/issues/39), fixes OntoGrapher controlls for touchpads,
-- [Ontographer - #424](https://github.com/opendata-mvcr/ontoGrapher/issues/424), 
+- [Ontographer - #424](https://github.com/opendata-mvcr/ontoGrapher/issues/424), fixes bug with time needed for finishing transactions exceeds limit,
 - [Mission Control - AL#36](https://github.com/opendata-mvcr/sgov-assembly-line/issues/36), does not allow users to create new vocabulary with IRI already existing in SSP.
 
 ## 2022-02-22
@@ -96,5 +96,3 @@ Support for publishing diagrams along with vocabularies. Two outstanding bugs re
 - [Ontographer - #37 (AL repo)](https://github.com/opendata-mvcr/sgov-assembly-line/issues/37), OntoGrapher allows exporting diagrams as PNG or SVG
 
 ---
-## Waiting for repairs:
-- [Ontographer - AL#58](https://github.com/opendata-mvcr/sgov-assembly-line/issues/58), fixes bug that OntoGrapher allows two domains or ranges from same relator
