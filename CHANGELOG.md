@@ -11,6 +11,7 @@ Stabilization of assembly line
  
 ### Bug fixes
 - [Ontographer - AL#39](https://github.com/opendata-mvcr/sgov-assembly-line/issues/39), fixes OntoGrapher controlls for touchpads,
+- [Ontographer - #424](https://github.com/opendata-mvcr/ontoGrapher/issues/424), 
 - [Mission Control - AL#36](https://github.com/opendata-mvcr/sgov-assembly-line/issues/36), does not allow users to create new vocabulary with IRI already existing in SSP.
 
 ## 2022-02-22
