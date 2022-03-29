@@ -2,6 +2,15 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## [Unreleased] - yyyy-mm-dd
+- /RELEASE-MANAGER/ short description
+
+### Features
+- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
+
+### Bug fixes
+- [Bug name](Bug LINK), /RELEASE MANAGER/ short description of the bug fix
+
 ## 2022-03-28
 Stabilization of assembly line
 
