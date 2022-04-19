@@ -6,7 +6,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ### Features
-- [Feature name](Feature LINK), /RELEASE MANAGER/ short description of the feature
+- [Ontographer - #429](https://github.com/opendata-mvcr/ontoGrapher/issues/429),
 
 ### Bug fixes
 - [Bug name](Bug LINK), /RELEASE MANAGER/ short description of the bug fix
