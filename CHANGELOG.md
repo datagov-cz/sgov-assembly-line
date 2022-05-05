@@ -9,7 +9,8 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - #429](https://github.com/opendata-mvcr/ontoGrapher/issues/429),
 
 ### Bug fixes
-- [Bug name](Bug LINK), /RELEASE MANAGER/ short description of the bug fix
+- [Ontographer - #368](https://github.com/opendata-mvcr/ontoGrapher/issues/368),
+- [Ontographer - #399](https://github.com/opendata-mvcr/ontoGrapher/issues/399),
 
 ## 2022-03-28
 Stabilization of assembly line
