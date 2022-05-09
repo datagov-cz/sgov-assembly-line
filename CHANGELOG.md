@@ -5,12 +5,15 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+## 2022-04-09
+Bug fixes in OntoGrapher
+
 ### Features
-- [Ontographer - #429](https://github.com/opendata-mvcr/ontoGrapher/issues/429),
+- [Ontographer - #429](https://github.com/opendata-mvcr/ontoGrapher/issues/429), alerts user on diagrams belonging to the vocabulary not longer in the workspace.
 
 ### Bug fixes
-- [Ontographer - #368](https://github.com/opendata-mvcr/ontoGrapher/issues/368),
-- [Ontographer - #399](https://github.com/opendata-mvcr/ontoGrapher/issues/399),
+- [Ontographer - #368](https://github.com/opendata-mvcr/ontoGrapher/issues/368), enhances actions on which is definition edit saved,
+- [Ontographer - #399](https://github.com/opendata-mvcr/ontoGrapher/issues/399), fixes bug with loading cardinalities.
 
 ## 2022-03-28
 Stabilization of assembly line
