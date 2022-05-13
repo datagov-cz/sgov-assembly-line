@@ -13,7 +13,9 @@ Bug fixes in OntoGrapher
 
 ### Bug fixes
 - [Ontographer - #368](https://github.com/opendata-mvcr/ontoGrapher/issues/368), enhances actions on which is definition edit saved,
-- [Ontographer - #399](https://github.com/opendata-mvcr/ontoGrapher/issues/399), fixes bug with loading cardinalities.
+- [Ontographer - #399](https://github.com/opendata-mvcr/ontoGrapher/issues/399), fixes bug with loading cardinalities,
+- [SGoV - #131](https://github.com/opendata-mvcr/sgov/issues/131), fixes API to handle creation of vocabulary with IRI that already exists,
+- [SGoV - #132](https://github.com/opendata-mvcr/sgov/issues/132), fixes adding vocabulary with shared attachments.
 
 ## 2022-03-28
 Stabilization of assembly line
