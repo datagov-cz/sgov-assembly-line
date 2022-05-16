@@ -2,6 +2,22 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
+## [Unreleased] - yyyy-mm-dd
+- /RELEASE-MANAGER/ short description
+
+## 2022-05-16
+Bug fixes in OntoGrapher, API and infrastructure
+
+### Features
+- [Ontographer - #429](https://github.com/opendata-mvcr/ontoGrapher/issues/429), alerts user on diagrams belonging to the vocabulary not longer in the workspace.
+
+### Bug fixes
+- [Ontographer - #368](https://github.com/opendata-mvcr/ontoGrapher/issues/368), enhances actions on which is definition edit saved,
+- [Ontographer - #399](https://github.com/opendata-mvcr/ontoGrapher/issues/399), fixes bug with loading cardinalities,
+- [SGoV - #131](https://github.com/opendata-mvcr/sgov/issues/131), fixes API to handle creation of vocabulary with IRI that already exists,
+- [SGoV - #132](https://github.com/opendata-mvcr/sgov/issues/132), fixes adding vocabulary with shared attachments,
+- [AL - #104](https://github.com/opendata-mvcr/sgov-assembly-line/pull/104), fixes SSP deploy fail due to timeouts on db-server 
+
 ## 2022-03-28
 Stabilization of assembly line
 
