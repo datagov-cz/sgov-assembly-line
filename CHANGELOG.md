@@ -6,7 +6,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ## 2022-04-09
-Bug fixes in OntoGrapher
+Bug fixes in OntoGrapher, API and infrastructure
 
 ### Features
 - [Ontographer - #429](https://github.com/opendata-mvcr/ontoGrapher/issues/429), alerts user on diagrams belonging to the vocabulary not longer in the workspace.
