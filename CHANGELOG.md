@@ -5,7 +5,7 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
-## 2022-04-09
+## 2022-05-16
 Bug fixes in OntoGrapher, API and infrastructure
 
 ### Features
