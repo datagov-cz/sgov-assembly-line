@@ -6,7 +6,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ## 2022-05-30
-OntoGrapher and SGoV server bug fixes and stabilization
+OntoGrapher bug fixes and stabilization
 
 ### Bug fixes
 - [Ontographer - AL#103](https://github.com/opendata-mvcr/sgov-assembly-line/issues/103), fixes bug in which OntoGrapher would crash when loading workspace data,
