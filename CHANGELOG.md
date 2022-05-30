@@ -11,6 +11,12 @@ OntoGrapher and SGoV server bug fixes and stabilization
 ### Features
 - [](), 
 
+### Bug fixes
+- [Ontographer - AL#103](https://github.com/opendata-mvcr/sgov-assembly-line/issues/103), fixes bug in which OntoGrapher would crash when loading workspace data,
+- [Ontographer - AL#111](https://github.com/opendata-mvcr/sgov-assembly-line/issues/111), fixes bug in which OntoGrapher wouldn't load workspaces fully,
+- [Ontographer - AL#113](https://github.com/opendata-mvcr/sgov-assembly-line/issues/113), fixes bug in which OntoGrapher wouldn't save changes on cardinalities.
+
+
 ## 2022-05-16
 Bug fixes in OntoGrapher, API and infrastructure
 
