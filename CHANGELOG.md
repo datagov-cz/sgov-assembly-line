@@ -5,6 +5,12 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+## 2022-05-30
+OntoGrapher and SGoV server bug fixes and stabilization
+
+### Features
+- [](), 
+
 ## 2022-05-16
 Bug fixes in OntoGrapher, API and infrastructure
 
