@@ -4,6 +4,7 @@ This file contains a list and description of Assembly Line components and their 
 
 ## SGoV data repository
 Contains all published vocabularies and content validation scripts.
+
 https://github.com/opendata-mvcr/ssp
 
 ## Assembly Line deployment setup
