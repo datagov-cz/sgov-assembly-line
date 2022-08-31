@@ -7,11 +7,6 @@ Contains all published vocabularies and content validation scripts.
 
 https://github.com/opendata-mvcr/ssp
 
-## Assembly Line deployment setup
-Contains Docker setup to run a complete Assembly Line instance.
-
-https://github.com/opendata-mvcr/sgov-assembly-line
-
 ## Assembly Line components
 
 ### OntoGrapher
@@ -35,3 +30,7 @@ Workspace management API, vocabulary validation and GitHub integration service
 
 https://github.com/opendata-mvcr/sgov
 
+## Assembly Line deployment setup
+Contains Docker setup to run a complete Assembly Line instance.
+
+https://github.com/opendata-mvcr/sgov-assembly-line
