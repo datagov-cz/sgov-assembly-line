@@ -68,7 +68,7 @@ Rovněž spusťe SPARQL dotazy ze složky `al-db-server/lucene`.
 
 ## Obnova databáze slovníků z publikovaných dat
 
-Služba `al-db-server` představuje RDF úložište obsahující uživatelé systému a pracovní verze slovníků. Uživatelé systému lze kdykoli smazat a vygenerovat pomocí služby `al-auth-server`, která ukláda data o uživatelích systému pomocí služby `al-auth-server-db`. Pracovní verze slovníku lze publikovat do [Sémantického slovníku pojmů](https://xn--slovnk-7va.gov.cz/) (SSP). 
+Služba `al-db-server` představuje RDF úložište obsahující uživatelé systému a pracovní verze slovníků. Uživatelé systému lze kdykoli smazat a vygenerovat pomocí služby `al-auth-server`, která ukláda data o uživatelích systému pomocí služby `al-auth-server-db`. Pracovní verze slovníků lze publikovat do [Sémantického slovníku pojmů](https://xn--slovnk-7va.gov.cz/) (SSP). 
 
 V případě, že jsou všechny slovníky publikované, je možné RDF úložistě přemazat a naimportovat slovníky znovu z SSP. Po obnovení úložište (viz. body týkající se `al-auth-serveru` v sekci [Nasazení výrobní linky](https://github.com/opendata-mvcr/sgov-assembly-line/edit/main/README.md#nasazen%C3%AD-v%C3%BDrobn%C3%AD-linky)) je potřeba obnovit i RDF reprezentaci uživatelů systému v tomto úložišti. Záznam uživatele se v RDF úložišti vytvoří automaticky při libovolné aktualizaci uživatele pomocí uživatelského rozhraní na adrese `/modelujeme/sluzby/auth-server/`. Po aktualizaci všech uživatelů je obnova databáze slovníku hotova. 
 
