@@ -65,6 +65,15 @@ Rovněž spusťe SPARQL dotazy ze složky `al-db-server/lucene`.
 `docker-compose stop al-termit-server ; docker-compose --env-file=.env.local up -d al-termit-server`
 
 8. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
+
+## Obnova databáze slovníků z publikovaných dat
+
+Služba `al-db-server` představuje RDF úložište obsahující pracovní verze slovníků a uživatele systému. Uživatele systému lze kdykoli smazat a přegenerovat pomocí služby `al-auth-server`, která ukláda zdrojové data o uživatelích pomocí služby `al-auth-server-db`. Pracovní verze slovníků lze publikovat do [Sémantického slovníku pojmů](https://xn--slovnk-7va.gov.cz/) (SSP). 
+
+V případě, že jsou všechny slovníky publikované, je možné RDF úložistě smazat a obnovenit počáteční stav úložište (viz. body týkající se `al-db-serveru` v sekci [Nasazení výrobní linky](https://github.com/opendata-mvcr/sgov-assembly-line/edit/main/README.md#nasazen%C3%AD-v%C3%BDrobn%C3%AD-linky)). Po obnovení počátečního stavu uložiště je potřeba naimportovat slovníky z SSP a obnovit i RDF reprezentaci uživatelů systému v tomto úložišti. Záznam uživatele se v RDF úložišti vytvoří automaticky při libovolné aktualizaci uživatele pomocí uživatelského rozhraní na adrese `/modelujeme/sluzby/auth-server/`. Po aktualizaci všech uživatelů je obnova databáze slovníku hotova. 
+
+Alternativně lze RDF reprezentaci uživatelů systému nahrát ze zálohy, protože je obsažena v separatním kontextu RDF úložiště (např. `https://slovník.gov.cz/uživatel`).
+
 ---
 Tento repozitář je udržován v rámci projektu OPZ č. [CZ.03.4.74/0.0/0.0/15_025/0013983](https://esf2014.esfcr.cz/PublicPortal/Views/Projekty/Public/ProjektDetailPublicPage.aspx?action=get&datovySkladId=F5E162B2-15EC-4BBE-9ABD-066388F3D412).
 ![Evropská unie - Evropský sociální fond - Operační program Zaměstnanost](https://data.gov.cz/images/ozp_logo_cz.jpg)
