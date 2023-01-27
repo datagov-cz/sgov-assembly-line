@@ -5,6 +5,21 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+## 2023-01-20
+- /RELEASE-MANAGER/ short description
+
+### Features
+- [Ontographer - #385](https://github.com/opendata-mvcr/ontoGrapher/issues/385), deprecates workspace loading in favor of vocabulary context(s) loading.
+
+### Bug fixes
+- [Ontographer - AL#110](https://github.com/opendata-mvcr/sgov-assembly-line/issues/110), fixes bug in which OntoGrapher would list deleted terms in the term panel,
+- [Ontographer - AL#116](https://github.com/opendata-mvcr/sgov-assembly-line/issues/116), fixes bug in which OntoGrapher where intrinsic tropes created in Compact Mode wouldn't show up in Full Mode,
+- [Ontographer - AL#119](https://github.com/opendata-mvcr/sgov-assembly-line/issues/119), fixes bug in which OntoGrapher where has-trope/is-trope-of links were loaded incorrectly,
+- [Ontographer - #454](https://github.com/opendata-mvcr/ontoGrapher/issues/454), fixes bug in which OntoGrapher changes made in diagram layout were discarded after refreshing,
+- [Ontographer - AL#122](https://github.com/opendata-mvcr/sgov-assembly-line/issues/122), fixes bug in which OntoGrapher where a new term was not created at the location of the mouse cursor,
+- [Ontographer - #457](https://github.com/opendata-mvcr/ontoGrapher/issues/457), fixes bug in which OntoGrapher where creating a loop Full-style connection and switching to Compact view resulted in a crash,
+- [Ontographer - #314](https://github.com/opendata-mvcr/ontoGrapher/issues/314), fixes bug in which OntoGrapher where invalid data was sent to the database,
+
 ## 2022-05-30
 OntoGrapher and SGoV server bug fixes and stabilization
 
