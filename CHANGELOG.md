@@ -10,7 +10,8 @@ All notable changes to the Assembly line tooling will be documented here.
 
 ### Features
 - [Ontographer - #385](https://github.com/opendata-mvcr/ontoGrapher/issues/385), deprecates workspace loading in favor of vocabulary context(s) loading.
-
+- [TermIt - #165](https://github.com/kbss-cvut/termit/issues/164), TermIt accepts set of vocabularies to be edited. TermIt was edited to handle new architecture, where workspaces don't exist. KBSS TermIt was modified to accept Keycloak as a mean of authentification. All vocabularies are visible in the UI, only the vocabularies which were passed for editation are actually editable, the rest is locked. Vocabularies can be edited in multiple contexts without collisions with other editing versions.
+- [TermIt - #32](https://github.com/lecbyjak/intelligent-tree-select/issues/32), TermIt allows expansion of terms in the tree component that have the same parent 
 ### Bug fixes
 - [Ontographer - AL#110](https://github.com/opendata-mvcr/sgov-assembly-line/issues/110), fixes bug in which OntoGrapher would list deleted terms in the term panel,
 - [Ontographer - AL#116](https://github.com/opendata-mvcr/sgov-assembly-line/issues/116), fixes bug in which OntoGrapher where intrinsic tropes created in Compact Mode wouldn't show up in Full Mode,
@@ -19,6 +20,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - AL#122](https://github.com/opendata-mvcr/sgov-assembly-line/issues/122), fixes bug in which OntoGrapher where a new term was not created at the location of the mouse cursor,
 - [Ontographer - #457](https://github.com/opendata-mvcr/ontoGrapher/issues/457), fixes bug in which OntoGrapher where creating a loop Full-style connection and switching to Compact view resulted in a crash,
 - [Ontographer - #314](https://github.com/opendata-mvcr/ontoGrapher/issues/314), fixes bug in which OntoGrapher where invalid data was sent to the database,
+- [Mission Control - #233](https://github.com/opendata-mvcr/mission-control/pull/233), fixes a bug which didn't allow to pass a huge number of vocabularies
 
 ## 2022-05-30
 OntoGrapher and SGoV server bug fixes and stabilization
