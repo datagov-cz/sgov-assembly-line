@@ -12,6 +12,12 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - #385](https://github.com/opendata-mvcr/ontoGrapher/issues/385), deprecates workspace loading in favor of vocabulary context(s) loading.
 - [TermIt - #165](https://github.com/kbss-cvut/termit/issues/164), TermIt accepts set of vocabularies to be edited. TermIt was edited to handle new architecture, where workspaces don't exist. KBSS TermIt was modified to accept Keycloak as a mean of authentification. All vocabularies are visible in the UI, only the vocabularies which were passed for editation are actually editable, the rest is locked. Vocabularies can be edited in multiple contexts without collisions with other editing versions.
 - [TermIt - #32](https://github.com/lecbyjak/intelligent-tree-select/issues/32), TermIt allows expansion of terms in the tree component that have the same parent 
+- [SGoV - #141](https://github.com/opendata-mvcr/sgov/pull/141), adds endpoint allowing to validate set of vocabularies
+- [SGoV - #146](https://github.com/opendata-mvcr/sgov/pull/146), change to new data architecture with attachments under vocabularies
+- [SGoV - #149](https://github.com/opendata-mvcr/sgov/pull/149), searching in SSP is changed from Virtuoso to GraphDB cache
+- [SGoV - #154](https://github.com/opendata-mvcr/sgov/pull/154), Change Tracking Context was changed to suit the new Termit
+- [Assembly line - #123](https://github.com/opendata-mvcr/sgov-assembly-line/pull/123), [Assembly line - #128](https://github.com/opendata-mvcr/sgov-assembly-line/pull/128), new TermIt deployment settings
+
 ### Bug fixes
 - [Ontographer - AL#110](https://github.com/opendata-mvcr/sgov-assembly-line/issues/110), fixes bug in which OntoGrapher would list deleted terms in the term panel,
 - [Ontographer - AL#116](https://github.com/opendata-mvcr/sgov-assembly-line/issues/116), fixes bug in which OntoGrapher where intrinsic tropes created in Compact Mode wouldn't show up in Full Mode,
@@ -20,7 +26,10 @@ All notable changes to the Assembly line tooling will be documented here.
 - [Ontographer - AL#122](https://github.com/opendata-mvcr/sgov-assembly-line/issues/122), fixes bug in which OntoGrapher where a new term was not created at the location of the mouse cursor,
 - [Ontographer - #457](https://github.com/opendata-mvcr/ontoGrapher/issues/457), fixes bug in which OntoGrapher where creating a loop Full-style connection and switching to Compact view resulted in a crash,
 - [Ontographer - #314](https://github.com/opendata-mvcr/ontoGrapher/issues/314), fixes bug in which OntoGrapher where invalid data was sent to the database,
-- [Mission Control - #233](https://github.com/opendata-mvcr/mission-control/pull/233), fixes a bug which didn't allow to pass a huge number of vocabularies
+- [Mission Control - #233](https://github.com/opendata-mvcr/mission-control/pull/233), fixes a bug which didn't allow to pass a huge number of vocabularies,
+- [SGoV - #148](https://github.com/opendata-mvcr/sgov/pull/148), fixes bug in which empty attachments were published
+- [SGoV - #152](https://github.com/opendata-mvcr/sgov/pull/152), fixes bug in which large publications took over 3 min
+- [Assembly line - #127](https://github.com/opendata-mvcr/sgov-assembly-line/pull/127), fixes bug in which large publications reported failure even when succeeding
 
 ## 2022-05-30
 OntoGrapher and SGoV server bug fixes and stabilization
