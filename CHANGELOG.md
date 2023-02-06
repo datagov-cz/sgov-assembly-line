@@ -6,7 +6,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ## 2023-01-20
-- /RELEASE-MANAGER/ short description
+In the long term was updated architecture of the whole system. It consists of major changes in TermIt UI and SGoV server and some minor changes in other tools. All bug fixes were postponed due to this update to this very date. 
 
 ### Features
 - [Ontographer - #385](https://github.com/opendata-mvcr/ontoGrapher/issues/385), deprecates workspace loading in favor of vocabulary context(s) loading.
