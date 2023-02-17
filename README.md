@@ -49,20 +49,22 @@ na službu `al-nginx`. V případě lokálního nasazení a webového serevru `a
  ```
 
 5. V al-db-serveru (`/modelujeme/sluzby/db-server`) importujte do repozitáře všechny soubory v sekci 
-`Import/RDF/Server files` do kontextu 'http://onto.fel.cvut.cz/ontologies/termit'. 
+`Import/RDF/Server files` . 
 Rovněž spusťe SPARQL dotazy ze složky `al-db-server/lucene`.
 
-6. V al-auth-serveru (`/modelujeme/sluzby/auth-server/`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
+1. V al-auth-serveru (`/modelujeme/sluzby/auth-server/`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
 `$KEYCLOAK_PASSWORD`)
  - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
  - zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET (použi `Regenerate Secret`), 
  - zkopíruj hodnotu klíče klienta al-termit-server do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+ - zkopíruj hodnotu klíče klienta al-checkit-server do proměnné CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
  - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo.
 
-7. Restartuj službu `al-sgov-server` a `al-termit-server`
+1. Restartuj službu `al-sgov-server`, `al-termit-server` a `al-checkit-server`
 
 `docker-compose stop al-sgov-server ; docker-compose --env-file=.env.local up -d al-sgov-server`
 `docker-compose stop al-termit-server ; docker-compose --env-file=.env.local up -d al-termit-server`
+`docker-compose stop al-checkit-server ; docker-compose --env-file=.env.local up -d al-checkit-server`
 
 8. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 

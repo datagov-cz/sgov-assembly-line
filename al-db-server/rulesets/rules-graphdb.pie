@@ -9,6 +9,7 @@ Prefices
     psys :  http://proton.semanticweb.org/protonsys#
     termit : http://onto.fel.cvut.cz/ontologies/application/termit/pojem/
     activity: https://www.w3.org/ns/activitystreams#
+    pzp: https://slovník.gov.cz/datový/popis-zmen/
 }
 
 Axioms
@@ -107,5 +108,11 @@ Rules
       parent <pdp:je-pojmem-ze-slovníku> target     [Constraint target != this] [Cut]
       -------------------------------
       this <termit:používá-pojmy-ze-slovníku> target
+
+  Id: pzp_gestor_1
+
+      source <pzp:má-gestora> this
+      -------------------------------
+      this <pzp:je-gestorem> source
 }
 

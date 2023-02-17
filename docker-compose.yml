@@ -18,6 +18,8 @@ services:
       - al-auth-server
       - al-sgov-server
       - al-termit-server
+      - al-checkit-ui
+      - al-checkit-server
   al-mission-control:
     image: docker.pkg.github.com/opendata-mvcr/mission-control/al-mission-control:latest
     environment:
@@ -160,6 +162,30 @@ services:
       JAVA_OPTS: "-Xmx1g"
     ports:
       - "8888:8080"
+    restart: always
+  al-checkit-ui:
+    build: ..\checkit-ui
+    environment: 
+      VITE_URL: ${URL}/v-nástroji/checkit/
+      VITE_APP_ID: al-checkit-ui
+      VITE_AUTHENTICATION_SERVER: http://al-auth-server:8080/modelujeme/sluzby/auth-server/realms/assembly-line
+    depends_on: 
+      - al-auth-server
+    restart: always
+  al-checkit-server:
+    build: ..\DP\checkit-server
+    environment:
+      SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/checkit-server
+      KEYCLOAK_AUTHURL: http://al-auth-server:8080/modelujeme/sluzby/auth-server
+      KEYCLOAK_CLIENTID: al-checkit-server
+      KEYCLOAK_REALM: assembly-line
+      KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
+      KEYCLOAK_SECRET: ${CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
+      REPOSITORY_URL: http://al-db-server:7200/repositories/${repo}
+      REPOSITORY_NAMESPACE_USER: https://slovník.gov.cz/uživatel/
+    depends_on:
+      - al-db-server
+      - al-auth-server
     restart: always
 
 volumes:
