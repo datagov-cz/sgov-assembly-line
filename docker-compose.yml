@@ -164,7 +164,7 @@ services:
       - "8888:8080"
     restart: always
   al-checkit-ui:
-    build: ..\checkit-ui
+    image: ghcr.io/filip-kopecky/checkit-ui/al-checkit-ui:latest
     environment: 
       VITE_URL: ${URL}/v-nástroji/checkit/
       VITE_APP_ID: al-checkit-ui
@@ -173,7 +173,7 @@ services:
       - al-auth-server
     restart: always
   al-checkit-server:
-    build: ..\DP\checkit-server
+    image: ghcr.io/mighantos/checkit-server/al-checkit-server:latest
     environment:
       SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/checkit-server
       KEYCLOAK_AUTHURL: http://al-auth-server:8080/modelujeme/sluzby/auth-server
@@ -181,7 +181,7 @@ services:
       KEYCLOAK_REALM: assembly-line
       KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
       KEYCLOAK_SECRET: ${CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
-      REPOSITORY_URL: http://al-db-server:7200/repositories/${repo}
+      REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
       REPOSITORY_NAMESPACE_USER: https://slovník.gov.cz/uživatel/
     depends_on:
       - al-db-server
