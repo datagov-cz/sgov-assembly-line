@@ -168,7 +168,7 @@ services:
     environment: 
       VITE_URL: ${URL}/v-nástroji/checkit/
       VITE_APP_ID: al-checkit-ui
-      VITE_AUTHENTICATION_SERVER: http://al-auth-server:8080/modelujeme/sluzby/auth-server/realms/assembly-line
+      VITE_AUTHENTICATION_SERVER: ${URL}/sluzby/auth-server/realms/assembly-line
     depends_on: 
       - al-auth-server
     restart: always
