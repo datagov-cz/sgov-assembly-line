@@ -28,6 +28,8 @@ RUN rm -rf ${GRAPHDB_HOME}/data
 COPY ./data ${GRAPHDB_HOME}/data
 COPY ./conf ${GRAPHDB_HOME}/conf
 
+RUN GDB_JAVA_OPTS='-Dgraphdb.home=/graphdb/home' /graphdb/dist/bin/loadrdf -m parallel -i assembly-line /root/graphdb-import/* -f
+
 CMD ["-Dgraphdb.home=/graphdb/home","-Dgraphdb.logback=conf/logback.xml"]
 ENTRYPOINT ["/graphdb/dist/bin/graphdb"]
 EXPOSE 7200

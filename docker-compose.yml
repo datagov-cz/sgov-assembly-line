@@ -48,7 +48,7 @@ services:
     build:
       context: al-db-server
       args:
-        GRAPHDB_ZIP: graphdb-free-9.6.0-dist.zip
+        GRAPHDB_ZIP: ${GRAPHDB_ZIP_FILE_NAME}
     image: al-graphdb
     environment:
       CONTEXT:
