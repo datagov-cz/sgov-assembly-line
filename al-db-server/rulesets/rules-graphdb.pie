@@ -9,7 +9,7 @@ Prefices
     psys :  http://proton.semanticweb.org/protonsys#
     termit : http://onto.fel.cvut.cz/ontologies/application/termit/pojem/
     activity: https://www.w3.org/ns/activitystreams#
-    pzp: https://slovník.gov.cz/datový/popis-zmen/
+    pzp: https://slovník.gov.cz/datový/popis-zmen/pojem/
 }
 
 Axioms
@@ -111,8 +111,8 @@ Rules
 
   Id: pzp_gestor_1
 
-      source <pzp:má-gestora> this
+      vocabulary <pzp:má-gestora> user
       -------------------------------
-      this <pzp:je-gestorem> source
+      user <pzp:je-gestorem> vocabulary
 }
 
