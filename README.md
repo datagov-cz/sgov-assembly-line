@@ -5,6 +5,7 @@ Výrobní linka je sada nástrojů, které slouží k tvorbě [Sémantického sl
 1. [Kontrolní panel](https://github.com/opendata-mvcr/mission-control), který používá [SGoV Server](https://github.com/opendata-mvcr/sgov) jako backend. Jedná se o nástroj pro správu pracovních prostorů (transakcí pro editaci Sémantického slovníku pojmů) a jejich publikaci do [Github repozitáře](https://github.com/opendata-mvcr/ssp) odkud jsou vytvořené slovníky publikovány do [SPARQL endpointu](https://xn--slovnk-7va.gov.cz/sparql).
 2. [TermIt](https://github.com/opendata-mvcr/termit-ui), který má rovněž vlastní [back-end](https://github.com/opendata-mvcr/termit). Jedná se o nástroj na správu pojmů samotných, jejich názvů, definic, zdrojů a základní strukturování do tezauru. TermIt pracuje s formátem [SKOS](https://www.w3.org/TR/skos-reference/).
 3. [OntoGrapher](https://github.com/opendata-mvcr/ontographer) je nástrojem pro tvorbu ontologických konceptuálních modelů na základě pojmů, tedy o jejich vzájemné propojování významovými vazbami (např. `Orgán veřejné moci` je speciálním případem `Organizace`). TermIt pracuje v jazyce [OWL](https://www.w3.org/TR/2012/REC-owl2-overview-20121211/#).
+4. [CheckIt]() s [backendem]() je nástroj sloužící pro revizi a schvalování změn provedených na slovnícich pomocí ostatních nástrujů Výrobní linky.
 
 Výrobní linka je rozšiřitelná o další nástroje, které mohou řešit jiné (nebo stejné) dílčí úlohy.
 
@@ -24,12 +25,16 @@ Postup:
 
 2. Přidej do `.env.<CONTEXT>` proměnné a nastav je:
    Tyto proměnné volíš:
-   `POSTGRES_DB`
-   `POSTGRES_USER`
-   `POSTGRES_PASSWORD`
-   `KEYCLOAK_USER`
-   `KEYCLOAK_PASSWORD`
-   `REPOSITORY_GITHUBUSERTOKEN` (nutné pouze pro publikaci pracovního prostoru na Github)
+
+   - `GRAPHDB_ZIP_FILE_NAME` - jméno souboru stažené GraphDB (např. `graphdb-free-9.6.0-dist.zip`)
+   - `POSTGRES_DB` - název databáze pro keycloak uživatele
+   - `POSTGRES_USER` - uživatelské jméno pro správu databáze
+   - `POSTGRES_PASSWORD` - heslo pro správu databáze
+   - `KEYCLOAK_USER` - uživatelské jméno k přihlášení do admin konzole Keycloaku
+   - `KEYCLOAK_PASSWORD` - heslo k přihlášení do admin konzole Keycloaku
+   - `KEYCLOAK_API_USER_USERNAME` - uživatelské jméno pro přístup k API Keycloaku (potřebné pro CheckIt)
+   - `KEYCLOAK_API_USER_PASSWORD` - heslo pro přístup k API Keycloaku (potřebné pro CheckIt)
+   - `REPOSITORY_GITHUBUSERTOKEN` - GitHub token (nutné pouze pro publikaci pracovního prostoru na Github)
 
 3. Spusť `docker-compose` s příslušným `.env.*` souborem. Příklad:
 
@@ -48,23 +53,63 @@ na službu `al-nginx`. V případě lokálního nasazení a webového serevru `a
 </VirtualHost>
  ```
 
-5. V al-db-serveru (`/modelujeme/sluzby/db-server`) importujte do repozitáře všechny soubory v sekci 
-`Import/RDF/Server files` . 
-Rovněž spusťe SPARQL dotazy ze složky `al-db-server/lucene`.
+nebo v případe `Nginx`:
 
-1. V al-auth-serveru (`/modelujeme/sluzby/auth-server/`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
+```
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        root /var/www/html;
+
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+        location /modelujeme {
+                proxy_set_header X-Forwarded-Host $host:$server_port;
+                proxy_set_header X-Forwarded-Server $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://localhost:1234/modelujeme;
+                proxy_buffer_size 128k;
+                proxy_buffers 4 256k;
+                proxy_busy_buffers_size 256k;
+                proxy_read_timeout 600s;
+        }
+}
+```
+
+5. Pro inicializace `al-db-serveru` je potřeba spustit SPARQL dotazy ze složky `al-db-server/lucene` na `/modelujeme/sluzby/db-server/` v sekci `SPARQL`.
+
+6. V al-auth-serveru (`/modelujeme/sluzby/auth-server/admin/`, přihlas se do něj pomocí `$KEYCLOAK_USER` a
 `$KEYCLOAK_PASSWORD`)
- - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
- - zkopíruj hodnotu klíče klienta al-sgov-server do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET (použi `Regenerate Secret`), 
- - zkopíruj hodnotu klíče klienta al-termit-server do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
- - zkopíruj hodnotu klíče klienta al-checkit-server do proměnné CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
- - vytvoř uživatele výrobní linky. Nezapomeň mu nastavit heslo.
 
-1. Restartuj službu `al-sgov-server`, `al-termit-server` a `al-checkit-server`
+   - běž do `Realm Settings/Keys` a klikni na `Public key`
+     - zkopíruj hodnotu veřejného klíče daného realmu do proměnné `KEYCLOAK_REALMKEY`,
+   - běž do `Clients` (levé menu)
+     - klikni na klienta `al-sgov-server` a v `Credentials` zkopíruj hodnotu `Secret` klienta do proměnné SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET (pokud vidíš `*****` použij `Regenerate Secret`), 
+     - stejně tak zkopíruj hodnotu `Secret` klienta `al-termit-server` do proměnné TERMIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+     - stejně tak zkopíruj hodnotu `Secret` klienta `al-checkit-server` do proměnné CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET,
+   - vytvoř uživatele výrobní linky v `Users/Add user`
+     - nastav mu `Username`, `Email`, `First Name` a `Last Name`
+     - po vytvoření mu nastav heslo v `Credentials`
 
-`docker-compose stop al-sgov-server ; docker-compose --env-file=.env.local up -d al-sgov-server`
-`docker-compose stop al-termit-server ; docker-compose --env-file=.env.local up -d al-termit-server`
-`docker-compose stop al-checkit-server ; docker-compose --env-file=.env.local up -d al-checkit-server`
+7. Restartuj služby `al-sgov-server`, `al-termit-server` a `al-checkit-server`:
+
+```
+docker-compose --env-file=.env.local up
+```
+
+nebo 
+
+```
+docker-compose stop al-sgov-server ; docker-compose --env-file=.env.local up -d al-sgov-server
+docker-compose stop al-termit-server ; docker-compose --env-file=.env.local up -d al-termit-server
+docker-compose stop al-checkit-server ; docker-compose --env-file=.env.local up -d al-checkit-server
+```
 
 8. Ověř, že Výrobní linka běží. V případě lokálního nasazení je její URL `http://localhost/modelujeme`.
 
@@ -72,7 +117,7 @@ Rovněž spusťe SPARQL dotazy ze složky `al-db-server/lucene`.
 
 Služba `al-db-server` představuje RDF úložište obsahující pracovní verze slovníků a uživatele systému. Uživatele systému lze kdykoli smazat a přegenerovat pomocí služby `al-auth-server`, která ukláda zdrojové data o uživatelích pomocí služby `al-auth-server-db`. Pracovní verze slovníků lze publikovat do [Sémantického slovníku pojmů](https://xn--slovnk-7va.gov.cz/) (SSP). 
 
-V případě, že jsou všechny slovníky publikované, je možné RDF úložistě smazat a obnovenit počáteční stav úložište (viz. body týkající se `al-db-serveru` v sekci [Nasazení výrobní linky](https://github.com/opendata-mvcr/sgov-assembly-line/edit/main/README.md#nasazen%C3%AD-v%C3%BDrobn%C3%AD-linky)). Po obnovení počátečního stavu uložiště je potřeba naimportovat slovníky z SSP a obnovit i RDF reprezentaci uživatelů systému v tomto úložišti. Záznam uživatele se v RDF úložišti vytvoří automaticky při libovolné aktualizaci uživatele pomocí uživatelského rozhraní na adrese `/modelujeme/sluzby/auth-server/`. Po aktualizaci všech uživatelů je obnova databáze slovníku hotova. 
+V případě, že jsou všechny slovníky publikované, je možné RDF úložistě smazat a obnovit počáteční stav úložište (viz. body týkající se `al-db-serveru` v sekci [Nasazení výrobní linky](https://github.com/opendata-mvcr/sgov-assembly-line/edit/main/README.md#nasazen%C3%AD-v%C3%BDrobn%C3%AD-linky)) a importu všech základních dat na `/modelujeme/sluzby/db-server/import#server`. Po obnovení počátečního stavu uložiště je potřeba naimportovat slovníky z SSP a obnovit i RDF reprezentaci uživatelů systému v tomto úložišti. Záznam uživatele se v RDF úložišti vytvoří automaticky při libovolné aktualizaci uživatele pomocí uživatelského rozhraní na adrese `/modelujeme/sluzby/auth-server/`. Po aktualizaci všech uživatelů je obnova databáze slovníku hotova. 
 
 Alternativně lze RDF reprezentaci uživatelů systému nahrát ze zálohy, protože je obsažena v separatním kontextu RDF úložiště (např. `https://slovník.gov.cz/uživatel`).
 
