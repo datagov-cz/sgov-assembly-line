@@ -1,0 +1,929 @@
+@prefix : <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model#> .
+@prefix l-sgov-529-2006-pojem: <https://slovník.gov.cz/legislativní/sbírka/529/2006/pojem/> .
+@prefix g-sgov-iso-iec-270322012-07-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270322012-07-15> .
+@prefix g-sgov-iso-iec-385002008-corporate-governance-of-information-technology-pojem: <https://slovník.gov.cz/generický/iso-iec-385002008-corporate-governance-of-information-technology/pojem/> .
+@prefix ns1: <https://slovník.gov.cz/generický/iso-iec-ieee-std.-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010> .
+@prefix g-sgov-projekt-opendata-slovník: <https://slovník.gov.cz/generický/projekt-opendata> .
+@prefix g-sgov-institut-pro-veřejnou-správu-pojem: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu/pojem/> .
+@prefix g-sgov-český-statistický-úřad: <https://slovník.gov.cz/generický/český-statistický-úřad/> .
+@prefix g-sgov-usnesení-vlády-815-2014-slovník: <https://slovník.gov.cz/generický/usnesení-vlády-815-2014> .
+@prefix g-sgov-pmbok-slovník: <https://slovník.gov.cz/generický/pmbok> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix g-sgov-eitbok-slovník: <https://slovník.gov.cz/generický/eitbok> .
+@prefix g-sgov-iso-iec-11770-12010-12-01-slovník: <https://slovník.gov.cz/generický/iso-iec-11770-12010-12-01> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix g-sgov-iso-iec-27034-12011-11-15: <https://slovník.gov.cz/generický/iso-iec-27034-12011-11-15/> .
+@prefix g-sgov-iso-iec-291002011-12-15: <https://slovník.gov.cz/generický/iso-iec-291002011-12-15/> .
+@prefix ns2: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č.-910-2014-ze-dne-23.-července-2014-č.-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu> .
+@prefix ac: <https://slovník.gov.cz/datový/pracovní-prostor/pojem/assetový-kontext/> .
+@prefix l-sgov-111-2009-slovník: <https://slovník.gov.cz/legislativní/sbírka/111/2009> .
+@prefix g-sgov-iso-iec-270312011-03-01-pojem: <https://slovník.gov.cz/generický/iso-iec-270312011-03-01/pojem/> .
+@prefix l-sgov-586-1992: <https://slovník.gov.cz/legislativní/sbírka/586/1992-DRAFT/> .
+@prefix g-sgov-iso-iec-18033-52015-12-01: <https://slovník.gov.cz/generický/iso-iec-18033-52015-12-01/> .
+@prefix g-sgov-iso-iec-270422015-06-15-pojem: <https://slovník.gov.cz/generický/iso-iec-270422015-06-15/pojem/> .
+@prefix g-sgov-iso-iec-18014-32009-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-18014-32009-12-15/pojem/> .
+@prefix g-sgov-iso-iec-270392015-02-15-iso-iec-270392016-05-01-slovník: <https://slovník.gov.cz/generický/iso-iec-270392015-02-15-iso-iec-270392016-05-01> .
+@prefix l-sgov-320-2001: <https://slovník.gov.cz/legislativní/sbírka/320/2001-DRAFT/> .
+@prefix g-sgov-iso-iec-197902012-08-15: <https://slovník.gov.cz/generický/iso-iec-197902012-08-15/> .
+@prefix g-sgov-wikipedia-slovník: <https://slovník.gov.cz/generický/wikipedia> .
+@prefix g-sgov-otevřená-data-slovník: <https://slovník.gov.cz/generický/otevřená-data> .
+@prefix g-sgov-koncepce-kpi-pojem: <https://slovník.gov.cz/generický/koncepce-kpi/pojem/> .
+@prefix l-sgov-529-2006: <https://slovník.gov.cz/legislativní/sbírka/529/2006/> .
+@prefix g-sgov-https--wwweuropeandataportaleu-cs-homepage-slovník: <https://slovník.gov.cz/generický/https--wwweuropeandataportaleu-cs-homepage> .
+@prefix g-sgov-čsn-en-iso-9001: <https://slovník.gov.cz/generický/čsn-en-iso-9001/> .
+@prefix g-sgov-národní-architektonický-plán-pojem: <https://slovník.gov.cz/generický/národní-architektonický-plán/pojem/> .
+@prefix g-sgov-slovník-kybernetické-bezpečnosti-pojem: <https://slovník.gov.cz/generický/slovník-kybernetické-bezpečnosti/pojem/> .
+@prefix l-sgov-332-2020: <https://slovník.gov.cz/legislativní/sbírka/332/2020/> .
+@prefix g-sgov-iso-iec-tr-15443-12012-11-15-pojem: <https://slovník.gov.cz/generický/iso-iec-tr-15443-12012-11-15/pojem/> .
+@prefix g-sgov-iso-iec-tr-15443-12012-11-15-slovník: <https://slovník.gov.cz/generický/iso-iec-tr-15443-12012-11-15> .
+@prefix l-sgov-410-2009-pojem: <https://slovník.gov.cz/legislativní/sbírka/410/2009-DRAFT/pojem/> .
+@prefix g-sgov-oha-slovník: <https://slovník.gov.cz/generický/oha> .
+@prefix g-sgov-iso-iec-197922009-08-01-slovník: <https://slovník.gov.cz/generický/iso-iec-197922009-08-01> .
+@prefix g-sgov-iso-iec-24760-32016-08-01: <https://slovník.gov.cz/generický/iso-iec-24760-32016-08-01/> .
+@prefix g-sgov-projekt-opendata-pojem: <https://slovník.gov.cz/generický/projekt-opendata/pojem/> .
+@prefix g-sgov-věcné-časové-a-finanční-podmínky-účasti-státního-rozpočtu-na-financování-akcí-programů-vydává-návaznosti-na-vyhlášku-mf-č560-2006-sb-a-pokynu-mf-r-07-vrámci-kapitoly-mv-správce-programu---odbor-programového-financování-pojem: <https://slovník.gov.cz/generický/věcné-časové-a-finanční-podmínky-účasti-státního-rozpočtu-na-financování-akcí-programů-vydává-návaznosti-na-vyhlášku-mf-č560-2006-sb-a-pokynu-mf-r-07-vrámci-kapitoly-mv-správce-programu---odbor-programového-financování/pojem/> .
+@prefix g-sgov-iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes/> .
+@prefix g-sgov-iso-iec-247452011-06-15-pojem: <https://slovník.gov.cz/generický/iso-iec-247452011-06-15/pojem/> .
+@prefix g-sgov-iso-iec-27036-32013-11-15-pojem: <https://slovník.gov.cz/generický/iso-iec-27036-32013-11-15/pojem/> .
+@prefix g-sgov-iso-iec-9798-12010-07-01-slovník: <https://slovník.gov.cz/generický/iso-iec-9798-12010-07-01> .
+@prefix v-sgov-pojem: <https://slovník.gov.cz/veřejný-sektor/pojem/> .
+@prefix g-sgov-world-forum-pojem: <https://slovník.gov.cz/generický/world-forum/pojem/> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix g-sgov-iso-iec-291462016-06-01-pojem: <https://slovník.gov.cz/generický/iso-iec-291462016-06-01/pojem/> .
+@prefix g-sgov-usnesení-vlády-č-624-2001-slovník: <https://slovník.gov.cz/generický/usnesení-vlády-č-624-2001> .
+@prefix g-sgov-iso-iec-18014-12008-09-01-slovník: <https://slovník.gov.cz/generický/iso-iec-18014-12008-09-01> .
+@prefix l-sgov-99-2019-slovník: <https://slovník.gov.cz/legislativní/sbírka/99/2019> .
+@prefix g-sgov-egovernment-action-plan-pojem: <https://slovník.gov.cz/generický/egovernment-action-plan/pojem/> .
+@prefix g-sgov-iso-iec-9798-12010-07-01: <https://slovník.gov.cz/generický/iso-iec-9798-12010-07-01/> .
+@prefix g-sgov-togaf-cs: <https://slovník.gov.cz/generický/togaf-cs/> .
+@prefix g-sgov-iso-iec-270372012-10-15: <https://slovník.gov.cz/generický/iso-iec-270372012-10-15/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix l-sgov-365-2000: <https://slovník.gov.cz/legislativní/sbírka/365/2000/> .
+@prefix g-sgov-iso-iec-197902012-08-15-pojem: <https://slovník.gov.cz/generický/iso-iec-197902012-08-15/pojem/> .
+@prefix g-sgov-iso-iec-27034-12011-iso-iec-270322012-07-15: <https://slovník.gov.cz/generický/iso-iec-27034-12011-iso-iec-270322012-07-15/> .
+@prefix g-sgov-eitbok-pojem: <https://slovník.gov.cz/generický/eitbok/pojem/> .
+@prefix g-sgov-čsn-en-iso-9000-2016-slovník: <https://slovník.gov.cz/generický/čsn-en-iso-9000-2016> .
+@prefix g-sgov-iso-iec-27033-32010-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-27033-32010-12-15/pojem/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix g-sgov-usnesení-vlády-čr-č-889-2015-k-dalšímu-rozvoji-ict-služeb-vs-příloha-č-1---strategie-rozvoje-ict-služebvs-a-její-opatření-na-zefektivnění-itc-služeb-slovník: <https://slovník.gov.cz/generický/usnesení-vlády-čr-č-889-2015-k-dalšímu-rozvoji-ict-služeb-vs-příloha-č-1---strategie-rozvoje-ict-služebvs-a-její-opatření-na-zefektivnění-itc-služeb> .
+@prefix g-sgov-nařízení-evropského-parlamentu-a-rady-eu-2016-679-slovník: <https://slovník.gov.cz/generický/nařízení-evropského-parlamentu-a-rady-eu-2016-679> .
+@prefix l-sgov-499-2004-pojem: <https://slovník.gov.cz/legislativní/sbírka/499/2004/pojem/> .
+@prefix g-sgov-koncepce-kpi: <https://slovník.gov.cz/generický/koncepce-kpi/> .
+@prefix g-sgov-iso-iec-270412015-06-15: <https://slovník.gov.cz/generický/iso-iec-270412015-06-15/> .
+@prefix g-sgov-iso-iec-291152013-04-01-slovník: <https://slovník.gov.cz/generický/iso-iec-291152013-04-01> .
+@prefix g-sgov-iso-iec-tr-270192013-07-15-slovník: <https://slovník.gov.cz/generický/iso-iec-tr-270192013-07-15> .
+@prefix l-sgov-499-2004: <https://slovník.gov.cz/legislativní/sbírka/499/2004/> .
+@prefix l-sgov-499-2004-slovník: <https://slovník.gov.cz/legislativní/sbírka/499/2004> .
+@prefix g-sgov-iso-iec-29192-42013-06-01-iso-iec-9798-52009: <https://slovník.gov.cz/generický/iso-iec-29192-42013-06-01-iso-iec-9798-52009/> .
+@prefix g-sgov-https--opendatagovcz-start: <https://slovník.gov.cz/generický/https--opendatagovcz-start/> .
+@prefix g-sgov-čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky-pojem: <https://slovník.gov.cz/generický/čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky/pojem/> .
+@prefix g-sgov-iso-iec-291462016-06-01: <https://slovník.gov.cz/generický/iso-iec-291462016-06-01/> .
+@prefix g-sgov-iso-iec-ieee-std-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010: <https://slovník.gov.cz/generický/iso-iec-ieee-std-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010/> .
+@prefix g-sgov-iso-iec-152882008-45-iso-iec-27033-12015-08-15-pojem: <https://slovník.gov.cz/generický/iso-iec-152882008-45-iso-iec-27033-12015-08-15/pojem/> .
+@prefix g-sgov-iso-iec-11770-52011-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-11770-52011-12-15> .
+@prefix g-sgov-iso-iec-ieee-42010-2011-defines-architecture-pojem: <https://slovník.gov.cz/generický/iso-iec-ieee-42010-2011-defines-architecture/pojem/> .
+@prefix l-sgov-320-2001-slovník: <https://slovník.gov.cz/legislativní/sbírka/320/2001-DRAFT> .
+@prefix g-sgov-směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru-slovník: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru> .
+@prefix ns3: <https://slovník.gov.cz/generický/národní-strategie-el.-zdravotnictví-slovník-pojmů/pojem/> .
+@prefix l-sgov-82-2018: <https://slovník.gov.cz/legislativní/sbírka/82/2018/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix g-sgov-iso-iec-9798-12010-07-01-pojem: <https://slovník.gov.cz/generický/iso-iec-9798-12010-07-01/pojem/> .
+@prefix g-sgov-nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu-slovník: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu> .
+@prefix g-sgov-iso-iec-24760-12011-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-24760-12011-12-15/pojem/> .
+@prefix g-sgov-iso-iec-27033-62016-06-01: <https://slovník.gov.cz/generický/iso-iec-27033-62016-06-01/> .
+@prefix g-sgov-iso-iec-291462016-06-01-slovník: <https://slovník.gov.cz/generický/iso-iec-291462016-06-01> .
+@prefix g-sgov-https--opendatagovcz-start-pojem: <https://slovník.gov.cz/generický/https--opendatagovcz-start/pojem/> .
+@prefix l-sgov-332-2020-pojem: <https://slovník.gov.cz/legislativní/sbírka/332/2020/pojem/> .
+@prefix g-sgov-iso-iec-27033-12015-08-15: <https://slovník.gov.cz/generický/iso-iec-27033-12015-08-15/> .
+@prefix g-sgov-nařízení-evropského-parlamentu-a-rady-eu-č-910-2014-pojem: <https://slovník.gov.cz/generický/nařízení-evropského-parlamentu-a-rady-eu-č-910-2014/pojem/> .
+@prefix g-sgov-iso-iec-20008-12013-12-15: <https://slovník.gov.cz/generický/iso-iec-20008-12013-12-15/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix g-sgov-iso-iec-27033-62016-06-01-pojem: <https://slovník.gov.cz/generický/iso-iec-27033-62016-06-01/pojem/> .
+@prefix l-sgov-259-2012-pojem: <https://slovník.gov.cz/legislativní/sbírka/259/2012/pojem/> .
+@prefix g-sgov-usnesení-vlády-č-86-2020---příloha-slovník: <https://slovník.gov.cz/generický/usnesení-vlády-č-86-2020---příloha> .
+@prefix g-sgov-čsn-iso-iec-20000-2---informační-technologie---management-služeb-slovník: <https://slovník.gov.cz/generický/čsn-iso-iec-20000-2---informační-technologie---management-služeb> .
+@prefix l-sgov-259-2012: <https://slovník.gov.cz/legislativní/sbírka/259/2012/> .
+@prefix g-sgov-iso-iec-385002008-corporate-governance-of-information-technology-slovník: <https://slovník.gov.cz/generický/iso-iec-385002008-corporate-governance-of-information-technology> .
+@prefix l-sgov-89-2012: <https://slovník.gov.cz/legislativní/sbírka/89/2012/> .
+@prefix g-sgov-iso-iec-218272008-10-15-pojem: <https://slovník.gov.cz/generický/iso-iec-218272008-10-15/pojem/> .
+@prefix g-sgov-iso-iec-291472014-02-15-pojem: <https://slovník.gov.cz/generický/iso-iec-291472014-02-15/pojem/> .
+@prefix g-sgov-iso-iec-15946-12016-07-01: <https://slovník.gov.cz/generický/iso-iec-15946-12016-07-01/> .
+@prefix g-sgov-otevřená-data-pojem: <https://slovník.gov.cz/generický/otevřená-data/pojem/> .
+@prefix g-sgov-iso-iec-29192-42013-06-01-slovník: <https://slovník.gov.cz/generický/iso-iec-29192-42013-06-01> .
+@prefix g-sgov-slovník-pojmů-k-datovým-schránkám-slovník: <https://slovník.gov.cz/generický/slovník-pojmů-k-datovým-schránkám> .
+@prefix g-sgov-iso-iec-18033-52015-12-01-slovník: <https://slovník.gov.cz/generický/iso-iec-18033-52015-12-01> .
+@prefix g-sgov-iso-iec-20008-12013-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-20008-12013-12-15> .
+@prefix g-sgov-iso-iec-18014-22009-12-15: <https://slovník.gov.cz/generický/iso-iec-18014-22009-12-15/> .
+@prefix g-sgov-iso-iec-291152013-04-01: <https://slovník.gov.cz/generický/iso-iec-291152013-04-01/> .
+@prefix g-sgov-usnesení-vlády-č-624-2001-pojem: <https://slovník.gov.cz/generický/usnesení-vlády-č-624-2001/pojem/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix g-sgov-oecd-slovník-slovník: <https://slovník.gov.cz/generický/oecd-slovník> .
+@prefix g-sgov-iso-iec-291472014-02-15: <https://slovník.gov.cz/generický/iso-iec-291472014-02-15/> .
+@prefix g-sgov-iso-iec-291002011-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-291002011-12-15> .
+@prefix z-sgov-p: <https://slovník.gov.cz/základní/pojem/> .
+@prefix g-sgov-iso-iec-27033-12015-08-15-pojem: <https://slovník.gov.cz/generický/iso-iec-27033-12015-08-15/pojem/> .
+@prefix g-sgov-oecd-slovník: <https://slovník.gov.cz/generický/oecd-slovník/> .
+@prefix g-sgov-smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr-slovník: <https://slovník.gov.cz/generický/smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr> .
+@prefix g-sgov-iso-iec-11770-52011-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-11770-52011-12-15/pojem/> .
+@prefix l-sgov-12-2020: <https://slovník.gov.cz/legislativní/sbírka/12/2020/> .
+@prefix l-sgov-181-2014: <https://slovník.gov.cz/legislativní/sbírka/181/2014/> .
+@prefix g-sgov-iso-iec-218272008-10-15: <https://slovník.gov.cz/generický/iso-iec-218272008-10-15/> .
+@prefix g-sgov-iso-iec-270402015-01-15-pojem: <https://slovník.gov.cz/generický/iso-iec-270402015-01-15/pojem/> .
+@prefix g-sgov-slovník-kybernetické-bezpečnosti-slovník: <https://slovník.gov.cz/generický/slovník-kybernetické-bezpečnosti> .
+@prefix g-sgov-zásady-pro-tvorbu-digitálně-přívětivé-legislativy: <https://slovník.gov.cz/generický/zásady-pro-tvorbu-digitálně-přívětivé-legislativy/> .
+@prefix g-sgov-doporučení-itu-t-g1000-slovník: <https://slovník.gov.cz/generický/doporučení-itu-t-g1000> .
+@prefix g-sgov-iso-iec-14888-12008-04-15: <https://slovník.gov.cz/generický/iso-iec-14888-12008-04-15/> .
+@prefix termit: <http://onto.fel.cvut.cz/ontologies/application/termit/> .
+@prefix g-sgov-iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací-slovník: <https://slovník.gov.cz/generický/iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací> .
+@prefix l-sgov-200-1994-slovník: <https://slovník.gov.cz/legislativní/sbírka/200/1994> .
+@prefix a-sgov-998-slovník: <https://slovník.gov.cz/agendový/998-DRAFT> .
+@prefix g-sgov-iso-iec-14888-12008-04-15-slovník: <https://slovník.gov.cz/generický/iso-iec-14888-12008-04-15> .
+@prefix g-sgov-institut-pro-veřejnou-správu: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu/> .
+@prefix g-sgov-wikipedia: <https://slovník.gov.cz/generický/wikipedia/> .
+@prefix g-sgov-zpracování-pravidel-pro-federaci-portálů-veřejné-správy-a-definování-cílového-stavu-nakit-s-p: <https://slovník.gov.cz/generický/zpracování-pravidel-pro-federaci-portálů-veřejné-správy-a-definování-cílového-stavu-nakit-s-p/> .
+@prefix g-sgov-wikipedie: <https://slovník.gov.cz/generický/wikipedie/> .
+@prefix g-sgov-iso-iec-tr-270162014-03-01-slovník: <https://slovník.gov.cz/generický/iso-iec-tr-270162014-03-01> .
+@prefix g-sgov-směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru-pojem: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru/pojem/> .
+@prefix g-sgov-iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels: <https://slovník.gov.cz/generický/iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels/> .
+@prefix g-sgov-usnesení-vlády-č-86-2020---příloha: <https://slovník.gov.cz/generický/usnesení-vlády-č-86-2020---příloha/> .
+@prefix g-sgov-iso-iec-18033-12015-08-01-slovník: <https://slovník.gov.cz/generický/iso-iec-18033-12015-08-01> .
+@prefix g-sgov-iso-iec-20008-12013-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-20008-12013-12-15/pojem/> .
+@prefix g-sgov-iso-iec-27050-12016-11-01-slovník: <https://slovník.gov.cz/generický/iso-iec-27050-12016-11-01> .
+@prefix l-sgov-365-2000-slovník: <https://slovník.gov.cz/legislativní/sbírka/365/2000> .
+@prefix g-sgov-iso-iec-197922009-08-01: <https://slovník.gov.cz/generický/iso-iec-197922009-08-01/> .
+@prefix ns4: <https://slovník.gov.cz/generický/https--opendata.gov.cz-start> .
+@prefix g-sgov-search-virtual-desktop-pojem: <https://slovník.gov.cz/generický/search-virtual-desktop/pojem/> .
+@prefix g-sgov-iso-iec-18014-12008-09-01-pojem: <https://slovník.gov.cz/generický/iso-iec-18014-12008-09-01/pojem/> .
+@prefix g-sgov-iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes-pojem: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes/pojem/> .
+@prefix g-sgov-iso-iec-247452011-06-15: <https://slovník.gov.cz/generický/iso-iec-247452011-06-15/> .
+@prefix g-sgov-egovernment-action-plan: <https://slovník.gov.cz/generický/egovernment-action-plan/> .
+@prefix l-sgov-99-2019-pojem: <https://slovník.gov.cz/legislativní/sbírka/99/2019/pojem/> .
+@prefix g-sgov-iso-iec-218272008-10-15-slovník: <https://slovník.gov.cz/generický/iso-iec-218272008-10-15> .
+@prefix g-sgov-iso-iec-270402015-01-15: <https://slovník.gov.cz/generický/iso-iec-270402015-01-15/> .
+@prefix docttr: <http://tpl.ottr.xyz/p/docttr/0.1/> .
+@prefix g-sgov-iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15-slovník: <https://slovník.gov.cz/generický/iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15> .
+@prefix g-sgov-iso-iec-270002016-02-15: <https://slovník.gov.cz/generický/iso-iec-270002016-02-15/> .
+@prefix g-sgov-čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky: <https://slovník.gov.cz/generický/čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky/> .
+@prefix g-sgov-usnesení-vlády-čr-č-889-2015-k-dalšímu-rozvoji-ict-služeb-vs-příloha-č-1---strategie-rozvoje-ict-služebvs-a-její-opatření-na-zefektivnění-itc-služeb: <https://slovník.gov.cz/generický/usnesení-vlády-čr-č-889-2015-k-dalšímu-rozvoji-ict-služeb-vs-příloha-č-1---strategie-rozvoje-ict-služebvs-a-její-opatření-na-zefektivnění-itc-služeb/> .
+@prefix g-sgov-iso-iec-18033-12015-08-01-pojem: <https://slovník.gov.cz/generický/iso-iec-18033-12015-08-01/pojem/> .
+@prefix g-sgov-wikipedie-pojem: <https://slovník.gov.cz/generický/wikipedie/pojem/> .
+@prefix g-sgov-slovník-pojmů-k-datovým-schránkám-pojem: <https://slovník.gov.cz/generický/slovník-pojmů-k-datovým-schránkám/pojem/> .
+@prefix g-sgov-národní-strategie-el-zdravotnictví-slovník-pojmů: <https://slovník.gov.cz/generický/národní-strategie-el-zdravotnictví-slovník-pojmů/> .
+@prefix g-sgov-iso-iec-ieee-std-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010-pojem: <https://slovník.gov.cz/generický/iso-iec-ieee-std-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010/pojem/> .
+@prefix g-sgov-čsn-en-iso-9000-2016-pojem: <https://slovník.gov.cz/generický/čsn-en-iso-9000-2016/pojem/> .
+@prefix g-sgov-the-open-group: <https://slovník.gov.cz/generický/the-open-group/> .
+@prefix g-sgov-iso-iec-9798-52009: <https://slovník.gov.cz/generický/iso-iec-9798-52009/> .
+@prefix g-sgov-iso-iec-ieee-42010-2011-defines-architecture: <https://slovník.gov.cz/generický/iso-iec-ieee-42010-2011-defines-architecture/> .
+@prefix g-sgov-iso-iec-270322012-07-15-pojem: <https://slovník.gov.cz/generický/iso-iec-270322012-07-15/pojem/> .
+@prefix g-sgov-archimate-pojem: <https://slovník.gov.cz/generický/archimate/pojem/> .
+@prefix g-sgov-institut-pro-veřejnou-správu-slovník: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu> .
+@prefix a-popis-dat-pojem: <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/> .
+@prefix g-sgov-iso-iec-29192-42013-06-01-iso-iec-9798-52009-pojem: <https://slovník.gov.cz/generický/iso-iec-29192-42013-06-01-iso-iec-9798-52009/pojem/> .
+@prefix g-sgov-výklad-oeg: <https://slovník.gov.cz/generický/výklad-oeg/> .
+@prefix l-sgov-89-1995-pojem: <https://slovník.gov.cz/legislativní/sbírka/89/1995/pojem/> .
+@prefix l-sgov-256-2013: <https://slovník.gov.cz/legislativní/sbírka/256/2013/> .
+@prefix g-sgov-iso-iec-27033-42014-03-01-slovník: <https://slovník.gov.cz/generický/iso-iec-27033-42014-03-01> .
+@prefix ws-p: <https://slovník.gov.cz/agendový/pracovní-prostor/pojem/> .
+@prefix ws-m: <https://slovník.gov.cz/datový/pracovní-prostor/pojem/metadatový-kontext/> .
+@prefix g-sgov-wikipedia-pojem: <https://slovník.gov.cz/generický/wikipedia/pojem/> .
+@prefix g-sgov-iso-iec-24760-12011-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-24760-12011-12-15> .
+@prefix g-sgov-iso-iec-18033-12015-08-01: <https://slovník.gov.cz/generický/iso-iec-18033-12015-08-01/> .
+@prefix g-sgov-zásady-pro-tvorbu-digitálně-přívětivé-legislativy-pojem: <https://slovník.gov.cz/generický/zásady-pro-tvorbu-digitálně-přívětivé-legislativy/pojem/> .
+@prefix g-sgov-iso-iec-180312011-11-15-pojem: <https://slovník.gov.cz/generický/iso-iec-180312011-11-15/pojem/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix g-sgov-iso-iec-197902012-08-15-slovník: <https://slovník.gov.cz/generický/iso-iec-197902012-08-15> .
+@prefix g-sgov-iso-iec-27035-22016-11-01-slovník: <https://slovník.gov.cz/generický/iso-iec-27035-22016-11-01> .
+@prefix g-sgov-iso-iec-ieee-291482011-pojem: <https://slovník.gov.cz/generický/iso-iec-ieee-291482011/pojem/> .
+@prefix g-sgov-nařízení-evropského-parlamentu-a-rady-eu-č-910-2014: <https://slovník.gov.cz/generický/nařízení-evropského-parlamentu-a-rady-eu-č-910-2014/> .
+@prefix l-sgov-200-1994: <https://slovník.gov.cz/legislativní/sbírka/200/1994/> .
+@prefix g-sgov-iso-iec-180312011-11-15: <https://slovník.gov.cz/generický/iso-iec-180312011-11-15/> .
+@prefix g-sgov-https--wwweuropeandataportaleu-cs-homepage: <https://slovník.gov.cz/generický/https--wwweuropeandataportaleu-cs-homepage/> .
+@prefix g-sgov-iso-iec-270112016-12-01: <https://slovník.gov.cz/generický/iso-iec-270112016-12-01/> .
+@prefix g-sgov-iso-iec-27036-12014-03-15: <https://slovník.gov.cz/generický/iso-iec-27036-12014-03-15/> .
+@prefix g-sgov-togaf-slovník: <https://slovník.gov.cz/generický/togaf> .
+@prefix g-sgov-iso-iec-122072008---systems-and-software-engineering-pojem: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering/pojem/> .
+@prefix g-sgov-iso-iec-tr-270192013-07-15-pojem: <https://slovník.gov.cz/generický/iso-iec-tr-270192013-07-15/pojem/> .
+@prefix g-sgov-iso-iec-27034-12011-iso-iec-270322012-07-15-pojem: <https://slovník.gov.cz/generický/iso-iec-27034-12011-iso-iec-270322012-07-15/pojem/> .
+@prefix l-sgov-529-2006-slovník: <https://slovník.gov.cz/legislativní/sbírka/529/2006> .
+@prefix g-sgov-european-interoperability-reference-architecture-pojem: <https://slovník.gov.cz/generický/european-interoperability-reference-architecture/pojem/> .
+@prefix l-sgov-332-2020-slovník: <https://slovník.gov.cz/legislativní/sbírka/332/2020> .
+@prefix g-sgov-věcné-časové-a-finanční-podmínky-účasti-státního-rozpočtu-na-financování-akcí-programů-vydává-návaznosti-na-vyhlášku-mf-č560-2006-sb-a-pokynu-mf-r-07-vrámci-kapitoly-mv-správce-programu---odbor-programového-financování: <https://slovník.gov.cz/generický/věcné-časové-a-finanční-podmínky-účasti-státního-rozpočtu-na-financování-akcí-programů-vydává-návaznosti-na-vyhlášku-mf-č560-2006-sb-a-pokynu-mf-r-07-vrámci-kapitoly-mv-správce-programu---odbor-programového-financování/> .
+@prefix g-sgov-itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os-pojem: <https://slovník.gov.cz/generický/itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os/pojem/> .
+@prefix g-sgov-ieee-std-1062-1998---recommended-practice-for-software-acquisition-pojem: <https://slovník.gov.cz/generický/ieee-std-1062-1998---recommended-practice-for-software-acquisition/pojem/> .
+@prefix l-sgov-106-1999-pojem: <https://slovník.gov.cz/legislativní/sbírka/106/1999/pojem/> .
+@prefix g-sgov-národní-strategie-el-zdravotnictví-slovník-pojmů-pojem: <https://slovník.gov.cz/generický/národní-strategie-el-zdravotnictví-slovník-pojmů/pojem/> .
+@prefix g-sgov-iso-iec-27050-12016-11-01: <https://slovník.gov.cz/generický/iso-iec-27050-12016-11-01/> .
+@prefix g-sgov-archimate: <https://slovník.gov.cz/generický/archimate/> .
+@prefix g-sgov-informační-koncepce-čr-slovník: <https://slovník.gov.cz/generický/informační-koncepce-čr> .
+@prefix g-sgov-iso-iec-27034-12011-11-15-pojem: <https://slovník.gov.cz/generický/iso-iec-27034-12011-11-15/pojem/> .
+@prefix slovník-gov: <https://slovník.gov.cz/> .
+@prefix g-sgov-iso-iec-9798-11997-iso-iec-18014-12008-09-01: <https://slovník.gov.cz/generický/iso-iec-9798-11997-iso-iec-18014-12008-09-01/> .
+@prefix g-sgov-výklad-oeg-pojem: <https://slovník.gov.cz/generický/výklad-oeg/pojem/> .
+@prefix a-sgov-998: <https://slovník.gov.cz/agendový/998-DRAFT/> .
+@prefix ns5: <https://slovník.gov.cz/generický/národní-strategie-el.-zdravotnictví-slovník-pojmů> .
+@prefix g-sgov-managementmania-pojem: <https://slovník.gov.cz/generický/managementmania/pojem/> .
+@prefix l-sgov-181-2014-pojem: <https://slovník.gov.cz/legislativní/sbírka/181/2014/pojem/> .
+@prefix g-sgov-itil-pojem: <https://slovník.gov.cz/generický/itil/pojem/> .
+@prefix g-sgov-iso-iec-29192-42013-06-01: <https://slovník.gov.cz/generický/iso-iec-29192-42013-06-01/> .
+@prefix og: <http://onto.fel.cvut.cz/ontologies/application/ontoGrapher/> .
+@prefix g-sgov-informační-koncepce-čr: <https://slovník.gov.cz/generický/informační-koncepce-čr/> .
+@prefix l-sgov-365-2000-pojem: <https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/> .
+@prefix g-sgov-směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru/> .
+@prefix g-sgov-iso-iec-11770-12010-12-01: <https://slovník.gov.cz/generický/iso-iec-11770-12010-12-01/> .
+@prefix g-sgov-iso-iec-27033-42014-03-01: <https://slovník.gov.cz/generický/iso-iec-27033-42014-03-01/> .
+@prefix g-sgov-iso-iec-270002016-02-15-pojem: <https://slovník.gov.cz/generický/iso-iec-270002016-02-15/pojem/> .
+@prefix g-sgov-iso-iec-18028-32005-pojem: <https://slovník.gov.cz/generický/iso-iec-18028-32005/pojem/> .
+@prefix g-sgov-iso-iec-15408-12014-01-15-slovník: <https://slovník.gov.cz/generický/iso-iec-15408-12014-01-15> .
+@prefix a-popis-dat: <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/> .
+@prefix ns6: <https://slovník.gov.cz/generický/https--www.europeandataportal.eu-cs-homepage> .
+@prefix g-sgov-iso-iec-159452002-02-01-pojem: <https://slovník.gov.cz/generický/iso-iec-159452002-02-01/pojem/> .
+@prefix l-sgov-12-2020-slovník: <https://slovník.gov.cz/legislativní/sbírka/12/2020> .
+@prefix g-sgov-iso-iec-27036-32013-11-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27036-32013-11-15> .
+@prefix g-sgov-ústava-čr-pojem: <https://slovník.gov.cz/generický/ústava-čr/pojem/> .
+@prefix l-sgov-250-2017-pojem: <https://slovník.gov.cz/legislativní/sbírka/250/2017-DRAFT/pojem/> .
+@prefix g-sgov-materiál-mpo-ke-sdílené-ekonomice-slovník: <https://slovník.gov.cz/generický/materiál-mpo-ke-sdílené-ekonomice> .
+@prefix g-sgov-čsn-en-iso-9001-slovník: <https://slovník.gov.cz/generický/čsn-en-iso-9001> .
+@prefix g-sgov-iso-iec-24760-32016-08-01-slovník: <https://slovník.gov.cz/generický/iso-iec-24760-32016-08-01> .
+@prefix g-sgov-iso-iec-270322012-07-15: <https://slovník.gov.cz/generický/iso-iec-270322012-07-15/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix l-sgov-181-2014-slovník: <https://slovník.gov.cz/legislativní/sbírka/181/2014> .
+@prefix l-sgov-250-2017: <https://slovník.gov.cz/legislativní/sbírka/250/2017-DRAFT/> .
+@prefix g-sgov-informační-koncepce-čr-pojem: <https://slovník.gov.cz/generický/informační-koncepce-čr/pojem/> .
+@prefix termit-pojem: <http://onto.fel.cvut.cz/ontologies/application/termit/pojem/> .
+@prefix g-sgov-institut-pro-veřejnou-správu-slovník-pojmů-slovník: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu-slovník-pojmů> .
+@prefix g-sgov-výkladový-slovník-kybernetické-bezpečnosti-slovník: <https://slovník.gov.cz/generický/výkladový-slovník-kybernetické-bezpečnosti> .
+@prefix g-sgov-iso-iec-27033-42014-03-01-pojem: <https://slovník.gov.cz/generický/iso-iec-27033-42014-03-01/pojem/> .
+@prefix g-sgov-národní-strategie-el-zdravotnictví-slovník-pojmů-slovník: <https://slovník.gov.cz/generický/národní-strategie-el-zdravotnictví-slovník-pojmů> .
+@prefix g-sgov-ústava-čr: <https://slovník.gov.cz/generický/ústava-čr/> .
+@prefix g-sgov-iso-iec-152882008: <https://slovník.gov.cz/generický/iso-iec-152882008/> .
+@prefix g-sgov-roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006-slovník: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006> .
+@prefix g-sgov-iso-iec-101162006-02-01: <https://slovník.gov.cz/generický/iso-iec-101162006-02-01/> .
+@prefix ns7: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006.> .
+@prefix g-sgov-iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15-pojem: <https://slovník.gov.cz/generický/iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15/pojem/> .
+@prefix l-sgov-89-1995: <https://slovník.gov.cz/legislativní/sbírka/89/1995/> .
+@prefix g-sgov-oeg-částečně-ivs: <https://slovník.gov.cz/generický/oeg-částečně-ivs/> .
+@prefix g-sgov-archimate-slovník: <https://slovník.gov.cz/generický/archimate> .
+@prefix g-sgov-iso-iec-270412015-06-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270412015-06-15> .
+@prefix g-sgov-iso-iec-29192-42013-06-01-pojem: <https://slovník.gov.cz/generický/iso-iec-29192-42013-06-01/pojem/> .
+@prefix l-sgov-300-2008-pojem: <https://slovník.gov.cz/legislativní/sbírka/300/2008/pojem/> .
+@prefix l-sgov-300-2008-slovník: <https://slovník.gov.cz/legislativní/sbírka/300/2008> .
+@prefix d-sgov-pracovní-prostor-pojem-asset: <https://slovník.gov.cz/datový/pracovní-prostor/pojem/asset/> .
+@prefix g-sgov-národní-architektonický-plán-slovník: <https://slovník.gov.cz/generický/národní-architektonický-plán> .
+@prefix g-sgov-roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006/> .
+@prefix g-sgov-iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels-pojem: <https://slovník.gov.cz/generický/iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels/pojem/> .
+@prefix g-sgov-nařízení-mv-č-5-2017: <https://slovník.gov.cz/generický/nařízení-mv-č-5-2017/> .
+@prefix g-sgov-výklad-oeg-slovník: <https://slovník.gov.cz/generický/výklad-oeg> .
+@prefix g-sgov-world-forum-slovník: <https://slovník.gov.cz/generický/world-forum> .
+@prefix g-sgov-iso-iec-270112016-12-01-pojem: <https://slovník.gov.cz/generický/iso-iec-270112016-12-01/pojem/> .
+@prefix g-sgov-zásady-pro-tvorbu-digitálně-přívětivé-legislativy-slovník: <https://slovník.gov.cz/generický/zásady-pro-tvorbu-digitálně-přívětivé-legislativy> .
+@prefix g-sgov-oeg: <https://slovník.gov.cz/generický/oeg/> .
+@prefix g-sgov-european-interoperability-reference-architecture-slovník: <https://slovník.gov.cz/generický/european-interoperability-reference-architecture> .
+@prefix g-sgov-iso-iec-18028-32005-slovník: <https://slovník.gov.cz/generický/iso-iec-18028-32005> .
+@prefix g-sgov-itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os: <https://slovník.gov.cz/generický/itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os/> .
+@prefix g-sgov-čsn-en-iso-9000-2016: <https://slovník.gov.cz/generický/čsn-en-iso-9000-2016/> .
+@prefix g-sgov-iso-iec-183672016-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-183672016-12-15/pojem/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix g-sgov-oeg-částečně-ivs-pojem: <https://slovník.gov.cz/generický/oeg-částečně-ivs/pojem/> .
+@prefix l-sgov-586-1992-slovník: <https://slovník.gov.cz/legislativní/sbírka/586/1992-DRAFT> .
+@prefix g-sgov-národní-architektonický-rámec-pojem: <https://slovník.gov.cz/generický/národní-architektonický-rámec/pojem/> .
+@prefix g-sgov-smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr: <https://slovník.gov.cz/generický/smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr/> .
+@prefix g-sgov-information-technology-infrastructure-library: <https://slovník.gov.cz/generický/information-technology-infrastructure-library/> .
+@prefix g-sgov-iso-iec-159452002-02-01: <https://slovník.gov.cz/generický/iso-iec-159452002-02-01/> .
+@prefix g-sgov-čsn-iso-iec-20000-slovník: <https://slovník.gov.cz/generický/čsn-iso-iec-20000> .
+@prefix g-sgov-čsn-iso-iec-20000: <https://slovník.gov.cz/generický/čsn-iso-iec-20000/> .
+@prefix g-sgov-eitbok: <https://slovník.gov.cz/generický/eitbok/> .
+@prefix g-sgov-iso-iec-301112013-11-01: <https://slovník.gov.cz/generický/iso-iec-301112013-11-01/> .
+@prefix g-sgov-koncepce-kpi-slovník: <https://slovník.gov.cz/generický/koncepce-kpi> .
+@prefix g-sgov-iso-iec-270422015-06-15: <https://slovník.gov.cz/generický/iso-iec-270422015-06-15/> .
+@prefix g-sgov-slovník-kybernetické-bezpečnosti: <https://slovník.gov.cz/generický/slovník-kybernetické-bezpečnosti/> .
+@prefix g-sgov-iso-iec-270372012-10-15-pojem: <https://slovník.gov.cz/generický/iso-iec-270372012-10-15/pojem/> .
+@prefix g-sgov-world-forum: <https://slovník.gov.cz/generický/world-forum/> .
+@prefix g-sgov-čsn-iso-iec-20000-pojem: <https://slovník.gov.cz/generický/čsn-iso-iec-20000/pojem/> .
+@prefix g-sgov-materiál-mpo-ke-sdílené-ekonomice: <https://slovník.gov.cz/generický/materiál-mpo-ke-sdílené-ekonomice/> .
+@prefix inst: <http://www.ontotext.com/connectors/lucene/instance#> .
+@prefix g-sgov-iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15: <https://slovník.gov.cz/generický/iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15/> .
+@prefix g-sgov-národní-architektonický-plán: <https://slovník.gov.cz/generický/národní-architektonický-plán/> .
+@prefix g-sgov-iso-iec-152882008-45-iso-iec-27033-12015-08-15: <https://slovník.gov.cz/generický/iso-iec-152882008-45-iso-iec-27033-12015-08-15/> .
+@prefix l-sgov-200-1994-pojem: <https://slovník.gov.cz/legislativní/sbírka/200/1994/pojem/> .
+@prefix g-sgov-https--opendatagovcz-start-slovník: <https://slovník.gov.cz/generický/https--opendatagovcz-start> .
+@prefix g-sgov-iso-iec-18033-52015-12-01-pojem: <https://slovník.gov.cz/generický/iso-iec-18033-52015-12-01/pojem/> .
+@prefix l-sgov-410-2009: <https://slovník.gov.cz/legislativní/sbírka/410/2009-DRAFT/> .
+@prefix g-sgov-nařízení-mv-č-5-2017-slovník: <https://slovník.gov.cz/generický/nařízení-mv-č-5-2017> .
+@prefix g-sgov-iso-iec-270432015-03-01-slovník: <https://slovník.gov.cz/generický/iso-iec-270432015-03-01> .
+@prefix g-sgov-iso-iec-18014-32009-12-15: <https://slovník.gov.cz/generický/iso-iec-18014-32009-12-15/> .
+@prefix g-sgov-oeg-pojem: <https://slovník.gov.cz/generický/oeg/pojem/> .
+@prefix g-sgov-usnesení-vlády-čr-č-889-2015-k-dalšímu-rozvoji-ict-služeb-vs-příloha-č-1---strategie-rozvoje-ict-služebvs-a-její-opatření-na-zefektivnění-itc-služeb-pojem: <https://slovník.gov.cz/generický/usnesení-vlády-čr-č-889-2015-k-dalšímu-rozvoji-ict-služeb-vs-příloha-č-1---strategie-rozvoje-ict-služebvs-a-její-opatření-na-zefektivnění-itc-služeb/pojem/> .
+@prefix g-sgov-iso-iec-270392015-02-15-iso-iec-270392016-05-01: <https://slovník.gov.cz/generický/iso-iec-270392015-02-15-iso-iec-270392016-05-01/> .
+@prefix g-sgov-iso-iec-11770-52011-12-15: <https://slovník.gov.cz/generický/iso-iec-11770-52011-12-15/> .
+@prefix ns13: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006./pojem/> .
+@prefix g-sgov-iso-iec-152882008-45-iso-iec-27033-12015-08-15-slovník: <https://slovník.gov.cz/generický/iso-iec-152882008-45-iso-iec-27033-12015-08-15> .
+@prefix ns12: <https://slovník.gov.cz/generický/https--www.europeandataportal.eu-cs-homepage/pojem/> .
+@prefix ns11: <https://slovník.gov.cz/datový/pracovní-prostor/pojem/slovníkový-kontext/> .
+@prefix ns10: <https://slovník.gov.cz/generický/https--opendata.gov.cz-start/pojem/> .
+@prefix ns8: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26.-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru/pojem/> .
+@prefix g-sgov-iso-iec-180312011-11-15-slovník: <https://slovník.gov.cz/generický/iso-iec-180312011-11-15> .
+@prefix g-sgov-iso-iec-158162002-02-01-pojem: <https://slovník.gov.cz/generický/iso-iec-158162002-02-01/pojem/> .
+@prefix l-sgov-320-2001-pojem: <https://slovník.gov.cz/legislativní/sbírka/320/2001-DRAFT/pojem/> .
+@prefix g-sgov-ieee-std-1062-1998---recommended-practice-for-software-acquisition: <https://slovník.gov.cz/generický/ieee-std-1062-1998---recommended-practice-for-software-acquisition/> .
+@prefix g-sgov-iso-iec-27034-12011-11-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27034-12011-11-15> .
+@prefix g-sgov-usnesení-vlády-815-2014: <https://slovník.gov.cz/generický/usnesení-vlády-815-2014/> .
+@prefix g-sgov-iso-iec-122072008---systems-and-software-engineering: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering/> .
+@prefix g-sgov-pmbok-pojem: <https://slovník.gov.cz/generický/pmbok/pojem/> .
+@prefix g-sgov-iso-iec-158162002-02-01-slovník: <https://slovník.gov.cz/generický/iso-iec-158162002-02-01> .
+@prefix g-sgov-iso-iec-ieee-291482011-slovník: <https://slovník.gov.cz/generický/iso-iec-ieee-291482011> .
+@prefix g-sgov-zpracování-pravidel-pro-federaci-portálů-veřejné-správy-a-definování-cílového-stavu-nakit-s-p-pojem: <https://slovník.gov.cz/generický/zpracování-pravidel-pro-federaci-portálů-veřejné-správy-a-definování-cílového-stavu-nakit-s-p/pojem/> .
+@prefix g-sgov-iso-iec-29192-42013-06-01-iso-iec-9798-52009-slovník: <https://slovník.gov.cz/generický/iso-iec-29192-42013-06-01-iso-iec-9798-52009> .
+@prefix g-sgov-togaf-pojem: <https://slovník.gov.cz/generický/togaf/pojem/> .
+@prefix g-sgov-iso-iec-15946-12016-07-01-pojem: <https://slovník.gov.cz/generický/iso-iec-15946-12016-07-01/pojem/> .
+@prefix a-sgov-rpp-a998: <https://slovník.gov.cz/agendový/rpp/a988-DRAFT/> .
+@prefix g-sgov-iso-iec-270422015-06-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270422015-06-15> .
+@prefix l-sgov-89-1995-slovník: <https://slovník.gov.cz/legislativní/sbírka/89/1995> .
+@prefix l-sgov-586-1992-pojem: <https://slovník.gov.cz/legislativní/sbírka/586/1992-DRAFT/pojem/> .
+@prefix g-sgov-ústava-čr-slovník: <https://slovník.gov.cz/generický/ústava-čr> .
+@prefix g-sgov-iso-iec-152882008-slovník: <https://slovník.gov.cz/generický/iso-iec-152882008> .
+@prefix g-sgov-zásady-pro-digitálně-přívětivou-legislativu: <https://slovník.gov.cz/generický/zásady-pro-digitálně-přívětivou-legislativu/> .
+@prefix g-sgov-togaf-cs-pojem: <https://slovník.gov.cz/generický/togaf-cs/pojem/> .
+@prefix sys: <http://www.ontotext.com/owlim/system#> .
+@prefix g-sgov-zásady-pro-digitálně-přívětivou-legislativu-pojem: <https://slovník.gov.cz/generický/zásady-pro-digitálně-přívětivou-legislativu/pojem/> .
+@prefix g-sgov-nařízení-evropského-parlamentu-a-rady-eu-2016-679: <https://slovník.gov.cz/generický/nařízení-evropského-parlamentu-a-rady-eu-2016-679/> .
+@prefix ns31: <https://slovník.gov.cz/datový/pracovní-prostor/pojem/> .
+@prefix g-sgov-iso-iec-11770-32015-08-01-pojem: <https://slovník.gov.cz/generický/iso-iec-11770-32015-08-01/pojem/> .
+@prefix g-sgov-nařízení-evropského-parlamentu-a-rady-eu-2016-679-pojem: <https://slovník.gov.cz/generický/nařízení-evropského-parlamentu-a-rady-eu-2016-679/pojem/> .
+@prefix l-sgov-12-2020-pojem: <https://slovník.gov.cz/legislativní/sbírka/12/2020/pojem/> .
+@prefix g-sgov-iso-iec-27033-32010-12-15: <https://slovník.gov.cz/generický/iso-iec-27033-32010-12-15/> .
+@prefix g-sgov-iso-iec-tr-197912010-04-01-slovník: <https://slovník.gov.cz/generický/iso-iec-tr-197912010-04-01> .
+@prefix g-sgov-togaf-cs-slovník: <https://slovník.gov.cz/generický/togaf-cs> .
+@prefix g-sgov-oeg-slovník: <https://slovník.gov.cz/generický/oeg> .
+@prefix l-sgov-256-2013-slovník: <https://slovník.gov.cz/legislativní/sbírka/256/2013> .
+@prefix l-sgov-99-2019: <https://slovník.gov.cz/legislativní/sbírka/99/2019/> .
+@prefix g-sgov-nařízení-evropského-parlamentu-a-rady-eu-č-910-2014-slovník: <https://slovník.gov.cz/generický/nařízení-evropského-parlamentu-a-rady-eu-č-910-2014> .
+@prefix g-sgov-iso-iec-9798-11997-iso-iec-18014-12008-09-01-pojem: <https://slovník.gov.cz/generický/iso-iec-9798-11997-iso-iec-18014-12008-09-01/pojem/> .
+@prefix ws: <https://slovník.gov.cz/agendový/pracovní-prostor/pojem/slovníkový-kontext/> .
+@prefix g-sgov-smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr-pojem: <https://slovník.gov.cz/generický/smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr/pojem/> .
+@prefix ns9: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č.-910-2014-ze-dne-23.-července-2014-č.-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu/pojem/> .
+@prefix g-sgov-iso-iec-9798-11997-iso-iec-18014-12008-09-01-slovník: <https://slovník.gov.cz/generický/iso-iec-9798-11997-iso-iec-18014-12008-09-01> .
+@prefix l-sgov-111-2009-pojem: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/> .
+@prefix g-sgov-nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu/> .
+@prefix g-sgov-iso-iec-183672016-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-183672016-12-15> .
+@prefix g-sgov-iso-iec-385002008-corporate-governance-of-information-technology: <https://slovník.gov.cz/generický/iso-iec-385002008-corporate-governance-of-information-technology/> .
+@prefix l-sgov-106-1999: <https://slovník.gov.cz/legislativní/sbírka/106/1999/> .
+@prefix g-sgov-oha: <https://slovník.gov.cz/generický/oha/> .
+@prefix g-sgov-iso-iec-24760-32016-08-01-pojem: <https://slovník.gov.cz/generický/iso-iec-24760-32016-08-01/pojem/> .
+@prefix l-sgov-250-2017-slovník: <https://slovník.gov.cz/legislativní/sbírka/250/2017-DRAFT> .
+@prefix g-sgov-european-interoperability-reference-architecture: <https://slovník.gov.cz/generický/european-interoperability-reference-architecture/> .
+@prefix g-sgov-iso-iec-270402015-01-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270402015-01-15> .
+@prefix g-sgov-institut-pro-veřejnou-správu-slovník-pojmů-pojem: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu-slovník-pojmů/pojem/> .
+@prefix l-sgov-111-2009: <https://slovník.gov.cz/legislativní/sbírka/111/2009/> .
+@prefix ns14: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26.-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru> .
+@prefix g-sgov-iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes-slovník: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes> .
+@prefix g-sgov-itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os-slovník: <https://slovník.gov.cz/generický/itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os> .
+@prefix g-sgov-search-virtual-desktop: <https://slovník.gov.cz/generický/search-virtual-desktop/> .
+@prefix g-sgov-iso-iec-270432015-03-01: <https://slovník.gov.cz/generický/iso-iec-270432015-03-01/> .
+@prefix g-sgov-čsn-iso-iec-20000-2-pojem: <https://slovník.gov.cz/generický/čsn-iso-iec-20000-2/pojem/> .
+@prefix g-sgov-iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels-slovník: <https://slovník.gov.cz/generický/iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels> .
+@prefix g-sgov-iso-iec-9798-52009-pojem: <https://slovník.gov.cz/generický/iso-iec-9798-52009/pojem/> .
+@prefix g-sgov-iso-iec-301112013-11-01-pojem: <https://slovník.gov.cz/generický/iso-iec-301112013-11-01/pojem/> .
+@prefix prefix: <http://www.ontotext.com/connectors/lucene#> .
+@prefix a-sgov-998-p: <https://slovník.gov.cz/agendový/998-DRAFT/pojem/> .
+@prefix g-sgov-iso-iec-270312011-03-01-slovník: <https://slovník.gov.cz/generický/iso-iec-270312011-03-01> .
+@prefix g-sgov-iso-iec-18014-32009-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-18014-32009-12-15> .
+@prefix g-sgov-iso-iec-247452011-06-15-slovník: <https://slovník.gov.cz/generický/iso-iec-247452011-06-15> .
+@prefix l-sgov-106-1999-slovník: <https://slovník.gov.cz/legislativní/sbírka/106/1999> .
+@prefix ns81: <https://slovník.gov.cz/generický/iso-iec-ieee-std.-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010/pojem/> .
+@prefix g-sgov-iso-iec-27034-12011-iso-iec-270322012-07-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27034-12011-iso-iec-270322012-07-15> .
+@prefix g-sgov-oecd-slovník-pojem: <https://slovník.gov.cz/generický/oecd-slovník/pojem/> .
+@prefix l-sgov-82-2018-slovník: <https://slovník.gov.cz/legislativní/sbírka/82/2018> .
+@prefix ottr: <http://ns.ottr.xyz/0.4/> .
+@prefix g-sgov-information-technology-infrastructure-library-slovník: <https://slovník.gov.cz/generický/information-technology-infrastructure-library> .
+@prefix g-sgov-iso-iec-18014-22009-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-18014-22009-12-15> .
+@prefix g-sgov-iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací: <https://slovník.gov.cz/generický/iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací/> .
+@prefix g-sgov-iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací-pojem: <https://slovník.gov.cz/generický/iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací/pojem/> .
+@prefix g-sgov-iso-iec-101162006-02-01-slovník: <https://slovník.gov.cz/generický/iso-iec-101162006-02-01> .
+@prefix g-sgov-iso-iec-11770-32015-08-01: <https://slovník.gov.cz/generický/iso-iec-11770-32015-08-01/> .
+@prefix g-sgov-search-virtual-desktop-slovník: <https://slovník.gov.cz/generický/search-virtual-desktop> .
+@prefix g-sgov-institut-pro-veřejnou-správu-slovník-pojmů: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu-slovník-pojmů/> .
+@prefix g-sgov-ieee-std-1062-1998---recommended-practice-for-software-acquisition-slovník: <https://slovník.gov.cz/generický/ieee-std-1062-1998---recommended-practice-for-software-acquisition> .
+@prefix g-sgov-nařízení-mv-č-5-2017-pojem: <https://slovník.gov.cz/generický/nařízení-mv-č-5-2017/pojem/> .
+@prefix g-sgov-usnesení-vlády-č-624-2001: <https://slovník.gov.cz/generický/usnesení-vlády-č-624-2001/> .
+@prefix g-sgov-iso-iec-101162006-02-01-pojem: <https://slovník.gov.cz/generický/iso-iec-101162006-02-01/pojem/> .
+@prefix g-sgov-the-open-group-pojem: <https://slovník.gov.cz/generický/the-open-group/pojem/> .
+@prefix l-sgov-82-2018-pojem: <https://slovník.gov.cz/legislativní/sbírka/82/2018/pojem/> .
+@prefix g-sgov-výkladový-slovník-kybernetické-bezpečnosti-pojem: <https://slovník.gov.cz/generický/výkladový-slovník-kybernetické-bezpečnosti/pojem/> .
+@prefix g-sgov-iso-iec-27036-12014-03-15-pojem: <https://slovník.gov.cz/generický/iso-iec-27036-12014-03-15/pojem/> .
+@prefix l-sgov-410-2009-slovník: <https://slovník.gov.cz/legislativní/sbírka/410/2009-DRAFT> .
+@prefix g-sgov-iso-iec-27036-12014-03-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27036-12014-03-15> .
+@prefix g-sgov-iso-iec-18014-22009-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-18014-22009-12-15/pojem/> .
+@prefix l-sgov-89-2012-pojem: <https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/> .
+@prefix g-sgov-wikipedie-slovník: <https://slovník.gov.cz/generický/wikipedie> .
+@prefix g-sgov-iso-iec-tr-270192013-07-15: <https://slovník.gov.cz/generický/iso-iec-tr-270192013-07-15/> .
+@prefix g-sgov-iso-iec-27033-12015-08-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27033-12015-08-15> .
+@prefix l-sgov-89-2012-slovník: <https://slovník.gov.cz/legislativní/sbírka/89/2012> .
+@prefix g-sgov-materiál-mpo-ke-sdílené-ekonomice-pojem: <https://slovník.gov.cz/generický/materiál-mpo-ke-sdílené-ekonomice/pojem/> .
+@prefix g-sgov-iso-iec-ieee-291482011: <https://slovník.gov.cz/generický/iso-iec-ieee-291482011/> .
+@prefix g-sgov-iso-iec-tr-15443-12012-11-15: <https://slovník.gov.cz/generický/iso-iec-tr-15443-12012-11-15/> .
+@prefix g-sgov-iso-iec-tr-197912010-04-01-pojem: <https://slovník.gov.cz/generický/iso-iec-tr-197912010-04-01/pojem/> .
+@prefix g-sgov-zásady-pro-digitálně-přívětivou-legislativu-slovník: <https://slovník.gov.cz/generický/zásady-pro-digitálně-přívětivou-legislativu> .
+@prefix g-sgov-oha-pojem: <https://slovník.gov.cz/generický/oha/pojem/> .
+@prefix g-sgov-iso-iec-9798-52009-slovník: <https://slovník.gov.cz/generický/iso-iec-9798-52009> .
+@prefix g-sgov-iso-iec-27033-32010-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27033-32010-12-15> .
+@prefix g-sgov-iso-iec-183672016-12-15: <https://slovník.gov.cz/generický/iso-iec-183672016-12-15/> .
+@prefix g-sgov-iso-iec-270372012-10-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270372012-10-15> .
+@prefix g-sgov-iso-iec-27036-32013-11-15: <https://slovník.gov.cz/generický/iso-iec-27036-32013-11-15/> .
+@prefix g-sgov-iso-iec-27033-62016-06-01-slovník: <https://slovník.gov.cz/generický/iso-iec-27033-62016-06-01> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g-sgov-iso-iec-27050-12016-11-01-pojem: <https://slovník.gov.cz/generický/iso-iec-27050-12016-11-01/pojem/> .
+@prefix g-sgov-slovník-pojmů-k-datovým-schránkám: <https://slovník.gov.cz/generický/slovník-pojmů-k-datovým-schránkám/> .
+@prefix g-sgov-iso-iec-11770-12010-12-01-pojem: <https://slovník.gov.cz/generický/iso-iec-11770-12010-12-01/pojem/> .
+@prefix g-sgov-itil-slovník: <https://slovník.gov.cz/generický/itil> .
+@prefix g-sgov-iso-iec-18028-32005: <https://slovník.gov.cz/generický/iso-iec-18028-32005/> .
+@prefix g-sgov-iso-iec-15946-12016-07-01-slovník: <https://slovník.gov.cz/generický/iso-iec-15946-12016-07-01> .
+@prefix g-sgov-managementmania-slovník: <https://slovník.gov.cz/generický/managementmania> .
+@prefix g-sgov-iso-iec-15408-12014-01-15-pojem: <https://slovník.gov.cz/generický/iso-iec-15408-12014-01-15/pojem/> .
+@prefix g-sgov-iso-iec-27035-22016-11-01: <https://slovník.gov.cz/generický/iso-iec-27035-22016-11-01/> .
+@prefix g-sgov-managementmania: <https://slovník.gov.cz/generický/managementmania/> .
+@prefix g-sgov-otevřená-data: <https://slovník.gov.cz/generický/otevřená-data/> .
+@prefix g-sgov-iso-iec-270412015-06-15-pojem: <https://slovník.gov.cz/generický/iso-iec-270412015-06-15/pojem/> .
+@prefix g-sgov-národní-architektonický-rámec: <https://slovník.gov.cz/generický/národní-architektonický-rámec/> .
+@prefix g-sgov-doporučení-itu-t-g1000: <https://slovník.gov.cz/generický/doporučení-itu-t-g1000/> .
+@prefix g-sgov-iso-iec-24760-12011-12-15: <https://slovník.gov.cz/generický/iso-iec-24760-12011-12-15/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix g-sgov-nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu-pojem: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu/pojem/> .
+@prefix g-sgov-věcné-časové-a-finanční-podmínky-účasti-státního-rozpočtu-na-financování-akcí-programů-vydává-návaznosti-na-vyhlášku-mf-č560-2006-sb-a-pokynu-mf-r-07-vrámci-kapitoly-mv-správce-programu---odbor-programového-financování-slovník: <https://slovník.gov.cz/generický/věcné-časové-a-finanční-podmínky-účasti-státního-rozpočtu-na-financování-akcí-programů-vydává-návaznosti-na-vyhlášku-mf-č560-2006-sb-a-pokynu-mf-r-07-vrámci-kapitoly-mv-správce-programu---odbor-programového-financování> .
+@prefix g-sgov-usnesení-vlády-č-86-2020---příloha-pojem: <https://slovník.gov.cz/generický/usnesení-vlády-č-86-2020---příloha/pojem/> .
+@prefix l-sgov-256-2013-pojem: <https://slovník.gov.cz/legislativní/sbírka/256/2013/pojem/> .
+@prefix g-sgov-výkladový-slovník-kybernetické-bezpečnosti: <https://slovník.gov.cz/generický/výkladový-slovník-kybernetické-bezpečnosti/> .
+@prefix g-sgov-čsn-iso-iec-20000-2: <https://slovník.gov.cz/generický/čsn-iso-iec-20000-2/> .
+@prefix g-sgov-pmbok: <https://slovník.gov.cz/generický/pmbok/> .
+@prefix g-sgov-iso-iec-270392015-02-15-iso-iec-270392016-05-01-pojem: <https://slovník.gov.cz/generický/iso-iec-270392015-02-15-iso-iec-270392016-05-01/pojem/> .
+@prefix g-sgov-český-statistický-úřad-pojem: <https://slovník.gov.cz/generický/český-statistický-úřad/pojem/> .
+@prefix g-sgov-iso-iec-291472014-02-15-slovník: <https://slovník.gov.cz/generický/iso-iec-291472014-02-15> .
+@prefix g-sgov-čsn-iso-iec-20000-2---informační-technologie---management-služeb: <https://slovník.gov.cz/generický/čsn-iso-iec-20000-2---informační-technologie---management-služeb/> .
+@prefix g-sgov-čsn-en-iso-9001-pojem: <https://slovník.gov.cz/generický/čsn-en-iso-9001/pojem/> .
+@prefix g-sgov-iso-iec-ieee-42010-2011-defines-architecture-slovník: <https://slovník.gov.cz/generický/iso-iec-ieee-42010-2011-defines-architecture> .
+@prefix g-sgov-projekt-opendata: <https://slovník.gov.cz/generický/projekt-opendata/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix g-sgov-iso-iec-tr-270162014-03-01-pojem: <https://slovník.gov.cz/generický/iso-iec-tr-270162014-03-01/pojem/> .
+@prefix g-sgov-čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky-slovník: <https://slovník.gov.cz/generický/čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky> .
+@prefix a-sgov-rpp-a998-p: <https://slovník.gov.cz/agendový/rpp/a988-DRAFT/pojem/> .
+@prefix g-sgov-iso-iec-301112013-11-01-slovník: <https://slovník.gov.cz/generický/iso-iec-301112013-11-01> .
+@prefix g-sgov-oeg-částečně-ivs-slovník: <https://slovník.gov.cz/generický/oeg-částečně-ivs> .
+@prefix g-sgov-čsn-iso-iec-20000-2---informační-technologie---management-služeb-pojem: <https://slovník.gov.cz/generický/čsn-iso-iec-20000-2---informační-technologie---management-služeb/pojem/> .
+@prefix g-sgov-iso-iec-291152013-04-01-pojem: <https://slovník.gov.cz/generický/iso-iec-291152013-04-01/pojem/> .
+@prefix g-sgov-information-technology-infrastructure-library-pojem: <https://slovník.gov.cz/generický/information-technology-infrastructure-library/pojem/> .
+@prefix g-sgov-iso-iec-ieee-std-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010-slovník: <https://slovník.gov.cz/generický/iso-iec-ieee-std-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010> .
+@prefix g-sgov-togaf: <https://slovník.gov.cz/generický/togaf/> .
+@prefix g-sgov-iso-iec-152882008-pojem: <https://slovník.gov.cz/generický/iso-iec-152882008/pojem/> .
+@prefix g-sgov-iso-iec-270002016-02-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270002016-02-15> .
+@prefix g-sgov-zpracování-pravidel-pro-federaci-portálů-veřejné-správy-a-definování-cílového-stavu-nakit-s-p-slovník: <https://slovník.gov.cz/generický/zpracování-pravidel-pro-federaci-portálů-veřejné-správy-a-definování-cílového-stavu-nakit-s-p> .
+@prefix l-sgov-259-2012-slovník: <https://slovník.gov.cz/legislativní/sbírka/259/2012> .
+@prefix g-sgov-iso-iec-270312011-03-01: <https://slovník.gov.cz/generický/iso-iec-270312011-03-01/> .
+@prefix g-sgov-iso-iec-197922009-08-01-pojem: <https://slovník.gov.cz/generický/iso-iec-197922009-08-01/pojem/> .
+@prefix g-sgov-iso-iec-270432015-03-01-pojem: <https://slovník.gov.cz/generický/iso-iec-270432015-03-01/pojem/> .
+@prefix g-sgov-roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006-pojem: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006/pojem/> .
+@prefix g-sgov-iso-iec-11770-32015-08-01-slovník: <https://slovník.gov.cz/generický/iso-iec-11770-32015-08-01> .
+@prefix g-sgov-egovernment-action-plan-slovník: <https://slovník.gov.cz/generický/egovernment-action-plan> .
+@prefix g-sgov-itil: <https://slovník.gov.cz/generický/itil/> .
+@prefix g-sgov-https--wwweuropeandataportaleu-cs-homepage-pojem: <https://slovník.gov.cz/generický/https--wwweuropeandataportaleu-cs-homepage/pojem/> .
+@prefix g-sgov-iso-iec-158162002-02-01: <https://slovník.gov.cz/generický/iso-iec-158162002-02-01/> .
+@prefix g-sgov-iso-iec-270112016-12-01-slovník: <https://slovník.gov.cz/generický/iso-iec-270112016-12-01> .
+@prefix g-sgov-iso-iec-291002011-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-291002011-12-15/pojem/> .
+@prefix g-sgov-the-open-group-slovník: <https://slovník.gov.cz/generický/the-open-group> .
+@prefix g-sgov-čsn-iso-iec-20000-2-slovník: <https://slovník.gov.cz/generický/čsn-iso-iec-20000-2> .
+@prefix g-sgov-doporučení-itu-t-g1000-pojem: <https://slovník.gov.cz/generický/doporučení-itu-t-g1000/pojem/> .
+@prefix g-sgov-usnesení-vlády-815-2014-pojem: <https://slovník.gov.cz/generický/usnesení-vlády-815-2014/pojem/> .
+@prefix g-sgov-iso-iec-159452002-02-01-slovník: <https://slovník.gov.cz/generický/iso-iec-159452002-02-01> .
+@prefix g-sgov-iso-iec-tr-197912010-04-01: <https://slovník.gov.cz/generický/iso-iec-tr-197912010-04-01/> .
+@prefix g-sgov-iso-iec-tr-270162014-03-01: <https://slovník.gov.cz/generický/iso-iec-tr-270162014-03-01/> .
+@prefix g-sgov-český-statistický-úřad-slovník: <https://slovník.gov.cz/generický/český-statistický-úřad> .
+@prefix g-sgov-iso-iec-122072008---systems-and-software-engineering-slovník: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering> .
+@prefix g-sgov-národní-architektonický-rámec-slovník: <https://slovník.gov.cz/generický/národní-architektonický-rámec> .
+@prefix g-sgov-iso-iec-18014-12008-09-01: <https://slovník.gov.cz/generický/iso-iec-18014-12008-09-01/> .
+@prefix g-sgov-iso-iec-27035-22016-11-01-pojem: <https://slovník.gov.cz/generický/iso-iec-27035-22016-11-01/pojem/> .
+@prefix g-sgov-iso-iec-14888-12008-04-15-pojem: <https://slovník.gov.cz/generický/iso-iec-14888-12008-04-15/pojem/> .
+@prefix g-sgov-iso-iec-15408-12014-01-15: <https://slovník.gov.cz/generický/iso-iec-15408-12014-01-15/> .
+@prefix l-sgov-300-2008: <https://slovník.gov.cz/legislativní/sbírka/300/2008/> .
+
+<https://slovník.gov.cz/základní/mapování-gufo> {
+  skos:Concept a owl:Class;
+    rdfs:subClassOf z-sgov-p:prvek .
+  
+  z-sgov-p:vztah a owl:Class;
+    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/endurant> .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/object> a owl:Class;
+    owl:equivalentClass z-sgov-p:objekt .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/endurant> a owl:Class;
+    owl:equivalentClass z-sgov-p:proměnný-prvek .
+  
+  z-sgov-p:pasivní-objekt a owl:Class;
+    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+  
+  z-sgov-p:akce a owl:Class;
+    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/action> .
+  
+  z-sgov-p:časový-prvek a owl:Class .
+  
+  <http://data.europa.eu/m8g/Criterion> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://data.europa.eu/m8g/Cost> a owl:Class .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/action> a owl:Class;
+    owl:equivalentClass z-sgov-p:akce .
+  
+  <http://schema.org/Place> a owl:Class;
+    rdfs:subClassOf z-sgov-p:prostorový-objekt .
+  
+  z-sgov-p:prostorový-objekt a owl:Class;
+    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+  
+  <http://data.europa.eu/m8g/Event> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
+  
+  <http://www.w3.org/2006/time#inXSDDateTimeStamp> a owl:DatatypeProperty .
+  
+  <http://www.w3.org/2006/time#hasEnd> a owl:ObjectProperty .
+  
+  <http://purl.org/vocab/cpsv#Input> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://data.europa.eu/m8g/Channel> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://www.w3.org/ns/dcat#Distribution> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://purl.org/vocab/cpsv#Output> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <https://slovník.gov.cz/základní/mapování/gufo> a owl:Ontology;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/gufo/verze/1.0.0>;
+    owl:imports <http://purl.org/nemo/gufo#>, <https://slovník.gov.cz/základní/verze/1.0.1> .
+  
+  <https://slovník.gov.cz/základní/mapování> a owl:Ontology, a-popis-dat-pojem:mapování;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/verze/1.0.0>;
+    owl:imports <https://slovník.gov.cz/základní/verze/1.0.1>, <http://www.w3.org/ns/person>,
+      <http://www.w3.org/ns/locn#> .
+  
+  a-popis-dat-pojem:mapování a owl:Class .
+  
+  <http://purl.org/vocab/frbr/core#Expression> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  z-sgov-p:datum a owl:DatatypeProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#inXSDDate> .
+  
+  <http://www.w3.org/2006/time#inXSDDate> a owl:DatatypeProperty .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/sub-kind> a owl:Class;
+    owl:equivalentClass z-sgov-p:poddruh .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/quality-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-kvalitativní-vlastnosti .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/agent> a owl:Class;
+    owl:equivalentClass z-sgov-p:agent .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/role-mixin> a owl:Class;
+    owl:equivalentClass z-sgov-p:mixin-rolí .
+  
+  <http://data.europa.eu/m8g/Output> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://www.w3.org/ns/dcat#Dataset> a owl:Class .
+  
+  <http://www.w3.org/ns/org#FormalOrganization> a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
+  
+  <http://data.europa.eu/m8g/FoundationEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
+  
+  <http://data.europa.eu/m8g/CriterionRequirement> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <https://slovník.gov.cz/základní/mapování-gufo> a owl:NamedIndividual, a-popis-dat-pojem:mapování .
+  
+  <http://data.europa.eu/m8g/Criteron> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  dc:Location a owl:Class;
+    owl:equivalentClass z-sgov-p:prostorový-objekt .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/relator> a owl:Class;
+    owl:equivalentClass z-sgov-p:vztah .
+  
+  <http://www.w3.org/2006/time#ProperInterval> a owl:Class;
+    owl:equivalentClass z-sgov-p:časový-interval .
+  
+  <http://data.europa.eu/m8g/RequirementGroup> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/event-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-události .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/perdurant> a owl:Class;
+    owl:equivalentClass z-sgov-p:neměnný-prvek .
+  
+  <http://data.europa.eu/m8g/LifeEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
+  
+  <http://www.w3.org/ns/org#ChangeEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:změna-proměnného-prvku .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/role> a owl:Class;
+    owl:equivalentClass z-sgov-p:role .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/mediates> a owl:ObjectProperty .
+  
+  <http://www.w3.org/ns/dcat#Catalog> a owl:Class .
+  
+  <http://data.europa.eu/m8g/PeriodOfTime> a owl:Class;
+    rdfs:subClassOf z-sgov-p:časový-prvek .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/phase> a owl:Class;
+    owl:equivalentClass z-sgov-p:fáze .
+  
+  dc:Jurisdiction a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <https://slovník.gov.cz/základní/mapování/ufo> a owl:Ontology, a-popis-dat-pojem:mapování;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/ufo/verze/1.0.0>;
+    owl:imports <https://slovník.gov.cz/základní/verze/1.0.1>, <http://onto.fel.cvut.cz/ontologies/ufo/> .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/kind> a owl:Class;
+    owl:equivalentClass z-sgov-p:druh .
+  
+  <http://schema.org/ContactPoint> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://schema.org/Person> a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/entity> a owl:Class;
+    owl:equivalentClass z-sgov-p:prvek .
+  
+  dc:Agent a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/category> a owl:Class;
+    owl:equivalentClass z-sgov-p:kategorie .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/intrinsic-trope-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-vlastnosti .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/event> a owl:Class;
+    owl:equivalentClass z-sgov-p:událost .
+  
+  <http://data.europa.eu/m8g/Evidence> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  z-sgov-p:má-konec a owl:ObjectProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#hasEnd> .
+  
+  <http://rdfs.org/sioc/ns#Forum> a owl:Class .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/situation> a owl:Class .
+  
+  <http://www.w3.org/2006/time#hasBeginning> a owl:ObjectProperty .
+  
+  <http://data.europa.eu/m8g/Participation> a owl:Class .
+  
+  <http://data.europa.eu/m8g/PublicOrganisation> a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
+  
+  <http://www.w3.org/ns/locn#geographicName> a owl:Class;
+    rdfs:subClassOf z-sgov-p:vlastnost, _:node7872513, _:node8112129, _:node8111975, _:node8111964,
+      _:node8172387, _:node8275587, _:node8356083, _:node8436579, _:node8517075, _:node8648117,
+      _:node8664840, _:node8758563, _:node8839059, _:node8919555, _:node9038176, _:node9074941,
+      _:node9161043, _:node9241539, _:node9331273, _:node9402531, _:node9483027, _:node9580686,
+      _:node9644645, _:node9725767, _:node9806867, _:node9887992, _:node9969092, _:node10050212,
+      _:node10131312, _:node10212629, _:node10295058, _:node10377487 .
+  
+  <http://purl.org/vocab/cpsv#PublicService> a owl:Class .
+  
+  <http://xmlns.com/foaf/0.1/Agent> a owl:Class;
+    owl:equivalentClass z-sgov-p:agent .
+  
+  <http://data.europa.eu/m8g/RequirementResponse> a owl:Class .
+  
+  <http://data.europa.eu/m8g/BusinessEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
+  
+  <http://www.w3.org/2006/time#TemporalEntity> a owl:Class;
+    rdfs:subClassOf z-sgov-p:časový-prvek .
+  
+  <https://schema.org/ContactPoint> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://data.europa.eu/m8g/DocumentReference> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://www.w3.org/ns/adms#Identifier> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://labs.mondeca.com/vocab/voaf#Vocabulary> a owl:Class .
+  
+  <http://www.w3.org/1999/xhtml/vocab#next> a owl:ObjectProperty .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/monadic-type> a owl:Class .
+  
+  z-sgov-p:datum-a-čas a owl:DatatypeProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#inXSDDateTimeStamp> .
+  
+  z-sgov-p:má-začátek a owl:ObjectProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#hasBeginning> .
+  
+  <https://slovník.gov.cz/základní/mapování/owltime> a owl:Ontology, owl:NamedIndividual,
+      a-popis-dat-pojem:mapování;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/owltime/verze/1.0.0>;
+    owl:imports <https://slovník.gov.cz/základní/verze/1.0.1>, <https://raw.githubusercontent.com/w3c/sdw/gh-pages/time/rdf/time.ttl> .
+  
+  <http://schema.org/OpeningHoursSpecification> a owl:Class .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/mode-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-módu .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/mixin> a owl:Class;
+    owl:equivalentClass z-sgov-p:mixin .
+  
+  _:node7872513 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8112129 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8111975 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8111964 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8172387 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8275587 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8356083 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8436579 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8517075 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8648117 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8664840 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8758563 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8839059 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8919555 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9038176 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9074941 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9161043 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9241539 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9331273 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9402531 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9483027 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9580686 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9644645 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9725767 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9806867 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9887992 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9969092 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10050212 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10131312 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10212629 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10295058 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10377487 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  z-sgov-p:je-vlastností rdfs:subPropertyOf <http://purl.org/nemo/gufo#inheresIn> .
+  
+  z-sgov-p:má-vztažený-prvek rdfs:subPropertyOf <http://purl.org/nemo/gufo#mediates> .
+  
+  z-sgov-p:vlastnost rdfs:subClassOf <http://purl.org/nemo/gufo#IntrinsicAspect> .
+  
+  z-sgov-p:typ-události rdfs:subClassOf <http://purl.org/nemo/gufo#EventType> .
+  
+  z-sgov-p:typ-vztahu rdfs:subClassOf <http://purl.org/nemo/gufo#RelationshipType> .
+  
+  z-sgov-p:role rdfs:subClassOf <http://purl.org/nemo/gufo#Role> .
+  
+  z-sgov-p:kategorie rdfs:subClassOf <http://purl.org/nemo/gufo#Category> .
+  
+  z-sgov-p:mixin-rolí rdfs:subClassOf <http://purl.org/nemo/gufo#RoleMixin> .
+  
+  z-sgov-p:mixin rdfs:subClassOf <http://purl.org/nemo/gufo#Mixin> .
+  
+  z-sgov-p:druh rdfs:subClassOf <http://purl.org/nemo/gufo#Kind> .
+  
+  z-sgov-p:poddruh rdfs:subClassOf <http://purl.org/nemo/gufo#SubKind> .
+  
+  z-sgov-p:událost rdfs:subClassOf <http://purl.org/nemo/gufo#Event> .
+  
+  z-sgov-p:typ-proměnného-prvku rdfs:subClassOf <http://purl.org/nemo/gufo#EndurantType> .
+  
+  z-sgov-p:typ rdfs:subClassOf <http://purl.org/nemo/gufo#Type> .
+  
+  z-sgov-p:fáze rdfs:subClassOf <http://purl.org/nemo/gufo#Phase> .
+  
+  z-sgov-p:nesortál rdfs:subClassOf <http://purl.org/nemo/gufo#NonSortal> .
+  
+  <http://www.w3.org/ns/locn#Geometry> rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  z-sgov-p:mixin-fází rdfs:subClassOf <http://purl.org/nemo/gufo#PhaseMixin> .
+  
+  <http://www.w3.org/ns/locn#Address> rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://www.w3.org/2006/time#Instant> owl:equivalentClass z-sgov-p:časový-okamžik .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/object-type> owl:equivalentClass z-sgov-p:typ-objektu .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/endurant-type> owl:equivalentClass z-sgov-p:typ-proměnného-prvku .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/relator-type> owl:equivalentClass z-sgov-p:typ-vztahu .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/intrinsic-trope> owl:equivalentClass z-sgov-p:vlastnost .
+}
