@@ -97,6 +97,8 @@ services:
       DB_SERVER_REPOSITORY_ID: assembly-line
       DB_SERVER_CONTEXT: https://slovník.gov.cz/uživatel
       NAMESPACE: https://slovník.gov.cz/uživatel/
+      KEYCLOAK_API_USER_USERNAME: ${KEYCLOAK_API_USER_USERNAME}
+      KEYCLOAK_API_USER_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
     depends_on:
       - al-auth-server-db
       - al-db-server
@@ -181,8 +183,8 @@ services:
       KEYCLOAK_REALM: assembly-line
       KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
       KEYCLOAK_SECRET: ${CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
-      KEYCLOAK_ADMINAPI_USERNAME: ${KEYCLOAK_ADMINAPI_USERNAME}
-      KEYCLOAK_ADMINAPI_PASSWORD: ${KEYCLOAK_ADMINAPI_PASSWORD}
+      KEYCLOAK_APIADMIN_USERNAME: ${KEYCLOAK_API_USER_USERNAME}
+      KEYCLOAK_APIADMIN_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
       REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
       REPOSITORY_NAMESPACE_USER: https://slovník.gov.cz/uživatel/
     depends_on:
