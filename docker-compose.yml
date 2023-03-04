@@ -76,6 +76,7 @@ services:
       - al-auth-server-db:/var/lib/postgresql/data
   al-auth-server:
     image: docker.pkg.github.com/opendata-mvcr/keycloak-graphdb-user-replicator/al-auth-server:latest
+    entrypoint: /al-auth-server/startup.sh
     environment:
       CONTEXT:
       ID: al-auth-server
