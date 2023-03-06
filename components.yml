@@ -35,3 +35,11 @@ al-issue-tracker:
   meta:
     new-bug: https://github.com/opendata-mvcr/sgov-assembly-line/issues/new?labels=bug&template=po-adavek-na-opravu.md&title=
     new-feature: https://github.com/opendata-mvcr/sgov-assembly-line/issues/new?labels=enhancement&template=po-adavek-na-novou-funkcionalitu.md&title=
+al-checkit-server:
+  name: CheckIt backend
+  url: ${URL}/sluzby/checkit-server
+  meta: {}
+al-checkit-ui:
+  name: CheckIt frontend
+  url: ${URL}/v-nástroji/checkit
+  meta: {}
