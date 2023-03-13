@@ -96,6 +96,10 @@ server {
    - vytvoř uživatele výrobní linky v `Users/Add user`
      - nastav mu `Username`, `Email`, `First Name` a `Last Name`
      - po vytvoření mu nastav heslo v `Credentials`
+   - vytvoř admina pro přiřazování gestorů ve výrobní lince v `Users/Add user`
+     - nastav mu `Username`, `Email`, `First Name` a `Last Name`
+     - po vytvoření mu nastav heslo v `Credentials`
+     - běž do sekce `Role Mappings` a v `Client Roles` vyhledej `al-checkit-server` -> klikni na `ROLE_ADMIN` a přidej tuto roli mocí tlačítka `Add selected`
 
 7. Restartuj služby `al-sgov-server`, `al-termit-server` a `al-checkit-server`:
 
