@@ -114,5 +114,11 @@ Rules
       vocabulary <pzp:má-gestora> user
       -------------------------------
       user <pzp:je-gestorem> vocabulary
+
+  Id: pzp_gestoring_request_1
+
+      gestoring_request <pzp:žádá-o-gestorování> slovník
+      -------------------------------
+      slovník <pzp:má-požadavek-na-gestorování> gestoring_request
 }
 
