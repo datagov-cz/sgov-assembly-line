@@ -172,6 +172,7 @@ services:
       VITE_URL: ${URL}/v-nástroji/checkit/
       VITE_APP_ID: al-checkit-ui
       VITE_AUTHENTICATION_SERVER: ${URL}/sluzby/auth-server/realms/assembly-line
+      VITE_SERVER: ${URL}/sluzby/checkit-server
     depends_on: 
       - al-auth-server
     restart: always
