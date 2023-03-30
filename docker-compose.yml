@@ -188,7 +188,6 @@ services:
       KEYCLOAK_API-ADMIN_USERNAME: ${KEYCLOAK_API_USER_USERNAME}
       KEYCLOAK_API-ADMIN_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
       REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
-      REPOSITORY_USER-ID-PREFIX: https://slovník.gov.cz/uživatel/
     depends_on:
       - al-db-server
       - al-auth-server
