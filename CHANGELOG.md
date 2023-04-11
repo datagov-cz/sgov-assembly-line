@@ -5,6 +5,20 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+## 2023-04-08 - Easter release
+This release changes user eXperience of major applications -- Mission Control, OntoGrapher, and som eminor changes in other tools. It also fixes bugs found in previously released version.
+
+### Features
+- [SGoV - #160](https://github.com/datagov-cz/sgov/issues/160), adding number of usages per vocabulary,
+- [OntoGrapher - #466](https://github.com/datagov-cz/ontoGrapher/issues/466), [OntoGrapher - #465](https://github.com/datagov-cz/ontoGrapher/issues/465), [OntoGrapher - #464](https://github.com/datagov-cz/ontoGrapher/issues/464), [OntoGrapher - #463](https://github.com/datagov-cz/ontoGrapher/issues/463), [OntoGrapher - #462](https://github.com/datagov-cz/ontoGrapher/issues/462) and [OntoGrapher - #461](https://github.com/datagov-cz/ontoGrapher/issues/461), OntoGrapher UX updates,
+- [TermIt - #100](https://github.com/datagov-cz/termit/issues/100), deletion of term delete also all its occurrences,
+- [Mission Control - #235](https://github.com/datagov-cz/mission-control/pull/235), new version of Mission control UX.
+
+### Bug fixes
+- [TermIt - #101](https://github.com/datagov-cz/termit/issues/101), allows creatung independent copies of terms in various versions of vocabularies.
+- [TermIt - #98](https://github.com/datagov-cz/termit/issues/98), fixes problems with showing narrower terms,
+- [Termit - #106](https://github.com/datagov-cz/termit/issues/106), fixes problem with updating definitions mentioning terms from other draft versions.
+
 ## 2023-01-20
 In the long term was updated architecture of the whole system. It consists of major changes in TermIt UI and SGoV server and some minor changes in other tools. All bug fixes were postponed due to this update to this very date. 
 
