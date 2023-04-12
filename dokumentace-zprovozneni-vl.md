@@ -1,5 +1,4 @@
 ##### Správa uživatelů
-
 Vytvořil jsem team c5-developers, přidal do něj členy, kteří mají zapisovat do repositářů nástrojů VL a dal jim PRO VŠECHNY REPOZITÁŘE write access. Tím by se měly zapsat do souboru .github/CODEOWNERS. To je potřeba zkontrolovat a případně je tam dopsat. To je potřeba k tomu, aby se team automaticky přiřazoval k Pull requestům.
 Obsah souboru CODEOWNERS:
 
@@ -11,8 +10,10 @@ Pro validaci se používá github action v repozitáři `SSP`. v souboru `valida
     url = uri('https://maven.pkg.github.com/datagov-cz/sgov-validator')
 
 
-##### Integrace s Netlify (nepovinné, jen pro dev účely)
+##### Publikace do SSP
+Při publikaci dat do SSP přes výrobní linku je využívaná služba sgov. Ta potřebuje zapisovat do repozitáře SSP a proto je potřeba, aby k němu měla přístup. Ten je možné zajistit pomocí autorizačního tokenu, který ale není možné generovat pro organizaci, ale pouze pro uživatele. Za tímto účelem byl vytvořen uživatel GH uživatel otevrenadata@dia.gov.cz. K přístupu do GH repozitářů tzv. odjinud je potřeba využívat jím vygenerovaný token.
 
+##### Integrace s Netlify (nepovinné, jen pro dev účely)
 Pro integraci s netlify pro testovací deployment je potřeba udělat následující kroky:
 * vytvořit účet na netlify (pod administrativním účtem otevrenadata@dia.gov.cz),
 * z netlify připojit účet na GH. Netlify nabídne prřipojení k účtu nebo organizaci (datagov-cz) a vybrání repozitářů, pro které připojení bude platit. Důležité jsou:
