@@ -19,7 +19,7 @@ services:
       - al-sgov-server
       - al-termit-server
   al-mission-control:
-    image: docker.pkg.github.com/opendata-mvcr/mission-control/al-mission-control:latest
+    image: ghcr.io/datagov-cz/mission-control/al-mission-control:latest
     environment:
       CONTEXT:
       ID: al-mission-control
@@ -27,7 +27,7 @@ services:
       COMPONENTS:
     restart: always
   al-ontographer:
-    image: docker.pkg.github.com/opendata-mvcr/ontographer/al-ontographer:latest
+    image: ghcr.io/datagov-cz/ontographer/al-ontographer:latest
     environment:
       CONTEXT:
       ID: al-ontographer
@@ -35,7 +35,7 @@ services:
       COMPONENTS:
     restart: always
   al-termit:
-    image: docker.pkg.github.com/opendata-mvcr/termit-ui/al-termit:latest
+    image: ghcr.io/datagov-cz/termit-ui/al-termit:latest
     environment:
       CONTEXT:
       ID: al-termit
@@ -73,7 +73,7 @@ services:
     volumes:
       - al-auth-server-db:/var/lib/postgresql/data
   al-auth-server:
-    image: docker.pkg.github.com/opendata-mvcr/keycloak-graphdb-user-replicator/al-auth-server:latest
+    image: ghcr.io/datagov-cz/keycloak-graphdb-user-replicator/al-auth-server:latest
     environment:
       CONTEXT:
       ID: al-auth-server
@@ -102,7 +102,7 @@ services:
     volumes:
       - ./al-auth-server:/al-auth-server
   al-sgov-server:
-    image: docker.pkg.github.com/opendata-mvcr/sgov/al-sgov-server:latest
+    image: ghcr.io/datagov-cz/sgov/al-sgov-server:latest
     environment:
       CONTEXT:
       ID: al-sgov-server
@@ -125,7 +125,7 @@ services:
       - al-auth-server
     restart: always
   al-termit-server:
-    image: docker.pkg.github.com/opendata-mvcr/termit/al-termit-server:latest
+    image: ghcr.io/datagov-cz/termit/al-termit-server:latest
     environment:
       CONTEXT:
       ID: al-termit-server
