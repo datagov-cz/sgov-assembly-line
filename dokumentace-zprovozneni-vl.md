@@ -34,6 +34,7 @@ Pro integraci s netlify pro testovací deployment je potřeba udělat následuj�
 Podrobný návod v angličtině najdete [na stránce netlify](https://docs.netlify.com/site-deploys/create-deploys/).
 
 ##### Webhooks
-Webhooks je potřeba mít k automatizovanému deployi změn na dev. Starají se o to, aby v okamžiku, kdy dojde ke změně kódu v repozitáři spustily aktualizaci na serveru. Webhooks jsou závislé na `secrets` a `variables`, které jsou definovány nikoliv v repozitáři, ale v organizace. Při přesunu mezi organizacemi je potřeba všechno zreprodukovat.
+Webhooks je potřeba mít k automatizovanému deployi změn na dev. Starají se o to, aby v okamžiku, kdy dojde ke změně kódu v repozitáři spustily aktualizaci na serveru. Webhooks jsou závislé na `secrets` a `variables`, které jsou definovány nikoliv v repozitáři, ale v organizace. Při přesunu mezi organizacemi je potřeba všechno zreprodukovat. Konkrétní `secrets` a `variables`:
+secrets.AL_DEV_SECRET -- heslo uloženo v organizaci pro spuštení automatizovaného deploy-e libovolného nástroje výrobní linky na dev (např. pro aktualizaci sgov-serveru se pouští CGI skript /modelujeme/update/al-sgov-server.php)
 
 #### Rebuild packages
