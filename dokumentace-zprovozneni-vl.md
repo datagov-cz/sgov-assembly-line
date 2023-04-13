@@ -1,8 +1,12 @@
 #### Správa uživatelů
-Vytvořil jsem team c5-developers, přidal do něj členy, kteří mají zapisovat do repositářů nástrojů VL a dal jim PRO VŠECHNY REPOZITÁŘE write access. Tím by se měly zapsat do souboru .github/CODEOWNERS. To je potřeba zkontrolovat a případně je tam dopsat. To je potřeba k tomu, aby se team automaticky přiřazoval k Pull requestům.
-Obsah souboru CODEOWNERS:
+Byly vytvořeny teamy al-developers, al-maintainers a ssp-maintainers, obsahující členy, kteří mají zapisovat do repositářů nástrojů VL a SSP a dal jim write access, resp mainain acces. Tím by se měly zapsat do souboru .github/CODEOWNERS. To je potřeba zkontrolovat a případně je tam dopsat. To je potřeba k tomu, aby se team automaticky přiřazoval k Pull requestům.
+Souboru CODEOWNERS obsahuje jeden z následujících řádků:
 
-    * @datagov-cz/c5-developers
+    * @datagov-cz/al-developers
+    * @datagov-cz/al-mainatiners
+    * @datagov-cz/ssp-maintainers
+
+
 
 #### Validace dat do SSP
 Pro validaci se používá github action v repozitáři `SSP`. v souboru `validation/build.gradle` je potřeba upřesnit umístění repozitáře SGoV validátoru (přesunul se mezi organizacemi a tím se mu změnilo IRI). Jedná se o tento řádek:
