@@ -74,6 +74,12 @@ V případě, že jsou všechny slovníky publikované, je možné RDF úložist
 
 Alternativně lze RDF reprezentaci uživatelů systému nahrát ze zálohy, protože je obsažena v separatním kontextu RDF úložiště (např. `https://slovník.gov.cz/uživatel`).
 
+## Změna rulesetu databáze
+
+*Konkrétní SPARQL dotazy naleznete v dokumentaci GraphDB odpovídající vaší verzi GraphDB v Usage -> Reasoning -> How To's. ([Dokumentace 9.6](https://graphdb.ontotext.com/documentation/9.6/standard/reasoning.html#how-to-s))*
+
+Na al-db-serveru v sekci SPARQL (`/modelujeme/sluzby/db-server/sparql`) najdete webové rozhraní pomocí, kterého lze nad databází vykonávat SPARQL dotazy. Vložte nový ruleset pomocí SPARQL dotazu ze sekce `Add a custom ruleset with SPARQL INSERT` dokumentace GraphDB, kde vložíte text nového ruleset mezi předpřipravené trojité apostrofy. Tento dotaz by měl vytvořit rulesetu s názvem "custom". To si můžete ověřit pomocí dotazu pro výpis rulesetů v sekci `List all rulesets` dokumentace a obsah rulesetu pomocí dotazu v `Explore a ruleset`. Nyní nastavte nový ruleset jako výchozí pomocí dotazu v sekci `Set a default ruleset`. Nyní by jste měli ve výpisu rulesetů vidět u nového rulesetu status default a current. Posledním krokem je přegenerování odvození pomocí dotazu v sekci `Reinferring`. (Doporučujeme přejmenovat nový ruleset pomocí dotazu v sekci `Rename a ruleset`, aby se předešlo konfliktu při příštím vytváření "custom" rulesetu.)
+
 ---
 Tento repozitář je udržován v rámci projektu OPZ č. [CZ.03.4.74/0.0/0.0/15_025/0013983](https://esf2014.esfcr.cz/PublicPortal/Views/Projekty/Public/ProjektDetailPublicPage.aspx?action=get&datovySkladId=F5E162B2-15EC-4BBE-9ABD-066388F3D412).
 ![Evropská unie - Evropský sociální fond - Operační program Zaměstnanost](https://data.gov.cz/images/ozp_logo_cz.jpg)
