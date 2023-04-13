@@ -21,7 +21,7 @@ Při publikaci dat do SSP přes výrobní linku je využívaná služba sgov. Ta
 Stránka slovník.gov.cz je přesměrována na GitHub pages generované v repozitáři `sgov-assembly-line`. Při změně organizace je potřeba změnit adresu, na kterou se stránka odkazuje. Tedy z https://opendata-mvcr.github.io/ssp/ na https://datagov-cz.github.io/ssp.
 
 #### Integrace s Netlify (nepovinné, jen pro dev účely)
-Pro integraci s netlify pro testovací deployment je potřeba udělat následující kroky (Netlify dokumentace: https://docs.netlify.com/site-deploys/create-deploys/):
+Pro integraci s netlify pro testovací deployment je potřeba udělat následující kroky:
 * vytvořit účet na netlify (pod administrativním účtem otevrenadata@dia.gov.cz),
 * z netlify připojit účet na GH. Netlify nabídne prřipojení k účtu nebo organizaci (datagov-cz) a vybrání repozitářů, pro které připojení bude platit. Důležité jsou:
   * termit-ui,
