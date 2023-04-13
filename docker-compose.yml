@@ -8,7 +8,7 @@ services:
       - ./al-nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./al-nginx/error.html:/usr/share/nginx/html/error.html
     ports:
-      - 1234:80
+      - ${PORT:-1234}:80
     restart: always
     depends_on:
       - al-mission-control
@@ -46,7 +46,7 @@ services:
     build:
       context: al-db-server
       args:
-        GRAPHDB_ZIP: graphdb-free-9.6.0-dist.zip
+        GRAPHDB_ZIP: ${GRAPHDB_ZIP:-graphdb-free-9.6.0-dist.zip}
     image: al-graphdb
     environment:
       CONTEXT:
@@ -116,10 +116,13 @@ services:
       KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
       KEYCLOAK_CREDENTIALS_SECRET: ${SGOV_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
       KEYCLOAK_PUBLIC_CLIENT: "false"
+      REPOSITORY_GITHUBORGANIZATION: ${SGOV_SERVER_REPOSITORY_GITHUBORGANIZATION:-datagov-cz}
+      REPOSITORY_GITHUBREPO: ${SGOV_SERVER_REPOSITORY_GITHUBREPO:-ssp}
       REPOSITORY_GITHUBUSERTOKEN: ${SGOV_SERVER_REPOSITORY_GITHUBUSERTOKEN}
       USER_NAMESPACE: https://slovník.gov.cz/uživatel/
       USER_CONTEXT: https://slovník.gov.cz/uživatel
       FEATURE_DEMO: ${FEATURE_DEMO:-false}
+      DEBUG: ${SGOV_SERVER_DEBUG:-false}
     depends_on:
       - al-db-server
       - al-auth-server
