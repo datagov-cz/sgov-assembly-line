@@ -30,7 +30,7 @@ Pro integraci s netlify pro testovací deployment je potřeba udělat následuj�
 * pokud má uživatel pro GH repo náležité oprávnění, vygeneruje netlify link do GH, kde se dokončí nastavení githubu,
 * poté je uživatel přesměrován zpátky do netlify pro konfiguraci site specific věcí a tím je konfigurace dokončena.
 
-Podrobný návod v angličtině najdete (na stránce netlify)[https://docs.netlify.com/site-deploys/create-deploys/].
+Podrobný návod v angličtině najdete [na stránce netlify](https://docs.netlify.com/site-deploys/create-deploys/).
 
 ##### Webhooks
 Webhooks je potřeba mít k automatizovanému deployi změn na dev. Starají se o to, aby v okamžiku, kdy dojde ke změně kódu v repozitáři spustily aktualizaci na serveru. Webhooks jsou závislé na `secrets` a `variables`, které jsou definovány nikoliv v repozitáři, ale v organizace. Při přesunu mezi organizacemi je potřeba všechno zreprodukovat.
