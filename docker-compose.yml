@@ -76,7 +76,7 @@ services:
       - al-auth-server-db:/var/lib/postgresql/data
   al-auth-server:
     image: ghcr.io/datagov-cz/keycloak-graphdb-user-replicator/al-auth-server:latest
-    entrypoint: /al-auth-server/startup.sh
+    entrypoint: ["bash","/al-auth-server/startup.sh"]
     environment:
       CONTEXT:
       ID: al-auth-server
