@@ -151,7 +151,7 @@ Rules
 
   Id: pzp_gestoring_request_1
 
-      gestoring_request <pzp:žádá-o-gestorování> slovník
+      gestoringRequest <pzp:žádá-o-gestorování> vocabulary
       -------------------------------
-      slovník <pzp:má-požadavek-na-gestorování> gestoring_request
+      vocabulary <pzp:má-požadavek-na-gestorování> gestoringRequest
 }
