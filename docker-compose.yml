@@ -192,7 +192,7 @@ services:
       KEYCLOAK_API-ADMIN_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
       REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
       GITHUB_PUBLISH-TO-SSP: true
-      GITHUB_TOKEN: ${SGOV_SERVER_REPOSITORY_GITHUBUSERTOKEN}
+      GITHUB_TOKEN: ${CHECKIT_SERVER_REPOSITORY_GITHUBUSERTOKEN}
       SGOV-SERVER_URL: http://al-sgov-server:8080/modelujeme/sluzby/sgov-server
     depends_on:
       - al-db-server
