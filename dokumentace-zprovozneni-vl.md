@@ -39,3 +39,17 @@ Webhooks je potřeba mít k automatizovanému deployi změn na dev. Starají se 
 - `secrets.AL_DEV_SECRET` -- heslo uloženo v organizaci pro spuštení automatizovaného deploy-e libovolného nástroje výrobní linky na dev (např. pro aktualizaci sgov-serveru se pouští CGI skript /modelujeme/update/al-sgov-server.php)
 
 #### Rebuild packages
+
+Packages jou používány k automatickému nasazování na dev prostředí. Po přesunu do nové organizace je zapotřebí vygenerovat packages pomocí příslušných GitHub actions v jednotlivých repozitářích nástrojů Výrobní linky, tedy:
+
+- [React Nginx](https://github.com/datagov-cz/react-nginx) - používaný při vytváření packagů frontendových aplikací
+- [Keycloak GraphDB User Replicator](https://github.com/datagov-cz/keycloak-graphdb-user-replicator) - Keycloak server obohacený o replikátor uživatelů do GraphDB používaný jako authorizační server Výrobní linky
+- [Mission control](https://github.com/datagov-cz/mission-control) - Frontend aplikace Výrobní linky
+- [OntoGrapher](https://github.com/datagov-cz/ontoGrapher) - Frontend aplikace Výrobní linky
+- [Termit UI](https://github.com/datagov-cz/termit-ui) - Frontend aplikace Výrobní linky
+- [Termit server](https://github.com/datagov-cz/termit) - Backend aplikace Výrobní linky
+- [SGoV server](https://github.com/datagov-cz/sgov) - Backend aplikace Výrobní linky
+
+Následně je ve frontend aplikacích potřeba upravit [Dockerfile](https://github.com/datagov-cz/mission-control/blob/main/Dockerfile), aby odkazoval na package React Nginx z nové organizace (tedy `FROM ghcr.io/stara-organizace/react-nginx/react-nginx:latest` -> `FROM ghcr.io/nova-organizace/react-nginx/react-nginx:latest`).
+
+Když máme vytvořeny packages v nové organitaci, můžeme přistoupit k úpravě [Docker-compose](https://github.com/datagov-cz/sgov-assembly-line/blob/main/docker-compose.yml) pro nasazení Výrobní linky. V něm je zapotřebí přepsat všechny odkazy na packages ze staré organizace na odkazy do nové (podobně jako u Dockerfile frontend aplikací). Aby se pomocí webhooks nasazovali nové packages je zapotřebí změny v Docker-compose aplikovat na jednotlivých nasazeních.
