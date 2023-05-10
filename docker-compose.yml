@@ -182,18 +182,18 @@ services:
   al-checkit-server:
     image: ghcr.io/mighantos/checkit-server/al-checkit-server:latest
     environment:
-      SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/checkit-server
+      SERVER_SERVLET_CONTEXTPATH: /modelujeme/sluzby/checkit-server
       KEYCLOAK_URL: http://al-auth-server:8080/modelujeme/sluzby/auth-server
-      KEYCLOAK_CLIENT-ID: al-checkit-server
+      KEYCLOAK_CLIENTID: al-checkit-server
       KEYCLOAK_REALM: assembly-line
-      KEYCLOAK_REALM-KEY: ${KEYCLOAK_REALMKEY}
+      KEYCLOAK_REALMKEY: ${KEYCLOAK_REALMKEY}
       KEYCLOAK_SECRET: ${CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
-      KEYCLOAK_API-ADMIN_USERNAME: ${KEYCLOAK_API_USER_USERNAME}
-      KEYCLOAK_API-ADMIN_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
+      KEYCLOAK_APIADMIN_USERNAME: ${KEYCLOAK_API_USER_USERNAME}
+      KEYCLOAK_APIADMIN_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
       REPOSITORY_URL: http://al-db-server:7200/repositories/${REPOSITORY}
-      GITHUB_PUBLISH-TO-SSP: true
+      GITHUB_PUBLISHTOSSP: false
       GITHUB_TOKEN: ${CHECKIT_SERVER_REPOSITORY_GITHUBUSERTOKEN}
-      SGOV-SERVER_URL: http://al-sgov-server:8080/modelujeme/sluzby/sgov-server
+      SGOVSERVER_URL: http://al-sgov-server:8080/modelujeme/sluzby/sgov-server
     depends_on:
       - al-db-server
       - al-auth-server
