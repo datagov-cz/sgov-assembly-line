@@ -53,7 +53,7 @@ services:
     environment:
       CONTEXT:
       ID: al-db-server
-      URL: ${URL}/sluzby/db-server/repositories/assembly-line
+      URL: ${URL}/sluzby/db-server/repositories/${REPOSITORY}
       COMPONENTS: # TODO REPOSITORY_USERNAME and REPOSITORY_PASSWORD
       GDB_JAVA_OPTS: >-
         -Dgraphdb.workbench.external-url=${URL}/sluzby/db-server
@@ -114,7 +114,7 @@ services:
       URL: ${URL}/sluzby/sgov-server
       COMPONENTS:
       SERVER_SERVLET_CONTEXT-PATH: /modelujeme/sluzby/sgov-server
-      REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
+      REPOSITORY_URL: http://al-db-server:7200/repositories/${REPOSITORY}
       KEYCLOAK_REALM: assembly-line
       KEYCLOAK_RESOURCE: al-sgov-server
       KEYCLOAK_AUTHSERVERURL: http://al-auth-server:8080/modelujeme/sluzby/auth-server
@@ -141,8 +141,8 @@ services:
       COMPONENTS:
       TERMIT_CORS_ALLOWEDORIGINPATTERNS: "*"
       TERMIT_REPOSITORY_CANONICAL_CONTAINER: https://slovník.gov.cz
-      TERMIT_REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
-      TERMIT_REPOSITORY_PUBLICURL: ${URL}/sluzby/db-server/repositories/assembly-line
+      TERMIT_REPOSITORY_URL: http://al-db-server:7200/repositories/${REPOSITORY}
+      TERMIT_REPOSITORY_PUBLICURL: ${URL}/sluzby/db-server/repositories/${REPOSITORY}
       TERMIT_TEXTANALYSIS_URL: http://al-annotace-server:8080/annotate?enableKeywordExtraction=true
       TERMIT_TEXTANALYSIS_TERMOCCURRENCEMINSCORE: "0.49"
       TERMIT_TEXTANALYSIS_TERMASSIGNMENTMINSCORE: "1"
@@ -190,7 +190,7 @@ services:
       KEYCLOAK_SECRET: ${CHECKIT_SERVER_KEYCLOAK_CREDENTIALS_SECRET}
       KEYCLOAK_API-ADMIN_USERNAME: ${KEYCLOAK_API_USER_USERNAME}
       KEYCLOAK_API-ADMIN_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
-      REPOSITORY_URL: http://al-db-server:7200/repositories/assembly-line
+      REPOSITORY_URL: http://al-db-server:7200/repositories/${REPOSITORY}
       GITHUB_PUBLISH-TO-SSP: true
       GITHUB_TOKEN: ${CHECKIT_SERVER_REPOSITORY_GITHUBUSERTOKEN}
       SGOV-SERVER_URL: http://al-sgov-server:8080/modelujeme/sluzby/sgov-server

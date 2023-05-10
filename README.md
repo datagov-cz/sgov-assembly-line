@@ -34,7 +34,8 @@ Postup:
    - `KEYCLOAK_PASSWORD` - heslo k přihlášení do admin konzole Keycloaku
    - `KEYCLOAK_API_USER_USERNAME` - uživatelské jméno pro přístup k API Keycloaku (potřebné pro CheckIt)
    - `KEYCLOAK_API_USER_PASSWORD` - heslo pro přístup k API Keycloaku (potřebné pro CheckIt)
-   - `REPOSITORY_GITHUBUSERTOKEN` - GitHub token (nutné pouze pro publikaci pracovního prostoru na Github)
+   - `SGOV_SERVER_REPOSITORY_GITHUBUSERTOKEN` - GitHub token pro vytvoření PR (nutné pouze pro publikaci pracovního prostoru na Github)
+   - `CHECKIT_SERVER_REPOSITORY_GITHUBUSERTOKEN` - GitHub token pro schvalování PR (nutné pouze pro publikaci pracovního prostoru na Github)
 
 3. Spusť `docker-compose` s příslušným `.env.*` souborem. Příklad:
 
