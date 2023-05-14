@@ -191,7 +191,7 @@ services:
       KEYCLOAK_APIADMIN_USERNAME: ${KEYCLOAK_API_USER_USERNAME}
       KEYCLOAK_APIADMIN_PASSWORD: ${KEYCLOAK_API_USER_PASSWORD}
       REPOSITORY_URL: http://al-db-server:7200/repositories/${REPOSITORY}
-      GITHUB_PUBLISHTOSSP: false
+      GITHUB_PUBLISHTOSSP: "false"
       GITHUB_TOKEN: ${CHECKIT_SERVER_REPOSITORY_GITHUBUSERTOKEN}
       SGOVSERVER_URL: http://al-sgov-server:8080/modelujeme/sluzby/sgov-server
     depends_on:
