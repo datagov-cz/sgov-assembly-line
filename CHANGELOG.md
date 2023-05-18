@@ -12,6 +12,7 @@ All notable changes to the Assembly line tooling will be documented here.
 - [OntoGrapher - #491](https://github.com/datagov-cz/ontoGrapher/issues/491), support for equivalent classes,
 - [OntoGrapher - #488](https://github.com/datagov-cz/ontoGrapher/issues/488), fix for selection artifacts baking themselves into exported images,
 - [OntoGrapher - #485](https://github.com/datagov-cz/ontoGrapher/issues/485), fix for assignment/creation of tropes in Compact view did not add that trope in Full view
+- [TermIt - #109](https://github.com/datagov-cz/termit/issues/109), fix exporting of a vocabulary to respect selected contexts
 
 ## 2023-04-08 - Easter release
 This release changes user eXperience of major applications -- Mission Control, OntoGrapher, and some minor changes in other tools. It also fixes bugs found in previously released version.
