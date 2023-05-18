@@ -5,6 +5,9 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+### Features
+- [TermIt-ui - #127](https://github.com/datagov-cz/termit-ui/pull/127), Export button added to vocabulary summary
+
 ### Bug fixes
 - [OntoGrapher - #491](https://github.com/datagov-cz/ontoGrapher/issues/491), support for equivalent classes,
 - [OntoGrapher - #488](https://github.com/datagov-cz/ontoGrapher/issues/488), fix for selection artifacts baking themselves into exported images,
