@@ -6,7 +6,8 @@ All notable changes to the Assembly line tooling will be documented here.
 - /RELEASE-MANAGER/ short description
 
 ### Features
-- [TermIt-ui - #127](https://github.com/datagov-cz/termit-ui/pull/127), Export button added to vocabulary summary
+- [TermIt-ui - #127](https://github.com/datagov-cz/termit-ui/pull/127), export button added to vocabulary summary
+- [Mission Control - #246](https://github.com/datagov-cz/mission-control/pull/246), added button that calls CheckIt, it it visible only when CheckIt is deployed in AL
 
 ### Bug fixes
 - [OntoGrapher - #491](https://github.com/datagov-cz/ontoGrapher/issues/491), support for equivalent classes,
