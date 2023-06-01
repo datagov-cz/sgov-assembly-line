@@ -20,7 +20,7 @@ case $ENV in
 
   development)
     export CONTEXT=development
-    export URL=https://xn--slovnk-test-scb.mvcr.gov.cz/modelujeme
+    export URL=https://xn--slovnk-test-scb.dia.gov.cz/modelujeme
     FILE=.env.development
     ;;
 
