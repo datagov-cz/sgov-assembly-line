@@ -5,11 +5,16 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+## 2023-06-17
+New release to coincide with the migration to new servers and the redeployment of the production environment after its outages.
+
 ### Features
 - [TermIt-ui - #127](https://github.com/datagov-cz/termit-ui/pull/127), export button added to vocabulary summary
 - [Mission Control - #246](https://github.com/datagov-cz/mission-control/pull/246), added button that calls CheckIt, it it visible only when CheckIt is deployed in AL
 
 ### Bug fixes
+- [OntoGrapher - #495](https://github.com/datagov-cz/ontoGrapher/issues/495), fix errors when filtering for project vocabularies,
+- [OntoGrapher - #487](https://github.com/datagov-cz/ontoGrapher/issues/487), fix data representation for connections,
 - [OntoGrapher - #491](https://github.com/datagov-cz/ontoGrapher/issues/491), support for equivalent classes,
 - [OntoGrapher - #488](https://github.com/datagov-cz/ontoGrapher/issues/488), fix for selection artifacts baking themselves into exported images,
 - [OntoGrapher - #485](https://github.com/datagov-cz/ontoGrapher/issues/485), fix for assignment/creation of tropes in Compact view did not add that trope in Full view
