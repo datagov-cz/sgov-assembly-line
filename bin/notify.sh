@@ -9,7 +9,7 @@
 # webhook to slack channel typically starting with https://hooks.slack.com/services/
 WEBHOOK=
 
-# context of assembly line e.g. PROD/DEV
+# context of assembly line e.g. PROD/TEST/DEV
 CTX=PROD
 
 ########
