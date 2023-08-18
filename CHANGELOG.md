@@ -5,6 +5,12 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+## 2023-08-??
+- Term list export and compact mode improvements
+
+### Features
+- [Ontographer - AL#129](https://github.com/opendata-mvcr/sgov-assembly-line/issues/129), implementation of term list export and relator type trope modeling in Compact mode
+
 ## 2023-06-17
 New release to coincide with the migration to new servers and the redeployment of the production environment after its outages.
 
