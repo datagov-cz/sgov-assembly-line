@@ -5,7 +5,7 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
-## 2023-08-??
+## 2023-08-20
 - Term list export and compact mode improvements
 
 ### Features
