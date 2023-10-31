@@ -48,8 +48,7 @@ services:
     build:
       context: al-db-server
       args:
-        GRAPHDB_ZIP: ${GRAPHDB_ZIP_FILE_NAME}
-    image: al-graphdb
+        GRAPHDB_ZIP: ${GRAPHDB_ZIP:-graphdb-free-9.6.0-dist.zip}
     environment:
       CONTEXT:
       ID: al-db-server
@@ -171,12 +170,12 @@ services:
     restart: always
   al-checkit-ui:
     image: ghcr.io/filip-kopecky/checkit-ui/al-checkit-ui:latest
-    environment: 
+    environment:
       VITE_URL: ${URL}/v-nástroji/checkit/
       VITE_APP_ID: al-checkit-ui
       VITE_AUTHENTICATION_SERVER: ${URL}/sluzby/auth-server/realms/assembly-line
       VITE_SERVER: ${URL}/sluzby/checkit-server
-    depends_on: 
+    depends_on:
       - al-auth-server
     restart: always
   al-checkit-server:

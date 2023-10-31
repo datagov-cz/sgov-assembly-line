@@ -5,6 +5,28 @@ All notable changes to the Assembly line tooling will be documented here.
 ## [Unreleased] - yyyy-mm-dd
 - /RELEASE-MANAGER/ short description
 
+## 2023-08-20
+- Term list export and compact mode improvements
+
+### Features
+- [Ontographer - AL#129](https://github.com/opendata-mvcr/sgov-assembly-line/issues/129), implementation of term list export and relator type trope modeling in Compact mode
+
+## 2023-06-17
+New release to coincide with the migration to new servers and the redeployment of the production environment after its outages.
+
+### Features
+- [TermIt-ui - #127](https://github.com/datagov-cz/termit-ui/pull/127), export button added to vocabulary summary
+- [Mission Control - #246](https://github.com/datagov-cz/mission-control/pull/246), added button that calls CheckIt, it it visible only when CheckIt is deployed in AL
+
+### Bug fixes
+- [OntoGrapher - #495](https://github.com/datagov-cz/ontoGrapher/issues/495), fix errors when filtering for project vocabularies,
+- [OntoGrapher - #487](https://github.com/datagov-cz/ontoGrapher/issues/487), fix data representation for connections,
+- [OntoGrapher - #491](https://github.com/datagov-cz/ontoGrapher/issues/491), support for equivalent classes,
+- [OntoGrapher - #488](https://github.com/datagov-cz/ontoGrapher/issues/488), fix for selection artifacts baking themselves into exported images,
+- [OntoGrapher - #485](https://github.com/datagov-cz/ontoGrapher/issues/485), fix for assignment/creation of tropes in Compact view did not add that trope in Full view
+- [TermIt - #109](https://github.com/datagov-cz/termit/issues/109), fix exporting of a vocabulary to respect selected contexts
+- [Assembly line - #135](https://github.com/opendata-mvcr/sgov-assembly-line/pull/135), updated database ruleset
+
 ## 2023-04-08 - Easter release
 This release changes user eXperience of major applications -- Mission Control, OntoGrapher, and some minor changes in other tools. It also fixes bugs found in previously released version.
 
