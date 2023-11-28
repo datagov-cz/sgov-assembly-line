@@ -4,7 +4,7 @@ about: Použijte, když něco nebude fungovat, tak jak by podle vás
   mělo.
 title: ''
 labels: bug
-assignees: MichalMed
+assignees: bindeali
 
 ---
 Pokud je to možné, pokuste se informaci o chybě rozepsat dle následující struktury, pomůžete nám ji rychleji identifikovat a opravit.
