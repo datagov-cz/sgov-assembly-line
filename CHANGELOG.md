@@ -2,7 +2,7 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
-## [Unreleased] - yyyy-mm-dd
+## 2023-12-05
 Ontographer stability and minor speed improvements along with minor bug fixes.
 - [OntoGrapher - #509](https://github.com/datagov-cz/ontoGrapher/issues/509), fix row duplication in RPP exports
 - [OntoGrapher - #505](https://github.com/datagov-cz/ontoGrapher/issues/505), fix IRI generation with slashes
