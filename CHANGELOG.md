@@ -2,8 +2,15 @@
 # Change Log
 All notable changes to the Assembly line tooling will be documented here.
 
-## [Unreleased] - yyyy-mm-dd
-- /RELEASE-MANAGER/ short description
+## 2023-12-05
+Ontographer stability and minor speed improvements along with minor bug fixes.
+- [OntoGrapher - #509](https://github.com/datagov-cz/ontoGrapher/issues/509), fix row duplication in RPP exports
+- [OntoGrapher - #505](https://github.com/datagov-cz/ontoGrapher/issues/505), fix IRI generation with slashes
+- [Ontographer - AL#178](https://github.com/opendata-mvcr/sgov-assembly-line/issues/178), fixed error when attempting to delete last remaining diagram
+- [Ontographer - AL#176](https://github.com/opendata-mvcr/sgov-assembly-line/issues/176), implemented clarifying text to differentiate write-enabled and read-only terms
+- [Ontographer - AL#173](https://github.com/opendata-mvcr/sgov-assembly-line/issues/173), fixed context menu appearing on new term creation
+- [Ontographer - AL#171](https://github.com/opendata-mvcr/sgov-assembly-line/issues/171), fixed "Vocabularies" selector in diagram detail panel's styling
+- [Assembly Line - AL#166](https://github.com/opendata-mvcr/sgov-assembly-line/issues/166), fixed server restriction causing TermIT CSV export to not work
 
 ## 2023-08-20
 - Term list export and compact mode improvements
