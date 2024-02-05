@@ -1,7 +1,8 @@
-@prefix : <http://www.ontotext.com/connectors/lucene#> .
+@prefix : <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/model#> .
 @prefix l-sgov-529-2006-pojem: <https://slovník.gov.cz/legislativní/sbírka/529/2006/pojem/> .
 @prefix g-sgov-iso-iec-270322012-07-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270322012-07-15> .
 @prefix g-sgov-iso-iec-385002008-corporate-governance-of-information-technology-pojem: <https://slovník.gov.cz/generický/iso-iec-385002008-corporate-governance-of-information-technology/pojem/> .
+@prefix ns1: <https://slovník.gov.cz/generický/iso-iec-ieee-std.-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010> .
 @prefix g-sgov-projekt-opendata-slovník: <https://slovník.gov.cz/generický/projekt-opendata> .
 @prefix g-sgov-institut-pro-veřejnou-správu-pojem: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu/pojem/> .
 @prefix g-sgov-český-statistický-úřad: <https://slovník.gov.cz/generický/český-statistický-úřad/> .
@@ -13,6 +14,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix g-sgov-iso-iec-27034-12011-11-15: <https://slovník.gov.cz/generický/iso-iec-27034-12011-11-15/> .
 @prefix g-sgov-iso-iec-291002011-12-15: <https://slovník.gov.cz/generický/iso-iec-291002011-12-15/> .
+@prefix ns2: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č.-910-2014-ze-dne-23.-července-2014-č.-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu> .
 @prefix ac: <https://slovník.gov.cz/datový/pracovní-prostor/pojem/assetový-kontext/> .
 @prefix l-sgov-111-2009-slovník: <https://slovník.gov.cz/legislativní/sbírka/111/2009> .
 @prefix g-sgov-iso-iec-270312011-03-01-pojem: <https://slovník.gov.cz/generický/iso-iec-270312011-03-01/pojem/> .
@@ -82,7 +84,9 @@
 @prefix g-sgov-iso-iec-ieee-42010-2011-defines-architecture-pojem: <https://slovník.gov.cz/generický/iso-iec-ieee-42010-2011-defines-architecture/pojem/> .
 @prefix l-sgov-320-2001-slovník: <https://slovník.gov.cz/legislativní/sbírka/320/2001-DRAFT> .
 @prefix g-sgov-směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru-slovník: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru> .
+@prefix ns3: <https://slovník.gov.cz/generický/národní-strategie-el.-zdravotnictví-slovník-pojmů/pojem/> .
 @prefix l-sgov-82-2018: <https://slovník.gov.cz/legislativní/sbírka/82/2018/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix g-sgov-iso-iec-9798-12010-07-01-pojem: <https://slovník.gov.cz/generický/iso-iec-9798-12010-07-01/pojem/> .
 @prefix g-sgov-nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu-slovník: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu> .
 @prefix g-sgov-iso-iec-24760-12011-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-24760-12011-12-15/pojem/> .
@@ -148,6 +152,7 @@
 @prefix g-sgov-iso-iec-27050-12016-11-01-slovník: <https://slovník.gov.cz/generický/iso-iec-27050-12016-11-01> .
 @prefix l-sgov-365-2000-slovník: <https://slovník.gov.cz/legislativní/sbírka/365/2000> .
 @prefix g-sgov-iso-iec-197922009-08-01: <https://slovník.gov.cz/generický/iso-iec-197922009-08-01/> .
+@prefix ns4: <https://slovník.gov.cz/generický/https--opendata.gov.cz-start> .
 @prefix g-sgov-search-virtual-desktop-pojem: <https://slovník.gov.cz/generický/search-virtual-desktop/pojem/> .
 @prefix g-sgov-iso-iec-18014-12008-09-01-pojem: <https://slovník.gov.cz/generický/iso-iec-18014-12008-09-01/pojem/> .
 @prefix g-sgov-iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes-pojem: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes/pojem/> .
@@ -156,6 +161,7 @@
 @prefix l-sgov-99-2019-pojem: <https://slovník.gov.cz/legislativní/sbírka/99/2019/pojem/> .
 @prefix g-sgov-iso-iec-218272008-10-15-slovník: <https://slovník.gov.cz/generický/iso-iec-218272008-10-15> .
 @prefix g-sgov-iso-iec-270402015-01-15: <https://slovník.gov.cz/generický/iso-iec-270402015-01-15/> .
+@prefix docttr: <http://tpl.ottr.xyz/p/docttr/0.1/> .
 @prefix g-sgov-iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15-slovník: <https://slovník.gov.cz/generický/iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15> .
 @prefix g-sgov-iso-iec-270002016-02-15: <https://slovník.gov.cz/generický/iso-iec-270002016-02-15/> .
 @prefix g-sgov-čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky: <https://slovník.gov.cz/generický/čsn-en-iso-iec-27001-oprava-2---informační-technologie---bezpečnostní-techniky---systémy-řízení-bezpečnosti-informací---požadavky/> .
@@ -215,6 +221,7 @@
 @prefix g-sgov-iso-iec-9798-11997-iso-iec-18014-12008-09-01: <https://slovník.gov.cz/generický/iso-iec-9798-11997-iso-iec-18014-12008-09-01/> .
 @prefix g-sgov-výklad-oeg-pojem: <https://slovník.gov.cz/generický/výklad-oeg/pojem/> .
 @prefix a-sgov-998: <https://slovník.gov.cz/agendový/998-DRAFT/> .
+@prefix ns5: <https://slovník.gov.cz/generický/národní-strategie-el.-zdravotnictví-slovník-pojmů> .
 @prefix g-sgov-managementmania-pojem: <https://slovník.gov.cz/generický/managementmania/pojem/> .
 @prefix l-sgov-181-2014-pojem: <https://slovník.gov.cz/legislativní/sbírka/181/2014/pojem/> .
 @prefix g-sgov-itil-pojem: <https://slovník.gov.cz/generický/itil/pojem/> .
@@ -229,6 +236,7 @@
 @prefix g-sgov-iso-iec-18028-32005-pojem: <https://slovník.gov.cz/generický/iso-iec-18028-32005/pojem/> .
 @prefix g-sgov-iso-iec-15408-12014-01-15-slovník: <https://slovník.gov.cz/generický/iso-iec-15408-12014-01-15> .
 @prefix a-popis-dat: <http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/> .
+@prefix ns6: <https://slovník.gov.cz/generický/https--www.europeandataportal.eu-cs-homepage> .
 @prefix g-sgov-iso-iec-159452002-02-01-pojem: <https://slovník.gov.cz/generický/iso-iec-159452002-02-01/pojem/> .
 @prefix l-sgov-12-2020-slovník: <https://slovník.gov.cz/legislativní/sbírka/12/2020> .
 @prefix g-sgov-iso-iec-27036-32013-11-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27036-32013-11-15> .
@@ -251,6 +259,7 @@
 @prefix g-sgov-iso-iec-152882008: <https://slovník.gov.cz/generický/iso-iec-152882008/> .
 @prefix g-sgov-roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006-slovník: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006> .
 @prefix g-sgov-iso-iec-101162006-02-01: <https://slovník.gov.cz/generický/iso-iec-101162006-02-01/> .
+@prefix ns7: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006.> .
 @prefix g-sgov-iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15-pojem: <https://slovník.gov.cz/generický/iso-iec-1388812009-modified---the-note-was-removed-iso-iec-27036-12014-03-15/pojem/> .
 @prefix l-sgov-89-1995: <https://slovník.gov.cz/legislativní/sbírka/89/1995/> .
 @prefix g-sgov-oeg-částečně-ivs: <https://slovník.gov.cz/generický/oeg-částečně-ivs/> .
@@ -312,7 +321,7 @@
 @prefix ns12: <https://slovník.gov.cz/generický/https--www.europeandataportal.eu-cs-homepage/pojem/> .
 @prefix ns11: <https://slovník.gov.cz/datový/pracovní-prostor/pojem/slovníkový-kontext/> .
 @prefix ns10: <https://slovník.gov.cz/generický/https--opendata.gov.cz-start/pojem/> .
-@prefix ns14: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26.-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru> .
+@prefix ns8: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26.-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru/pojem/> .
 @prefix g-sgov-iso-iec-180312011-11-15-slovník: <https://slovník.gov.cz/generický/iso-iec-180312011-11-15> .
 @prefix g-sgov-iso-iec-158162002-02-01-pojem: <https://slovník.gov.cz/generický/iso-iec-158162002-02-01/pojem/> .
 @prefix l-sgov-320-2001-pojem: <https://slovník.gov.cz/legislativní/sbírka/320/2001-DRAFT/pojem/> .
@@ -352,6 +361,7 @@
 @prefix g-sgov-iso-iec-9798-11997-iso-iec-18014-12008-09-01-pojem: <https://slovník.gov.cz/generický/iso-iec-9798-11997-iso-iec-18014-12008-09-01/pojem/> .
 @prefix ws: <https://slovník.gov.cz/agendový/pracovní-prostor/pojem/slovníkový-kontext/> .
 @prefix g-sgov-smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr-pojem: <https://slovník.gov.cz/generický/smlouva-o--poskytování-dodávek-a-servisních-služeb-mv-čr/pojem/> .
+@prefix ns9: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č.-910-2014-ze-dne-23.-července-2014-č.-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu/pojem/> .
 @prefix g-sgov-iso-iec-9798-11997-iso-iec-18014-12008-09-01-slovník: <https://slovník.gov.cz/generický/iso-iec-9798-11997-iso-iec-18014-12008-09-01> .
 @prefix l-sgov-111-2009-pojem: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/> .
 @prefix g-sgov-nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č-910-2014-ze-dne-23-července-2014-č-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu/> .
@@ -365,6 +375,7 @@
 @prefix g-sgov-iso-iec-270402015-01-15-slovník: <https://slovník.gov.cz/generický/iso-iec-270402015-01-15> .
 @prefix g-sgov-institut-pro-veřejnou-správu-slovník-pojmů-pojem: <https://slovník.gov.cz/generický/institut-pro-veřejnou-správu-slovník-pojmů/pojem/> .
 @prefix l-sgov-111-2009: <https://slovník.gov.cz/legislativní/sbírka/111/2009/> .
+@prefix ns14: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26.-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru> .
 @prefix g-sgov-iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes-slovník: <https://slovník.gov.cz/generický/iso-iec-122072008---systems-and-software-engineering---software-life-cycle-processes> .
 @prefix g-sgov-itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os-slovník: <https://slovník.gov.cz/generický/itil-v3---slovníček-termínů-definic-a-zkratek-itsmf-czech-republic-os> .
 @prefix g-sgov-search-virtual-desktop: <https://slovník.gov.cz/generický/search-virtual-desktop/> .
@@ -373,23 +384,17 @@
 @prefix g-sgov-iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels-slovník: <https://slovník.gov.cz/generický/iso-iec-15026-32011-systems-and-software-engineering---systems-and-software-assurance---part-3-system-integrity-levels> .
 @prefix g-sgov-iso-iec-9798-52009-pojem: <https://slovník.gov.cz/generický/iso-iec-9798-52009/pojem/> .
 @prefix g-sgov-iso-iec-301112013-11-01-pojem: <https://slovník.gov.cz/generický/iso-iec-301112013-11-01/pojem/> .
+@prefix prefix: <http://www.ontotext.com/connectors/lucene#> .
 @prefix a-sgov-998-p: <https://slovník.gov.cz/agendový/998-DRAFT/pojem/> .
 @prefix g-sgov-iso-iec-270312011-03-01-slovník: <https://slovník.gov.cz/generický/iso-iec-270312011-03-01> .
 @prefix g-sgov-iso-iec-18014-32009-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-18014-32009-12-15> .
 @prefix g-sgov-iso-iec-247452011-06-15-slovník: <https://slovník.gov.cz/generický/iso-iec-247452011-06-15> .
-@prefix ns2: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č.-910-2014-ze-dne-23.-července-2014-č.-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu> .
-@prefix ns1: <https://slovník.gov.cz/generický/iso-iec-ieee-std.-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010> .
-@prefix ns4: <https://slovník.gov.cz/generický/https--opendata.gov.cz-start> .
 @prefix l-sgov-106-1999-slovník: <https://slovník.gov.cz/legislativní/sbírka/106/1999> .
-@prefix ns3: <https://slovník.gov.cz/generický/národní-strategie-el.-zdravotnictví-slovník-pojmů/pojem/> .
-@prefix ns6: <https://slovník.gov.cz/generický/https--www.europeandataportal.eu-cs-homepage> .
-@prefix ns5: <https://slovník.gov.cz/generický/národní-strategie-el.-zdravotnictví-slovník-pojmů> .
-@prefix ns8: <https://slovník.gov.cz/generický/směrnice-evropského-parlamentu-a-rady-eu-2016-2102-ze-dne-26.-října-2016-o-přístupnosti-internetových-stránek-a-mobilních-aplikací-subjektů-veřejného-sektoru/pojem/> .
+@prefix ns81: <https://slovník.gov.cz/generický/iso-iec-ieee-std.-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010/pojem/> .
 @prefix g-sgov-iso-iec-27034-12011-iso-iec-270322012-07-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27034-12011-iso-iec-270322012-07-15> .
-@prefix ns7: <https://slovník.gov.cz/generický/roger-sessions-a-better-path-to-enterprise-architectures-roger-sessions-duben-2006.> .
 @prefix g-sgov-oecd-slovník-pojem: <https://slovník.gov.cz/generický/oecd-slovník/pojem/> .
-@prefix ns9: <https://slovník.gov.cz/generický/nařízení-ep-a-rady-eu-č.-910-2014-ze-dne-23.-července-2014-č.-910-2014-o-elektronické-identifikaci-a-službách-vytvářejících-důvěru-pro-elektronické-transakce-na-vnitřním-trhu/pojem/> .
 @prefix l-sgov-82-2018-slovník: <https://slovník.gov.cz/legislativní/sbírka/82/2018> .
+@prefix ottr: <http://ns.ottr.xyz/0.4/> .
 @prefix g-sgov-information-technology-infrastructure-library-slovník: <https://slovník.gov.cz/generický/information-technology-infrastructure-library> .
 @prefix g-sgov-iso-iec-18014-22009-12-15-slovník: <https://slovník.gov.cz/generický/iso-iec-18014-22009-12-15> .
 @prefix g-sgov-iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací: <https://slovník.gov.cz/generický/iso-iec-17799---soubor-norem-informační-technologie---bezpečnostní-techniky---soubor-postupů-pro-management-bezpečnosti-informací/> .
@@ -411,7 +416,6 @@
 @prefix g-sgov-iso-iec-18014-22009-12-15-pojem: <https://slovník.gov.cz/generický/iso-iec-18014-22009-12-15/pojem/> .
 @prefix l-sgov-89-2012-pojem: <https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/> .
 @prefix g-sgov-wikipedie-slovník: <https://slovník.gov.cz/generický/wikipedie> .
-@prefix ns81: <https://slovník.gov.cz/generický/iso-iec-ieee-std.-247652010-systems-and-software-engineering---vocabulary-iso-iec-ieee-2010/pojem/> .
 @prefix g-sgov-iso-iec-tr-270192013-07-15: <https://slovník.gov.cz/generický/iso-iec-tr-270192013-07-15/> .
 @prefix g-sgov-iso-iec-27033-12015-08-15-slovník: <https://slovník.gov.cz/generický/iso-iec-27033-12015-08-15> .
 @prefix l-sgov-89-2012-slovník: <https://slovník.gov.cz/legislativní/sbírka/89/2012> .
@@ -500,789 +504,426 @@
 @prefix g-sgov-iso-iec-15408-12014-01-15: <https://slovník.gov.cz/generický/iso-iec-15408-12014-01-15/> .
 @prefix l-sgov-300-2008: <https://slovník.gov.cz/legislativní/sbírka/300/2008/> .
 
-<http://onto.fel.cvut.cz/ontologies/termit> {
-  a-popis-dat-pojem:slovník a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:datová-sada .
-  
-  a-popis-dat-pojem:má-dokumentový-slovník a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    owl:inverseOf a-popis-dat-pojem:popisuje-dokument .
-  
-  termit-pojem:má-reakci a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain <http://rdfs.org/sioc/types#Comment>;
-    rdfs:range termit-pojem:reakce;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has reaction"@en, "Má reakci"@cs .
-  
-  termit-pojem:má-zdroj-definice-termu a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain a-popis-dat-pojem:term;
-    rdfs:range xsd:boolean;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "má zdroj definice termu"@cs .
-  
-  a-popis-dat-pojem:je-částí-dokumentu a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah .
-  
-  termit-pojem:reakce a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf z-sgov-p:objekt;
-    skos:broader z-sgov-p:typ-objektu, z-sgov-p:objekt;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Reaction"@en, "Reakce"@cs .
-  
-  a-popis-dat-pojem:má-soubor a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:dokument;
-    rdfs:range a-popis-dat-pojem:soubor;
-    owl:inverseOf a-popis-dat-pojem:je-částí-dokumentu .
-  
-  termit-pojem:používá-pojmy-ze-slovníku a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:slovník;
-    rdfs:range a-popis-dat-pojem:slovník;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Uses terms from vocabulary"@en, "Používá pojmy ze slovníku"@cs .
-  
-  a-popis-dat-pojem:má-glosář a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/ufo/has-part>;
-    rdfs:domain a-popis-dat-pojem:slovník;
-    rdfs:range a-popis-dat-pojem:glosář .
-  
-  termit-pojem:je-přiřazením-termu a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain termit-pojem:přiřazení-termu;
-    rdfs:range a-popis-dat-pojem:term;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Is assignment of a term"@en, "Je přiřazením termu"@cs .
-  
-  a-popis-dat-pojem:popisuje-dokument a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:dokumentový-slovník;
-    rdfs:range a-popis-dat-pojem:dokument .
-  
-  skos:inScheme a owl:ObjectProperty .
-  
-  termit-pojem:zdroj-definice-termu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:souborový-výskyt-termu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:souborový-výskyt-termu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "zdroj definice termu"@cs .
-  
-  a-popis-dat-pojem:dokumentový-slovník a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:slovník .
-  
-  a-popis-dat-pojem:je-pojmem-ze-slovníku a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-pojmem;
-    rdfs:range a-popis-dat-pojem:slovník .
-  
-  a-popis-dat-pojem:glosář a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf skos:ConceptScheme, <http://onto.fel.cvut.cz/ontologies/ufo/object> .
-  
-  a-popis-dat-pojem:model a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
-  
-  z-sgov-p:typ-objektu a owl:Class .
-  
-  z-sgov-p:typ-vlastnosti a owl:Class .
-  
-  z-sgov-p:typ-vztahu a owl:Class .
-  
-  z-sgov-p:typ-události a owl:Class .
-  
-  z-sgov-p:vlastnost a owl:DatatypeProperty .
-  
-  z-sgov-p:vztah a owl:ObjectProperty .
-  
-  z-sgov-p:objekt a owl:Class .
-  
-  a-popis-dat-pojem:má-model a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/ufo/has-part>;
-    rdfs:domain a-popis-dat-pojem:slovník;
-    rdfs:range a-popis-dat-pojem:model .
-  
-  skos:hasTopConcept a owl:AnnotationProperty .
-  
-  a-popis-dat-pojem:má-autora a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-editora .
-  
-  a-popis-dat-pojem:má-datum-a-čas-poslední-modifikace a z-sgov-p:typ-vlastnosti, owl:DatatypeProperty,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-datum-a-čas-modifikace .
-  
-  a-popis-dat-pojem:má-datum-a-čas-vytvoření a z-sgov-p:typ-vlastnosti, owl:DatatypeProperty,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-datum-a-čas-modifikace .
-  
-  a-popis-dat-pojem:má-posledního-editora a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-editora .
-  
-  termit-pojem:je-draft a skos:Concept, z-sgov-p:typ-vlastnosti, owl:DatatypeProperty;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:term;
-    rdfs:range termit-pojem:zdroj-definice-termu;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "je draft"@cs .
-  
-  a-popis-dat-pojem:uživatel a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person> .
-  
-  a-popis-dat-pojem:má-křestní-jméno a z-sgov-p:typ-vlastnosti, owl:DatatypeProperty,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person>;
-    rdfs:range rdfs:Literal .
-  
-  a-popis-dat-pojem:má-příjmení a z-sgov-p:typ-vlastnosti, owl:DatatypeProperty, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person>;
-    rdfs:range rdfs:Literal .
-  
-  a-popis-dat-pojem:má-heslo a z-sgov-p:typ-vlastnosti, owl:DatatypeProperty, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain a-popis-dat-pojem:uživatel;
-    rdfs:range rdfs:Literal .
-  
-  a-popis-dat-pojem:má-uživatelské-jméno a z-sgov-p:typ-vlastnosti, owl:DatatypeProperty,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain a-popis-dat-pojem:uživatel;
-    rdfs:range rdfs:Literal .
-  
-  termit-pojem:uživatel-termitu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf a-popis-dat-pojem:uživatel;
-    skos:broader z-sgov-p:typ-objektu, a-popis-dat-pojem:uživatel;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "TermIt user"@en, "Uživatel TermItu"@cs .
-  
-  termit-pojem:administrátor-termitu a skos:Concept, owl:Class, z-sgov-p:typ-objektu,
-      termit-pojem:uživatelská-role;
-    rdfs:subClassOf termit-pojem:uživatel-termitu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:uživatel-termitu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Administrator"@en, "Administrátor"@cs;
-    skos:scopeNote "He or she has full access to the system, including user administration."@en,
-      "Má plný přístup k systému, včetně administrace uživatelů."@cs .
-  
-  a-popis-dat-pojem:má-editora a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:range a-popis-dat-pojem:uživatel .
-  
-  a-popis-dat-pojem:má-datum-a-čas-modifikace a z-sgov-p:typ-vlastnosti, owl:DatatypeProperty,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain <http://onto.fel.cvut.cz/ontologies/ufo/object>;
-    rdfs:range rdfs:Literal .
-  
-  a-popis-dat-pojem:vytvoření-entity a owl:Class, z-sgov-p:typ-události, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:změna .
-  
-  a-popis-dat-pojem:má-změněnou-entitu a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:změna;
-    rdfs:range <http://onto.fel.cvut.cz/ontologies/ufo/endurant> .
-  
-  a-popis-dat-pojem:má-změněný-atribut a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:úprava-entity .
-  
-  a-popis-dat-pojem:má-novou-hodnotu a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:úprava-entity .
-  
-  a-popis-dat-pojem:úprava-entity a owl:Class, z-sgov-p:typ-události, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:změna .
-  
-  a-popis-dat-pojem:má-původní-hodnotu a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:úprava-entity .
-  
-  a-popis-dat-pojem:dokument a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:zdroj .
-  
-  <http://onto.fel.cvut.cz/ontologies/ufo/object> a owl:Class .
-  
-  a-popis-dat:model a owl:Ontology, a-popis-dat-pojem:model, owl:NamedIndividual;
-    rdfs:label "Slovník popis dat - model"@cs, "Vocabulary for data description - model"@en;
-    dc:created "13.11.2019";
-    <http://purl.org/ontology/bibo/status> "Specifikace"@cs, "Specification"@en;
-    vann:preferredNamespacePrefix "a-popis-dat-pojem";
-    vann:preferredNamespaceUri "http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/pojem/";
-    owl:versionIRI <http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/model/verze/1.0.1>;
-    owl:imports <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/1.0.0>, a-popis-dat:glosář;
-    <http://purl.org/dc/elements/1.1/rights> <https://creativecommons.org/licenses/by/4.0/>;
-    <http://purl.org/dc/elements/1.1/title> "Slovník popis dat - model"@cs, "Vocabulary for data description - model"@en;
-    <http://purl.org/dc/elements/1.1/creator> "Michal Med" .
-  
-  a-popis-dat-pojem:obsahuje-kořenový-pojem a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual, owl:AnnotationProperty;
-    rdfs:subPropertyOf skos:hasTopConcept, a-popis-dat-pojem:obsahuje-pojem .
-  
-  <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/offers-dataset> a owl:ObjectProperty .
-  
-  a-popis-dat-pojem:definuje-funkci a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:atribut-databázové-tabulky;
-    rdfs:range a-popis-dat-pojem:funkce .
-  
-  a-popis-dat-pojem:atribut-databázové-tabulky a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:atribut .
-  
-  a-popis-dat-pojem:funkce a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/trope> .
-  
-  a-popis-dat-pojem:importuje-slovník a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:slovník;
-    rdfs:range a-popis-dat-pojem:slovník .
-  
-  a-popis-dat-pojem:je-atributem a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:atribut;
-    rdfs:range <http://onto.fel.cvut.cz/ontologies/ufo/object> .
-  
-  a-popis-dat-pojem:atribut a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf z-sgov-p:objekt .
-  
-  a-popis-dat-pojem:je-atributem-databázové-tabulky a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-atributem;
-    rdfs:domain a-popis-dat-pojem:atribut-databázové-tabulky;
-    rdfs:range a-popis-dat-pojem:databázová-tabulka .
-  
-  a-popis-dat-pojem:databázová-tabulka a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
-  
-  a-popis-dat-pojem:je-atributem-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-atributem;
-    rdfs:domain a-popis-dat-pojem:atribut-záznamu;
-    rdfs:range a-popis-dat-pojem:záznam .
-  
-  a-popis-dat-pojem:atribut-záznamu a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:atribut, a-popis-dat-pojem:term .
-  
-  a-popis-dat-pojem:záznam a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf skos:Concept, <http://onto.fel.cvut.cz/ontologies/ufo/object> .
-  
-  a-popis-dat-pojem:je-datovým-atributem-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-atributem-záznamu;
-    rdfs:domain a-popis-dat-pojem:datový-atribut-záznamu .
-  
-  a-popis-dat-pojem:datový-atribut-záznamu a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:atribut-záznamu .
-  
-  a-popis-dat-pojem:je-pojmem a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-záznamem;
-    rdfs:domain a-popis-dat-pojem:term .
-  
-  a-popis-dat-pojem:je-záznamem a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:záznam;
-    rdfs:range <http://onto.fel.cvut.cz/ontologies/ufo/object> .
-  
-  a-popis-dat-pojem:term a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:záznam .
-  
-  a-popis-dat-pojem:je-referenčním-atributem-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-atributem-záznamu;
-    rdfs:domain a-popis-dat-pojem:referenční-atribut-záznamu .
-  
-  a-popis-dat-pojem:referenční-atribut-záznamu a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:atribut-záznamu .
-  
-  a-popis-dat-pojem:je-statistickým-atributem-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-atributem-záznamu;
-    rdfs:domain a-popis-dat-pojem:statistický-atribut-záznamu .
-  
-  a-popis-dat-pojem:statistický-atribut-záznamu a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:atribut-záznamu .
-  
-  a-popis-dat-pojem:je-v-kontextu a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah .
-  
-  a-popis-dat-pojem:je-v-kontextu-datové-sady a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-v-kontextu;
-    rdfs:range a-popis-dat-pojem:datová-sada .
-  
-  a-popis-dat-pojem:datová-sada a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:zdroj, <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset>,
-      a-popis-dat-pojem:kontext .
-  
-  a-popis-dat-pojem:je-verzí a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/ufo/is-snapshot-of>;
-    rdfs:domain <http://onto.fel.cvut.cz/ontologies/ufo/endurant> .
-  
-  <http://onto.fel.cvut.cz/ontologies/ufo/endurant> a owl:Class .
-  
-  a-popis-dat-pojem:je-záznamem-datové-sady a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:je-záznamem;
-    rdfs:range a-popis-dat-pojem:datová-sada .
-  
-  a-popis-dat-pojem:katalogizuje-datovou-sadu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:katalog;
-    rdfs:range a-popis-dat-pojem:datová-sada .
-  
-  a-popis-dat-pojem:katalog a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:datová-sada .
-  
-  a-popis-dat-pojem:má-atribut a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:range a-popis-dat-pojem:atribut;
-    owl:inverseOf a-popis-dat-pojem:je-atributem .
-  
-  a-popis-dat-pojem:má-atribut-databázové-tabulky a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-atribut;
-    rdfs:domain a-popis-dat-pojem:databázová-tabulka;
-    rdfs:range a-popis-dat-pojem:atribut-databázové-tabulky .
-  
-  a-popis-dat-pojem:má-atribut-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-atribut;
-    owl:inverseOf a-popis-dat-pojem:je-atributem-záznamu .
-  
-  a-popis-dat-pojem:má-datový-atribut-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-atribut-záznamu;
-    owl:inverseOf a-popis-dat-pojem:je-datovým-atributem-záznamu .
-  
-  a-popis-dat-pojem:má-datový-typ a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:atribut-databázové-tabulky .
-  
-  a-popis-dat-pojem:má-hodnotu-z-číselníku a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:atribut-databázové-tabulky;
-    rdfs:range a-popis-dat-pojem:číselník .
-  
-  a-popis-dat-pojem:číselník a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:databázová-tabulka .
-  
-  a-popis-dat-pojem:má-referenční-atribut-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-atribut-záznamu;
-    owl:inverseOf a-popis-dat-pojem:je-referenčním-atributem-záznamu .
-  
-  a-popis-dat-pojem:soubor a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:zdroj .
-  
-  a-popis-dat-pojem:má-statistický-atribut-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-atribut-záznamu;
-    owl:inverseOf a-popis-dat-pojem:je-statistickým-atributem-záznamu .
-  
-  a-popis-dat-pojem:má-zdroj a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain <http://onto.fel.cvut.cz/ontologies/ufo/object>;
-    rdfs:range a-popis-dat-pojem:zdroj .
-  
-  a-popis-dat-pojem:zdroj a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
-  
-  a-popis-dat-pojem:změna a owl:Class, z-sgov-p:typ-události, owl:NamedIndividual .
-  
-  a-popis-dat-pojem:má-číselníkovou-hodnotu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:má-atribut-databázové-tabulky;
-    rdfs:domain a-popis-dat-pojem:číselník;
-    rdfs:range a-popis-dat-pojem:číselníková-hodnota .
-  
-  a-popis-dat-pojem:číselníková-hodnota a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:atribut-databázové-tabulky .
-  
-  a-popis-dat-pojem:obsahuje-pojem a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:glosář;
-    rdfs:range a-popis-dat-pojem:term;
-    owl:inverseOf skos:inScheme .
-  
-  a-popis-dat-pojem:popisuje-legislativní-dokument a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf a-popis-dat-pojem:popisuje-dokument;
-    rdfs:domain a-popis-dat-pojem:legislativní-slovník;
-    rdfs:range a-popis-dat-pojem:dokument-legislativní-povahy .
-  
-  a-popis-dat-pojem:legislativní-slovník a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:dokumentový-slovník .
-  
-  a-popis-dat-pojem:dokument-legislativní-povahy a owl:Class, z-sgov-p:typ-objektu,
-      owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:dokument .
-  
-  a-popis-dat-pojem:poskytuje-atribut-záznamu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:zdroj-atributu-záznamu;
-    rdfs:range a-popis-dat-pojem:atribut-záznamu .
-  
-  a-popis-dat-pojem:zdroj-atributu-záznamu a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:zdroj-dat .
-  
-  a-popis-dat-pojem:poskytuje-datovou-sadu a owl:ObjectProperty, z-sgov-p:typ-vztahu,
-      owl:NamedIndividual;
-    rdfs:subPropertyOf <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/offers-dataset>;
-    rdfs:domain a-popis-dat-pojem:zdroj-datové-sady;
-    rdfs:range a-popis-dat-pojem:datová-sada .
-  
-  a-popis-dat-pojem:zdroj-datové-sady a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset-source> .
-  
-  a-popis-dat-pojem:poskytuje-záznam a owl:ObjectProperty, z-sgov-p:typ-vztahu, owl:NamedIndividual;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain a-popis-dat-pojem:zdroj-záznamu;
-    rdfs:range a-popis-dat-pojem:záznam .
-  
-  a-popis-dat-pojem:zdroj-záznamu a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:zdroj-dat .
-  
-  <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/person> a owl:Class .
-  
-  <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset> a owl:Class .
-  
-  <http://onto.fel.cvut.cz/ontologies/dataset-descriptor/pojem/dataset-source> a owl:Class .
-  
-  a-popis-dat-pojem:agendový-slovník a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:slovník .
-  
-  a-popis-dat-pojem:databáze a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:zdroj .
-  
-  a-popis-dat-pojem:databázová-tabulka-jako-zdroj-dat a owl:Class, z-sgov-p:typ-objektu,
-      owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:databázová-tabulka, a-popis-dat-pojem:dotaz-sql-databáze .
-  
-  a-popis-dat-pojem:dotaz-sql-databáze a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:zdroj-dat .
-  
-  a-popis-dat-pojem:kontext a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
+<https://slovník.gov.cz/základní/mapování-gufo> {
+  skos:Concept a owl:Class;
+    rdfs:subClassOf z-sgov-p:prvek .
+  
+  z-sgov-p:vztah a owl:Class;
     rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/endurant> .
   
-  a-popis-dat-pojem:datový-slovník a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:slovník .
+  <http://onto.fel.cvut.cz/ontologies/ufo/object> a owl:Class;
+    owl:equivalentClass z-sgov-p:objekt .
   
-  a-popis-dat-pojem:diagram a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf skos:ConceptScheme, <http://onto.fel.cvut.cz/ontologies/ufo/object> .
+  <http://onto.fel.cvut.cz/ontologies/ufo/endurant> a owl:Class;
+    owl:equivalentClass z-sgov-p:proměnný-prvek .
   
-  a-popis-dat-pojem:zdroj-dat a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
+  z-sgov-p:pasivní-objekt a owl:Class;
     rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
   
-  <http://onto.fel.cvut.cz/ontologies/ufo/trope> a owl:Class .
+  z-sgov-p:akce a owl:Class;
+    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/action> .
   
-  a-popis-dat-pojem:geometrický-atribut a owl:Class, z-sgov-p:typ-objektu, owl:NamedIndividual;
-    rdfs:subClassOf a-popis-dat-pojem:atribut .
+  z-sgov-p:časový-prvek a owl:Class .
   
-  termit-pojem:cíl-definičního-výskytu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:cíl-výskytu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:cíl-výskytu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Definition occurrence target"@en, "Cíl definičního výskytu"@cs;
-    skos:scopeNote "vyskytuje se v definici jiného termu"@cs .
+  <http://data.europa.eu/m8g/Criterion> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:cíl-výskytu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:cíl;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:cíl;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Occurrence target"@en, "Cíl výskytu"@cs .
+  <http://data.europa.eu/m8g/Cost> a owl:Class .
   
-  termit:glosář a owl:Ontology, a-popis-dat-pojem:glosář, skos:ConceptScheme;
-    dc:title "Vocabulary of system TermIt - glossary"@en, "Slovník systému TermIt - glosář"@cs;
-    dc:created "2020-05-26";
-    <http://purl.org/ontology/bibo/status> "Specifikace"@cs, "Specification"@en;
-    vann:preferredNamespacePrefix "termit-pojem";
-    vann:preferredNamespaceUri "http://onto.fel.cvut.cz/ontologies/application/termit/pojem/";
-    skos:hasTopConcept termit-pojem:má-zdroj-definice-termu, termit-pojem:je-přiřazením-termu,
-      termit-pojem:je-draft, termit-pojem:uživatel-termitu, termit-pojem:má-prefix-text-quote,
-      termit-pojem:je-selektorem-definice-termu, termit-pojem:přiřazení-termu, termit-pojem:má-cíl,
-      termit-pojem:selektor-definice, termit-pojem:má-suffix-text-quote, termit-pojem:záznam-o-textové-analýze,
-      termit-pojem:má-přesný-text-quote, termit-pojem:selektor, termit-pojem:má-koncovou-pozici,
-      termit-pojem:má-slovník-pro-analýzu, termit-pojem:cíl, termit-pojem:má-selektor, termit-pojem:má-analyzovaný-zdroj,
-      termit-pojem:má-startovní-pozici;
-    owl:versionIRI <http://onto.fel.cvut.cz/ontologies/application/termit/glosář/verze/1.1.2>;
-    owl:imports <https://slovník.gov.cz/datový/pracovní-prostor/glosář>, a-popis-dat:glosář,
-      <http://rdfs.org/sioc/ns#>, <http://www.w3.org/ns/activitystreams#>;
-    dc:creator "Michal Med", " Martin Ledvinka" .
+  <http://onto.fel.cvut.cz/ontologies/ufo/action> a owl:Class;
+    owl:equivalentClass z-sgov-p:akce .
   
-  termit-pojem:má-prefix-text-quote a skos:Concept, z-sgov-p:typ-vlastnosti, owl:DatatypeProperty;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain termit-pojem:selektor-text-quote;
-    rdfs:range rdfs:Literal;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has text quote prefix"@en, "Má prefix text quote"@cs .
+  <http://schema.org/Place> a owl:Class;
+    rdfs:subClassOf z-sgov-p:prostorový-objekt .
   
-  termit-pojem:souborový-výskyt-termu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:výskyt-termu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:výskyt-termu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "File term occurrence"@en, "Souborový výskyt termu"@cs .
+  z-sgov-p:prostorový-objekt a owl:Class;
+    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/object> .
   
-  termit-pojem:výskyt-termu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:přiřazení-termu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:přiřazení-termu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Term occurrence"@en, "Výskyt termu"@cs .
+  <http://data.europa.eu/m8g/Event> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
   
-  termit-pojem:je-selektorem-definice-termu a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain termit-pojem:selektor-definice;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "is selector of term definition"@en, "je selektorem definice termu"@cs .
+  <http://www.w3.org/2006/time#inXSDDateTimeStamp> a owl:DatatypeProperty .
   
-  termit-pojem:zablokovaný-uživatel-termitu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:uživatel-termitu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:uživatel-termitu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Blocked TermIt user"@en, "Zablokovaný uživatel TermItu"@cs .
+  <http://www.w3.org/2006/time#hasEnd> a owl:ObjectProperty .
   
-  termit-pojem:uživatelská-role a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    skos:broader z-sgov-p:typ-objektu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "User role"@en, "Uživatelská role"@cs .
+  <http://purl.org/vocab/cpsv#Input> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:plný-uživatel-termitu a skos:Concept, owl:Class, z-sgov-p:typ-objektu,
-      termit-pojem:uživatelská-role;
-    rdfs:subClassOf termit-pojem:uživatel-termitu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:uživatel-termitu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Editor"@en, "Editor"@cs;
-    skos:scopeNote "He or she can view, create, edit and delete vocabularies, terms and resources. He or she can also comment on terms. He or she cannot manage users."@en,
-      "Může prohlížet, vytvářet, měnit a mazat slovníky, pojmy a zdroje. Pojmy může rovněž komentovat. Nemůže spravovat uživatele."@cs .
+  <http://data.europa.eu/m8g/Channel> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:má-uživatelskou-roli a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain termit-pojem:uživatel-termitu;
-    rdfs:range termit-pojem:uživatelská-role;
-    skos:broader z-sgov-p:typ-vztahu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has user role"@en, "Má uživatelskou roli"@cs .
+  <http://www.w3.org/ns/dcat#Distribution> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:konfigurace a skos:Concept, owl:Class;
-    skos:broader z-sgov-p:typ-objektu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Configuration"@en, "Konfigurace"@cs .
+  <http://purl.org/vocab/cpsv#Output> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:přiřazení-termu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf z-sgov-p:objekt;
-    skos:broader z-sgov-p:typ-objektu, z-sgov-p:objekt;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Term assignment"@en, "Přiřazení termu"@cs .
+  <https://slovník.gov.cz/základní/mapování/gufo> a owl:Ontology;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/gufo/verze/1.0.0>;
+    owl:imports <http://purl.org/nemo/gufo#>, <https://slovník.gov.cz/základní/verze/1.0.1> .
   
-  termit-pojem:má-cíl a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain termit-pojem:přiřazení-termu;
-    rdfs:range termit-pojem:cíl;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel ", \"Has target"@en, "Má cíl"@cs .
+  <https://slovník.gov.cz/základní/mapování> a owl:Ontology, a-popis-dat-pojem:mapování;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/verze/1.0.0>;
+    owl:imports <https://slovník.gov.cz/základní/verze/1.0.1>, <http://www.w3.org/ns/person>,
+      <http://www.w3.org/ns/locn#> .
   
-  termit-pojem:selektor-definice a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf z-sgov-p:objekt;
-    skos:broader z-sgov-p:typ-objektu, z-sgov-p:objekt;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Definition selector"@en, "Selektor definice"@cs .
+  a-popis-dat-pojem:mapování a owl:Class .
   
-  termit-pojem:má-suffix-text-quote a skos:Concept, z-sgov-p:typ-vlastnosti, owl:DatatypeProperty;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain termit-pojem:selektor-text-quote;
-    rdfs:range rdfs:Literal;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has text quote suffix"@en, "Má suffix text quote"@cs .
+  <http://purl.org/vocab/frbr/core#Expression> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:záznam-o-textové-analýze a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf z-sgov-p:objekt;
-    skos:broader z-sgov-p:typ-objektu, z-sgov-p:objekt;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Text analysis record"@en, "Záznam o textové analýze"@cs .
+  z-sgov-p:datum a owl:DatatypeProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#inXSDDate> .
   
-  termit-pojem:má-přesný-text-quote a skos:Concept, z-sgov-p:typ-vlastnosti, owl:DatatypeProperty;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain termit-pojem:selektor-text-quote;
-    rdfs:range rdfs:Literal;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has exact text quote"@en, "Má přesný text quote"@cs .
+  <http://www.w3.org/2006/time#inXSDDate> a owl:DatatypeProperty .
   
-  termit-pojem:selektor a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf z-sgov-p:objekt;
-    skos:broader z-sgov-p:typ-objektu, z-sgov-p:objekt;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Selector"@en, "selektor"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/sub-kind> a owl:Class;
+    owl:equivalentClass z-sgov-p:poddruh .
   
-  termit-pojem:má-koncovou-pozici a skos:Concept, z-sgov-p:typ-vlastnosti, owl:DatatypeProperty;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain termit-pojem:selektor-pozici-v-textu;
-    rdfs:range rdfs:Literal;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has end position"@en, "Má koncovou pozici"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ .
   
-  termit-pojem:má-slovník-pro-analýzu a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain termit-pojem:záznam-o-textové-analýze;
-    rdfs:range a-popis-dat-pojem:slovník;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has analysis vocabulary"@en, "Má slovník pro analýzu"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/quality-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-kvalitativní-vlastnosti .
   
-  termit-pojem:cíl a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf z-sgov-p:objekt;
-    skos:broader z-sgov-p:typ-objektu, z-sgov-p:objekt;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Target"@en, "Cíl"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/agent> a owl:Class;
+    owl:equivalentClass z-sgov-p:agent .
   
-  termit-pojem:má-selektor a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain termit-pojem:cíl-výskytu;
-    rdfs:range termit-pojem:selektor;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "má selektor"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/role-mixin> a owl:Class;
+    owl:equivalentClass z-sgov-p:mixin-rolí .
   
-  termit-pojem:má-analyzovaný-zdroj a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf z-sgov-p:vztah;
-    rdfs:domain termit-pojem:záznam-o-textové-analýze;
-    rdfs:range a-popis-dat-pojem:zdroj;
-    skos:broader z-sgov-p:typ-vztahu, z-sgov-p:vztah;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has analyzed resource"@en, "Má analyzovaný zdroj"@cs .
+  <http://data.europa.eu/m8g/Output> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:má-startovní-pozici a skos:Concept, z-sgov-p:typ-vlastnosti, owl:DatatypeProperty;
-    rdfs:subPropertyOf z-sgov-p:vlastnost;
-    rdfs:domain termit-pojem:selektor-pozici-v-textu;
-    rdfs:range rdfs:Literal;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Has start position"@en, "Má startovní pozici"@cs .
+  <http://www.w3.org/ns/dcat#Dataset> a owl:Class .
   
-  termit-pojem:má-cíl-definičního-výskytu a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf termit-pojem:má-cíl-výskytu;
-    rdfs:domain termit-pojem:definiční-výskyt-termu;
-    rdfs:range termit-pojem:cíl-definičního-výskytu;
-    skos:broader z-sgov-p:typ-vztahu, termit-pojem:má-cíl-výskytu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "has definition occurence target"@en, "má cíl definičního výskytu"@cs .
+  <http://www.w3.org/ns/org#FormalOrganization> a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
   
-  termit-pojem:má-cíl-výskytu a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf termit-pojem:má-cíl;
-    rdfs:range termit-pojem:cíl-výskytu;
-    skos:broader z-sgov-p:typ-vztahu, termit-pojem:má-cíl;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "has occurrence target"@en, "má cíl výskytu"@cs .
+  <http://data.europa.eu/m8g/FoundationEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
   
-  termit-pojem:cíl-souborového-výskytu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:cíl-výskytu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:cíl-výskytu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "File occurrence target"@en, "Cíl souborového výskytu"@cs .
+  <http://data.europa.eu/m8g/CriterionRequirement> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:selektor-xpath a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:selektor;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:selektor;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "XPath selector"@en, "Selektor XPath"@cs .
+  <https://slovník.gov.cz/základní/mapování-gufo> a owl:NamedIndividual, a-popis-dat-pojem:mapování .
   
-  termit-pojem:definiční-výskyt-termu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:výskyt-termu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:výskyt-termu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Definition term occurrence"@en, "Definiční výskyt termu"@cs .
+  <http://data.europa.eu/m8g/Criteron> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:navržené-přiřazení-termu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:přiřazení-termu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:přiřazení-termu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Suggested term assignment"@en, "Navržené přiřazení termu"@cs .
+  dc:Location a owl:Class;
+    owl:equivalentClass z-sgov-p:prostorový-objekt .
   
-  termit-pojem:má-cíl-souborového-výskytu a skos:Concept, owl:ObjectProperty, z-sgov-p:typ-vztahu;
-    rdfs:subPropertyOf termit-pojem:má-cíl-výskytu;
-    rdfs:domain termit-pojem:souborový-výskyt-termu;
-    rdfs:range termit-pojem:cíl-souborového-výskytu;
-    skos:broader z-sgov-p:typ-vztahu, termit-pojem:má-cíl-výskytu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "has file occurence target"@en, "má cíl souborového výskytu"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/relator> a owl:Class;
+    owl:equivalentClass z-sgov-p:vztah .
   
-  termit-pojem:navržený-výskyt-termu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:výskyt-termu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:výskyt-termu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Suggested term occurrence"@en, "Navržený výskyt termu"@cs .
+  <http://www.w3.org/2006/time#ProperInterval> a owl:Class;
+    owl:equivalentClass z-sgov-p:časový-interval .
   
-  termit-pojem:selektor-pozici-v-textu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:selektor;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:selektor;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Selector by text position"@en, "Selektor pozicí v textu"@cs .
+  <http://data.europa.eu/m8g/RequirementGroup> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
   
-  termit-pojem:uzamčený-uživatel-termitu a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:uživatel-termitu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:uživatel-termitu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Locked TermIt user"@en, "Uzamčený uživatel TermItu"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/event-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-události .
   
-  termit-pojem:selektor-fragmentem a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:selektor;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:selektor;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Selector by fragment"@en, "Selektor fragmentem"@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/perdurant> a owl:Class;
+    owl:equivalentClass z-sgov-p:neměnný-prvek .
   
-  termit-pojem:selektor-css a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:selektor;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:selektor;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "CSS selector"@en, "Selektor CSS"@cs .
+  <http://data.europa.eu/m8g/LifeEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
   
-  termit-pojem:selektor-text-quote a skos:Concept, owl:Class, z-sgov-p:typ-objektu;
-    rdfs:subClassOf termit-pojem:selektor;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:selektor;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Selector by text quote"@en, "Selektor text quote"@cs .
+  <http://www.w3.org/ns/org#ChangeEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:změna-proměnného-prvku .
   
-  termit-pojem:omezený-uživatel-termitu a skos:Concept, owl:Class, z-sgov-p:typ-objektu,
-      termit-pojem:uživatelská-role;
-    rdfs:subClassOf termit-pojem:uživatel-termitu;
-    skos:broader z-sgov-p:typ-objektu, termit-pojem:uživatel-termitu;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Reader"@en, "Čtenář"@cs;
-    skos:scopeNote "He or she can list and view vocabularies and terms. He or she can also comment on terms."@en,
-      "Může prohlížet slovníky a pojmy. Pojmy může rovněž komentovat."@cs .
+  <http://onto.fel.cvut.cz/ontologies/ufo/role> a owl:Class;
+    owl:equivalentClass z-sgov-p:role .
   
-  termit-pojem:je-tématem a skos:Concept, owl:ObjectProperty;
-    skos:broader z-sgov-p:typ-vlastnosti, z-sgov-p:vlastnost;
-    skos:inScheme termit:glosář;
-    skos:prefLabel "Is topic of"@en, "Je tématem"@cs;
-    owl:inverseOf <http://rdfs.org/sioc/ns#topic> .
+  <http://onto.fel.cvut.cz/ontologies/ufo/mediates> a owl:ObjectProperty .
   
-  termit:model a owl:Ontology, a-popis-dat-pojem:model;
-    dc:title "Vocabulary of system TermIt - model"@en, "Slovník systému TermIt - model"@cs;
-    dc:created "2020-05-26";
-    <http://purl.org/ontology/bibo/status> "Specifikace"@cs, "Specification"@en;
-    vann:preferredNamespacePrefix "termit-pojem";
-    vann:preferredNamespaceUri "http://onto.fel.cvut.cz/ontologies/application/termit/pojem/";
-    owl:versionIRI <http://onto.fel.cvut.cz/ontologies/application/termit/model/verze/1.1.2>;
-    owl:imports a-popis-dat:model, termit:glosář, <https://slovník.gov.cz/datový/pracovní-prostor/model>;
-    dc:creator "Michal Med", " Martin Ledvinka" .
+  <http://www.w3.org/ns/dcat#Catalog> a owl:Class .
   
-  dc:language a owl:AnnotationProperty .
+  <http://data.europa.eu/m8g/PeriodOfTime> a owl:Class;
+    rdfs:subClassOf z-sgov-p:časový-prvek .
   
-  rdfs:subClassOf rdfs:subPropertyOf skos:broader .
+  <http://onto.fel.cvut.cz/ontologies/ufo/phase> a owl:Class;
+    owl:equivalentClass z-sgov-p:fáze .
   
-  skos:prefLabel rdfs:subPropertyOf rdfs:label .
+  dc:Jurisdiction a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <https://slovník.gov.cz/základní/mapování/ufo> a owl:Ontology, a-popis-dat-pojem:mapování;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/ufo/verze/1.0.0>;
+    owl:imports <https://slovník.gov.cz/základní/verze/1.0.1>, <http://onto.fel.cvut.cz/ontologies/ufo/> .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/kind> a owl:Class;
+    owl:equivalentClass z-sgov-p:druh .
+  
+  <http://schema.org/ContactPoint> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://schema.org/Person> a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/entity> a owl:Class;
+    owl:equivalentClass z-sgov-p:prvek .
+  
+  dc:Agent a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/category> a owl:Class;
+    owl:equivalentClass z-sgov-p:kategorie .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/intrinsic-trope-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-vlastnosti .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/event> a owl:Class;
+    owl:equivalentClass z-sgov-p:událost .
+  
+  <http://data.europa.eu/m8g/Evidence> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  z-sgov-p:má-konec a owl:ObjectProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#hasEnd> .
+  
+  <http://rdfs.org/sioc/ns#Forum> a owl:Class .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/situation> a owl:Class .
+  
+  <http://www.w3.org/2006/time#hasBeginning> a owl:ObjectProperty .
+  
+  <http://data.europa.eu/m8g/Participation> a owl:Class .
+  
+  <http://data.europa.eu/m8g/PublicOrganisation> a owl:Class;
+    rdfs:subClassOf z-sgov-p:agent .
+  
+  <http://www.w3.org/ns/locn#geographicName> a owl:Class;
+    rdfs:subClassOf z-sgov-p:vlastnost, _:node7872513, _:node8112129, _:node8111975, _:node8111964,
+      _:node8172387, _:node8275587, _:node8356083, _:node8436579, _:node8517075, _:node8648117,
+      _:node8664840, _:node8758563, _:node8839059, _:node8919555, _:node9038176, _:node9074941,
+      _:node9161043, _:node9241539, _:node9331273, _:node9402531, _:node9483027, _:node9580686,
+      _:node9644645, _:node9725767, _:node9806867, _:node9887992, _:node9969092, _:node10050212,
+      _:node10131312, _:node10212629, _:node10295058, _:node10377487 .
+  
+  <http://purl.org/vocab/cpsv#PublicService> a owl:Class .
+  
+  <http://xmlns.com/foaf/0.1/Agent> a owl:Class;
+    owl:equivalentClass z-sgov-p:agent .
+  
+  <http://data.europa.eu/m8g/RequirementResponse> a owl:Class .
+  
+  <http://data.europa.eu/m8g/BusinessEvent> a owl:Class;
+    rdfs:subClassOf z-sgov-p:událost .
+  
+  <http://www.w3.org/2006/time#TemporalEntity> a owl:Class;
+    rdfs:subClassOf z-sgov-p:časový-prvek .
+  
+  <https://schema.org/ContactPoint> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://data.europa.eu/m8g/DocumentReference> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://www.w3.org/ns/adms#Identifier> a owl:Class;
+    rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://labs.mondeca.com/vocab/voaf#Vocabulary> a owl:Class .
+  
+  <http://www.w3.org/1999/xhtml/vocab#next> a owl:ObjectProperty .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/monadic-type> a owl:Class .
+  
+  z-sgov-p:datum-a-čas a owl:DatatypeProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#inXSDDateTimeStamp> .
+  
+  z-sgov-p:má-začátek a owl:ObjectProperty;
+    owl:equivalentProperty <http://www.w3.org/2006/time#hasBeginning> .
+  
+  <https://slovník.gov.cz/základní/mapování/owltime> a owl:Ontology, owl:NamedIndividual,
+      a-popis-dat-pojem:mapování;
+    owl:versionIRI <https://slovník.gov.cz/základní/mapování/owltime/verze/1.0.0>;
+    owl:imports <https://slovník.gov.cz/základní/verze/1.0.1>, <https://raw.githubusercontent.com/w3c/sdw/gh-pages/time/rdf/time.ttl> .
+  
+  <http://schema.org/OpeningHoursSpecification> a owl:Class .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/mode-type> a owl:Class;
+    owl:equivalentClass z-sgov-p:typ-módu .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/mixin> a owl:Class;
+    owl:equivalentClass z-sgov-p:mixin .
+  
+  _:node7872513 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8112129 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8111975 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8111964 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8172387 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8275587 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8356083 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8436579 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8517075 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8648117 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8664840 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8758563 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8839059 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node8919555 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9038176 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9074941 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9161043 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9241539 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9331273 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9402531 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9483027 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9580686 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9644645 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9725767 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9806867 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9887992 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node9969092 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10050212 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10131312 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10212629 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10295058 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  _:node10377487 a owl:Restriction;
+    owl:onProperty z-sgov-p:je-vlastností;
+    owl:someValuesFrom z-sgov-p:prostorový-objekt .
+  
+  z-sgov-p:je-vlastností rdfs:subPropertyOf <http://purl.org/nemo/gufo#inheresIn> .
+  
+  z-sgov-p:má-vztažený-prvek rdfs:subPropertyOf <http://purl.org/nemo/gufo#mediates> .
+  
+  z-sgov-p:vlastnost rdfs:subClassOf <http://purl.org/nemo/gufo#IntrinsicAspect> .
+  
+  z-sgov-p:typ-události rdfs:subClassOf <http://purl.org/nemo/gufo#EventType> .
+  
+  z-sgov-p:typ-vztahu rdfs:subClassOf <http://purl.org/nemo/gufo#RelationshipType> .
+  
+  z-sgov-p:role rdfs:subClassOf <http://purl.org/nemo/gufo#Role> .
+  
+  z-sgov-p:kategorie rdfs:subClassOf <http://purl.org/nemo/gufo#Category> .
+  
+  z-sgov-p:mixin-rolí rdfs:subClassOf <http://purl.org/nemo/gufo#RoleMixin> .
+  
+  z-sgov-p:mixin rdfs:subClassOf <http://purl.org/nemo/gufo#Mixin> .
+  
+  z-sgov-p:druh rdfs:subClassOf <http://purl.org/nemo/gufo#Kind> .
+  
+  z-sgov-p:poddruh rdfs:subClassOf <http://purl.org/nemo/gufo#SubKind> .
+  
+  z-sgov-p:událost rdfs:subClassOf <http://purl.org/nemo/gufo#Event> .
+  
+  z-sgov-p:typ-proměnného-prvku rdfs:subClassOf <http://purl.org/nemo/gufo#EndurantType> .
+  
+  z-sgov-p:typ rdfs:subClassOf <http://purl.org/nemo/gufo#Type> .
+  
+  z-sgov-p:fáze rdfs:subClassOf <http://purl.org/nemo/gufo#Phase> .
+  
+  z-sgov-p:nesortál rdfs:subClassOf <http://purl.org/nemo/gufo#NonSortal> .
+  
+  <http://www.w3.org/ns/locn#Geometry> rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  z-sgov-p:mixin-fází rdfs:subClassOf <http://purl.org/nemo/gufo#PhaseMixin> .
+  
+  <http://www.w3.org/ns/locn#Address> rdfs:subClassOf z-sgov-p:pasivní-objekt .
+  
+  <http://www.w3.org/2006/time#Instant> owl:equivalentClass z-sgov-p:časový-okamžik .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/object-type> owl:equivalentClass z-sgov-p:typ-objektu .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/endurant-type> owl:equivalentClass z-sgov-p:typ-proměnného-prvku .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/relator-type> owl:equivalentClass z-sgov-p:typ-vztahu .
+  
+  <http://onto.fel.cvut.cz/ontologies/ufo/intrinsic-trope> owl:equivalentClass z-sgov-p:vlastnost .
 }

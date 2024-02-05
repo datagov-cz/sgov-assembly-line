@@ -1,0 +1,1 @@
+"realm-management" : [ "manage-users", "view-clients", "view-users" ], "al-checkit-server" : [], "al-sgov-server" : [], "al-termit-server" : []
