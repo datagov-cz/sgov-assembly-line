@@ -1,6 +1,17 @@
 
-# Change Log
-All notable changes to the Assembly line tooling will be documented here.
+## 2024-02-04
+Od této aktualizace dále bude psán výpis změn v češtině.
+
+### OntoGrapher
+ - https://github.com/datagov-cz/ontoGrapher/pull/523 - implementace regulárního výrazu PN_LOCAL při tvorbě IRI pro nové pojmy
+ - https://github.com/datagov-cz/ontoGrapher/pull/520 - optimalizace načítání projektu
+ - https://github.com/datagov-cz/ontoGrapher/pull/518 - změna části IRI u nových pojmů, pokud není známý namespace slovníku
+ - https://github.com/datagov-cz/ontoGrapher/pull/519 - pojmy jen pro čtení se automaticky odebírají, pokud nejsou v žádném diagramu
+ - https://github.com/datagov-cz/ontoGrapher/pull/517 - implementace proměnné TERM_LANGUAGE do proměnného prostředí
+ - https://github.com/datagov-cz/ontoGrapher/pull/516 - oprava vzhledu filtrování 
+ 
+### Sdílená komponenta
+ - https://github.com/datagov-cz/assembly-line-shared/pull/22 - podpora React 18
 
 ## 2023-12-05
 Ontographer stability and minor speed improvements along with minor bug fixes.
